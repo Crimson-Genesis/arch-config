@@ -1,0 +1,10 @@
+[Icon Theme]
+Name= Hoshino Swimsuit
+Comment= HOshino from Blue Archive in a cool animated cursor theme. Credits to www.pixiv.net/en/users/345405 for making this.
+Inherits= default
+Directories= cursors
+
+[cursors]
+Size= 32
+
+

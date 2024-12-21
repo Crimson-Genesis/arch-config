@@ -1,0 +1,12 @@
+# update grub
+sudo grub-mkconfig -o /boot/grub/grub.cfg
+
+# /etc/grub.d/40_custom
+menuentry "Recovery Shell" {
+    linux /vmlinuz-linux root=UUID=your-root-uuid rw single
+    initrd /initramfs-linux.img
+}
+
+# the RAM test tool for GRUB
+sudo pacman -S memtest86+
+

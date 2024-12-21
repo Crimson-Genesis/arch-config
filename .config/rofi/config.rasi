@@ -1,0 +1,26 @@
+ @theme "./rofi-themes-collection/themes/simple-tokyonight.rasi"
+
+ configuration {
+    modes: "drun,run";
+    show: "drun";
+    font: "hack 10";
+    show-icons: true;
+    modi: "combi,drun,emoji,calc";
+    combi-modi: "drun,run,window";
+    terminal: "alacritty";
+
+    kb-element-next: "";
+    kb-element-prev: "";
+    kb-move-char-back: "";
+    kb-move-char-forward: "";
+    kb-remove-word-forward: "";
+    kb-cancel: "";
+
+    kb-element-next: "Alt+j";
+    kb-element-prev: "Alt+k";
+    kb-move-char-back: "Alt+h";
+    kb-move-char-forward: "Alt+l";
+    kb-remove-word-back: "Alt+BackSpace";
+    kb-cancel: "Control+c";
+}
+

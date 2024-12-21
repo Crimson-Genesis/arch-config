@@ -1,0 +1,43 @@
+[global]
+    width = 300
+    hight = 300
+    notification_limit = 20
+    origin = bottom-right
+    offset = 10x50
+    progress_bar = true
+    transparency = 20
+    frame_color = "#708FD1"
+    frame_width = 1
+    separator_color = auto
+    sort = yes
+    font = FiraMono Nerd Font,FiraMono Nerd Font Medium 10
+    alignment = left
+    icon_position = left
+    min_icon_size = 0
+    max_icon_size = 64
+    icon_path = /usr/share/icons/gnome/16x16/status/:/usr/share/icons/gnome/16x16/devices/
+    dmenu = /usr/bin/dmenu -p dunst:
+    browser = /usr/bin/brave
+    always_run_script = true
+    title = Dunst
+    class = Dunst
+    corner_radius = 10
+    mouse_left_click = close_current
+    mouse_middle_click = do_action, close_current
+    mouse_right_click = close_all
+    timeout = 3
+[urgency_low]
+    background = "#282a36"
+    foreground = "#6272a4"
+    timeout = 3
+
+[urgency_normal]
+    background = "#282a36"
+    foreground = "#bd93f9"
+    timeout = 3
+
+[urgency_critical]
+    background = "#ff5555"
+    foreground = "#f8f8f2"
+    frame_color = "#ff5555"
+    timeout = 10

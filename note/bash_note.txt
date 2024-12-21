@@ -1,0 +1,10 @@
+the bash "declare" keyword is used for declareing a assosiative array or a intiger array.
+Ex:- 
+declare -a distros
+distros[0]="Amazon"
+distros[1]="Ubuntu"
+
+declare -A place
+palce[home]="/home"
+place[nico]="/home/nico"
+

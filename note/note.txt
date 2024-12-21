@@ -1,0 +1,8 @@
+p10k configure
+xrdb -merge ~/.Xresources # To mearge the .Xresources file data after change...
+
+https://wallpapers-clan.com/desktop-wallpapers/category/anime/
+ Reverend Insanity by Gu Zen Ren
+ GSI
+
+https://aria2.github.io/

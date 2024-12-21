@@ -1,0 +1,608 @@
+{
+   "checksum": "d629270d12c1a809a319e670b2e32a1e",
+   "roots": {
+      "bookmark_bar": {
+         "children": [  ],
+         "date_added": "13369643435090829",
+         "date_last_used": "0",
+         "date_modified": "0",
+         "guid": "0bc5d13f-2cba-5d74-951f-3f233fe6c908",
+         "id": "1",
+         "name": "Bookmarks",
+         "type": "folder"
+      },
+      "other": {
+         "children": [ {
+            "date_added": "13369647292300572",
+            "date_last_used": "0",
+            "guid": "50e58679-4752-4cbb-b2af-ff296f883bc1",
+            "id": "5",
+            "meta_info": {
+               "power_bookmark_meta": ""
+            },
+            "name": "Tyler Vigen's personal website",
+            "type": "url",
+            "url": "https://tylervigen.com/"
+         }, {
+            "date_added": "13369647707487909",
+            "date_last_used": "0",
+            "guid": "7e799f6a-91f0-4294-ad1d-cc2b22ca5484",
+            "id": "6",
+            "meta_info": {
+               "power_bookmark_meta": ""
+            },
+            "name": "xkcd: Sky Alarm",
+            "type": "url",
+            "url": "https://xkcd.com/"
+         }, {
+            "date_added": "13369651395626633",
+            "date_last_used": "0",
+            "guid": "fc853fec-cd45-4320-bd8c-25e1117175b8",
+            "id": "7",
+            "meta_info": {
+               "power_bookmark_meta": ""
+            },
+            "name": "Calligraphr - Draw your own fonts.",
+            "type": "url",
+            "url": "https://www.calligraphr.com/en/"
+         }, {
+            "date_added": "13369682975894846",
+            "date_last_used": "0",
+            "guid": "963b3c1d-0d50-468b-a436-ec0878a4655c",
+            "id": "8",
+            "meta_info": {
+               "power_bookmark_meta": ""
+            },
+            "name": "Excalidraw",
+            "type": "url",
+            "url": "https://excalidraw.com/"
+         }, {
+            "date_added": "13369940405027349",
+            "date_last_used": "0",
+            "guid": "ac2a58a3-1356-4614-a13a-7ddb19c2c07b",
+            "id": "10",
+            "meta_info": {
+               "power_bookmark_meta": ""
+            },
+            "name": "aw-junaid/Hacking-Tools: This Repository is a collection of different ethical hacking tools and malware's for penetration testing and research purpose written in python, ruby, rust, c++, go and c.",
+            "type": "url",
+            "url": "https://github.com/aw-junaid/Hacking-Tools"
+         }, {
+            "date_added": "13370070752637496",
+            "date_last_used": "0",
+            "guid": "8b629707-3b7b-4904-9365-599b334009d8",
+            "id": "12",
+            "meta_info": {
+               "power_bookmark_meta": ""
+            },
+            "name": "(16) Pokimane REUNITES With JasonTheWeen.. - YouTube",
+            "type": "url",
+            "url": "https://www.youtube.com/watch?v=FZNg71SLFOA"
+         }, {
+            "date_added": "13370278207741165",
+            "date_last_used": "0",
+            "guid": "7894fc12-ced3-491a-9ed2-4853692f44dc",
+            "id": "14",
+            "meta_info": {
+               "power_bookmark_meta": ""
+            },
+            "name": "Pathfinding Visualizer",
+            "type": "url",
+            "url": "https://pathfindingvisualizer.net/"
+         }, {
+            "date_added": "13370278465960801",
+            "date_last_used": "0",
+            "guid": "a8553682-c662-4903-9d35-bdd46c63f8c5",
+            "id": "15",
+            "meta_info": {
+               "power_bookmark_meta": ""
+            },
+            "name": "visualising data structures and algorithms through animation - VisuAlgo",
+            "type": "url",
+            "url": "https://visualgo.net/en"
+         }, {
+            "date_added": "13370278802795415",
+            "date_last_used": "0",
+            "guid": "28a0ffd0-3e42-4de1-a781-37d73c05024e",
+            "id": "16",
+            "meta_info": {
+               "power_bookmark_meta": ""
+            },
+            "name": "Algorithm Visualizer",
+            "type": "url",
+            "url": "https://algorithm-visualizer.net/"
+         }, {
+            "date_added": "13370347185108664",
+            "date_last_used": "0",
+            "guid": "a90746aa-5c0f-4a09-a83d-a2c9129b133a",
+            "id": "17",
+            "meta_info": {
+               "power_bookmark_meta": ""
+            },
+            "name": "(22) Most unique Weapon inspection in Mw3 #mw3 #warzone #cod #callofduty - YouTube",
+            "type": "url",
+            "url": "https://www.youtube.com/shorts/fE3rggSwI3w"
+         }, {
+            "date_added": "13370351733856496",
+            "date_last_used": "0",
+            "guid": "7e6be132-ce81-4c1e-81fb-a554a54f9b45",
+            "id": "18",
+            "meta_info": {
+               "power_bookmark_meta": ""
+            },
+            "name": "Course: Complete 2022 Data Science & Machine Learning Bootcamp | Udemy",
+            "type": "url",
+            "url": "https://www.udemy.com/course/python-data-science-machine-learning-bootcamp/learn/lecture/14845108#overview"
+         }, {
+            "date_added": "13370862123840498",
+            "date_last_used": "0",
+            "guid": "e4b00f49-d388-4b1e-b1cb-28dc1c5ff0f5",
+            "id": "20",
+            "meta_info": {
+               "power_bookmark_meta": ""
+            },
+            "name": "GENRAGE | Streetwear Fashion India",
+            "type": "url",
+            "url": "https://genrage.com/"
+         }, {
+            "date_added": "13370973977831008",
+            "date_last_used": "0",
+            "guid": "f3bc34de-068f-4a84-a078-f32cceeedeca",
+            "id": "22",
+            "meta_info": {
+               "power_bookmark_meta": ""
+            },
+            "name": "Download the latest indie games - itch.io",
+            "type": "url",
+            "url": "https://itch.io/"
+         }, {
+            "date_added": "13371140934472073",
+            "date_last_used": "0",
+            "guid": "c465e27a-a9bc-4fd7-bc02-c4c781399678",
+            "id": "24",
+            "meta_info": {
+               "power_bookmark_meta": ""
+            },
+            "name": "book.hacktricks.xyz",
+            "type": "url",
+            "url": "https://book.hacktricks.xyz/"
+         }, {
+            "date_added": "13371143057709486",
+            "date_last_used": "0",
+            "guid": "31a5a91a-8d80-43aa-ab70-afb5533ac98a",
+            "id": "25",
+            "meta_info": {
+               "power_bookmark_meta": ""
+            },
+            "name": "Obtainium",
+            "type": "url",
+            "url": "https://obtainium.imranr.dev/"
+         }, {
+            "date_added": "13371143605796668",
+            "date_last_used": "0",
+            "guid": "523ac5a2-dbee-49ab-94ae-d06584fe5a7d",
+            "id": "26",
+            "meta_info": {
+               "power_bookmark_meta": ""
+            },
+            "name": "deniscerri/ytdlnis: Android Video/Audio Downloader app using yt-dlp",
+            "type": "url",
+            "url": "https://github.com/deniscerri/ytdlnis?tab=readme-ov-file"
+         }, {
+            "date_added": "13371149364203801",
+            "date_last_used": "0",
+            "guid": "3454e56d-b662-40d1-9459-0020ef424239",
+            "id": "27",
+            "meta_info": {
+               "power_bookmark_meta": ""
+            },
+            "name": "Google Scholar",
+            "type": "url",
+            "url": "https://scholar.google.com/"
+         }, {
+            "date_added": "13371561170365655",
+            "date_last_used": "0",
+            "guid": "e9c24c08-75a1-4c99-86b7-60127dfc7dfd",
+            "id": "29",
+            "meta_info": {
+               "power_bookmark_meta": ""
+            },
+            "name": "Apache SpamAssassin: Welcome",
+            "type": "url",
+            "url": "https://spamassassin.apache.org/"
+         }, {
+            "date_added": "13371561896461409",
+            "date_last_used": "0",
+            "guid": "53659a1d-73ee-4e67-8edb-df4b80c4af5b",
+            "id": "30",
+            "meta_info": {
+               "power_bookmark_meta": ""
+            },
+            "name": "Index of /old",
+            "type": "url",
+            "url": "https://spamassassin.apache.org/old/"
+         }, {
+            "date_added": "13371562723293034",
+            "date_last_used": "0",
+            "guid": "2523e990-e349-41b7-a57d-4c00647e9eb2",
+            "id": "31",
+            "meta_info": {
+               "power_bookmark_meta": ""
+            },
+            "name": "Welcome • freemediaheckyeah",
+            "type": "url",
+            "url": "https://fmhy.net/"
+         }, {
+            "date_added": "13371564002006384",
+            "date_last_used": "0",
+            "guid": "49ad99e4-6655-4be7-836f-faba7d5d70ae",
+            "id": "32",
+            "meta_info": {
+               "power_bookmark_meta": ""
+            },
+            "name": "MkvDrama.Org - Free Download Asian Drama, Movies and Shows",
+            "type": "url",
+            "url": "https://mkvdrama.org/"
+         }, {
+            "date_added": "13371564130715269",
+            "date_last_used": "0",
+            "guid": "7950ceab-2f2b-46d8-a5f2-a57ac63760e8",
+            "id": "33",
+            "meta_info": {
+               "power_bookmark_meta": ""
+            },
+            "name": "Home @ Tokyo Insider",
+            "type": "url",
+            "url": "https://www.tokyoinsider.com/"
+         }, {
+            "date_added": "13371564170774597",
+            "date_last_used": "0",
+            "guid": "5567bf39-ef6d-4b14-ba0f-7b3e3257efbe",
+            "id": "34",
+            "meta_info": {
+               "power_bookmark_meta": ""
+            },
+            "name": "Websites • Wotaku.wiki by Duck",
+            "type": "url",
+            "url": "https://wotaku.wiki/websites#download"
+         }, {
+            "date_added": "13371564243653858",
+            "date_last_used": "0",
+            "guid": "16b628f2-5a1a-454e-9995-391f9981d2e7",
+            "id": "35",
+            "meta_info": {
+               "power_bookmark_meta": ""
+            },
+            "name": "vadapav.mov",
+            "type": "url",
+            "url": "https://vadapav.mov/"
+         }, {
+            "date_added": "13371661841888495",
+            "date_last_used": "0",
+            "guid": "5c11c38f-b3a7-4fe9-b59a-02ad03ce7c8d",
+            "id": "37",
+            "meta_info": {
+               "power_bookmark_meta": ""
+            },
+            "name": "Browse :: Nyaa",
+            "type": "url",
+            "url": "https://nyaa.si/"
+         }, {
+            "date_added": "13371662319853935",
+            "date_last_used": "0",
+            "guid": "a4210c8b-082a-4ec8-b6ba-34959610000c",
+            "id": "38",
+            "meta_info": {
+               "power_bookmark_meta": ""
+            },
+            "name": "Miruro · Watch Free Anime Online · Stream Subbed & Dubbed Anime in HD",
+            "type": "url",
+            "url": "https://www.miruro.tv/"
+         }, {
+            "date_added": "13371662588899792",
+            "date_last_used": "0",
+            "guid": "4d469d0f-3e28-4740-9fe1-15e768841dbc",
+            "id": "39",
+            "meta_info": {
+               "power_bookmark_meta": ""
+            },
+            "name": "Hikari Hikari",
+            "type": "url",
+            "url": "https://watch.hikaritv.xyz/"
+         }, {
+            "date_added": "13371840837994732",
+            "date_last_used": "0",
+            "guid": "6fe183c6-a03d-473b-aa00-c147abf2f43f",
+            "id": "40",
+            "meta_info": {
+               "power_bookmark_meta": ""
+            },
+            "name": "Nerd Fonts - Iconic font aggregator, glyphs/icons collection, & fonts patcher",
+            "type": "url",
+            "url": "https://www.nerdfonts.com/cheat-sheet"
+         }, {
+            "date_added": "13371857199656053",
+            "date_last_used": "0",
+            "guid": "4adfb7b6-95b5-424b-8a69-9e640d42dd3f",
+            "id": "41",
+            "meta_info": {
+               "power_bookmark_meta": ""
+            },
+            "name": "Palettes | Flat UI Colors 🎨 280 handpicked colors ready for COPY & PASTE",
+            "type": "url",
+            "url": "https://flatuicolors.com/"
+         }, {
+            "date_added": "13372263152298135",
+            "date_last_used": "0",
+            "guid": "526bf673-881b-4c83-be9d-a1231759ac01",
+            "id": "43",
+            "meta_info": {
+               "power_bookmark_meta": ""
+            },
+            "name": "bash keyboard shortcuts - Linux - SS64.com",
+            "type": "url",
+            "url": "https://ss64.com/bash/syntax-keyboard.html"
+         }, {
+            "date_added": "13372453296159713",
+            "date_last_used": "0",
+            "guid": "96327bd5-b3c5-41f6-bd37-ca719f384459",
+            "id": "45",
+            "meta_info": {
+               "power_bookmark_meta": ""
+            },
+            "name": "Artist - Google Drive",
+            "type": "url",
+            "url": "https://drive.google.com/drive/folders/1EUlpiFexsn4xTcr4h1YPavfEyDWJ1k_N"
+         }, {
+            "date_added": "13372948725335586",
+            "date_last_used": "0",
+            "guid": "3e715213-f22b-45a0-9084-88724fb72f63",
+            "id": "47",
+            "meta_info": {
+               "power_bookmark_meta": ""
+            },
+            "name": "Lara - Google Drive",
+            "type": "url",
+            "url": "https://drive.google.com/drive/folders/1Kx-j1aTlbizPYhGn9_ucgFbEhoJt2rJf"
+         }, {
+            "date_added": "13373153821965127",
+            "date_last_used": "0",
+            "guid": "b18abd50-45af-490c-b979-789a5b133765",
+            "id": "49",
+            "meta_info": {
+               "power_bookmark_meta": ""
+            },
+            "name": "Oily bodies 🤤 pick your favorites : r/jav",
+            "type": "url",
+            "url": "https://www.reddit.com/r/jav/comments/1fuus25/oily_bodies_pick_your_favorites/"
+         }, {
+            "date_added": "13373322670971519",
+            "date_last_used": "0",
+            "guid": "3af4905d-0350-447b-8163-8d0826dc2aac",
+            "id": "50",
+            "meta_info": {
+               "power_bookmark_meta": ""
+            },
+            "name": "All-Time Top Film Franchises - Box-Office",
+            "type": "url",
+            "url": "https://www.filmsite.org/series-boxoffice.html"
+         }, {
+            "date_added": "13373429137375467",
+            "date_last_used": "0",
+            "guid": "a9ea23d0-dd8e-4582-b464-6f64b421f23d",
+            "id": "52",
+            "meta_info": {
+               "power_bookmark_meta": ""
+            },
+            "name": "HiAnime Free Anime Streaming Homepage",
+            "type": "url",
+            "url": "https://hianime.to/home"
+         }, {
+            "date_added": "13373447294546837",
+            "date_last_used": "0",
+            "guid": "5cbe18df-2907-43d2-9d39-ff105f79ae01",
+            "id": "53",
+            "meta_info": {
+               "power_bookmark_meta": ""
+            },
+            "name": "Color Lisa - Color palette masterpieces of the world’s greatest artists.",
+            "type": "url",
+            "url": "https://colorlisa.com/"
+         }, {
+            "date_added": "13373586174611241",
+            "date_last_used": "0",
+            "guid": "73e7f7fe-461c-49c3-a11b-b7a6a12ecd21",
+            "id": "55",
+            "meta_info": {
+               "power_bookmark_meta": ""
+            },
+            "name": "API — Mimesis 17.1.0 documentation",
+            "type": "url",
+            "url": "https://mimesis.name/master/api.html#mimesis.Person.email"
+         }, {
+            "date_added": "13373682300218842",
+            "date_last_used": "0",
+            "guid": "c49b4050-8b98-47c3-9bd5-6aa8ccdd2a0f",
+            "id": "57",
+            "meta_info": {
+               "power_bookmark_meta": ""
+            },
+            "name": "Model Zoo - Deep learning code and pretrained models for transfer learning, educational purposes, and more",
+            "type": "url",
+            "url": "https://www.modelzoo.co/"
+         }, {
+            "date_added": "13373694937001104",
+            "date_last_used": "0",
+            "guid": "320760b8-d45e-4e99-8012-fd58c3ee1595",
+            "id": "59",
+            "meta_info": {
+               "power_bookmark_meta": ""
+            },
+            "name": "erikw/vim-keybindings-everywhere-the-ultimate-list: The ultimate list of which programs support Vim-like keybindings natively, or how they can be added with extensions. A collaborative project.",
+            "type": "url",
+            "url": "https://github.com/erikw/vim-keybindings-everywhere-the-ultimate-list"
+         }, {
+            "date_added": "13373798247409548",
+            "date_last_used": "0",
+            "guid": "dc99d511-a899-4437-85b2-a32f1d95120d",
+            "id": "61",
+            "meta_info": {
+               "power_bookmark_meta": ""
+            },
+            "name": "CIFAR – Convening extraordinary minds to address the most important questions facing science and humanity.",
+            "type": "url",
+            "url": "https://cifar.ca/"
+         }, {
+            "date_added": "13374114163814518",
+            "date_last_used": "0",
+            "guid": "64ad4b13-4b6c-4ea4-8bc0-f8716d24f887",
+            "id": "63",
+            "meta_info": {
+               "power_bookmark_meta": ""
+            },
+            "name": "The 100+ Best Movie Series Of All Time, Ranked",
+            "type": "url",
+            "url": "https://www.ranker.com/crowdranked-list/5-star-movie-franchises"
+         }, {
+            "date_added": "13374388036250036",
+            "date_last_used": "0",
+            "guid": "800db7ad-0fe9-4c54-8476-7f346677761d",
+            "id": "65",
+            "meta_info": {
+               "power_bookmark_meta": ""
+            },
+            "name": "AVN with voice acting? : r/AVN_Lovers",
+            "type": "url",
+            "url": "https://www.reddit.com/r/AVN_Lovers/comments/14v6s5p/avn_with_voice_acting/"
+         }, {
+            "date_added": "13374415614554092",
+            "date_last_used": "0",
+            "guid": "74d872ef-984f-4b3c-8f71-13d94ecf2293",
+            "id": "67",
+            "meta_info": {
+               "power_bookmark_meta": ""
+            },
+            "name": "Lust Theory: Bouns Codes for Season 3 V0.4.5 – KosGuides",
+            "type": "url",
+            "url": "https://kosguides.com/221-lust-theory-bouns-codes-where-to-enter/"
+         }, {
+            "date_added": "13374425189312537",
+            "date_last_used": "0",
+            "guid": "9ababb68-de54-449f-b7bd-f769158c9b81",
+            "id": "68",
+            "meta_info": {
+               "power_bookmark_meta": ""
+            },
+            "name": "Where to find and unlock all of the Runes - Dead Cells Walkthrough - Neoseeker",
+            "type": "url",
+            "url": "https://www.neoseeker.com/dead-cells/Basics/Runes"
+         }, {
+            "date_added": "13375174649814300",
+            "date_last_used": "0",
+            "guid": "c391533c-adcc-44d1-9ea3-21b69d5b29a8",
+            "id": "70",
+            "meta_info": {
+               "power_bookmark_meta": ""
+            },
+            "name": "ChatGPT",
+            "type": "url",
+            "url": "https://chatgpt.com/"
+         }, {
+            "date_added": "13375631840731738",
+            "date_last_used": "0",
+            "guid": "ad954621-8e4f-40f1-b9ec-c42c0fa9b619",
+            "id": "72",
+            "meta_info": {
+               "power_bookmark_meta": ""
+            },
+            "name": "Claude",
+            "type": "url",
+            "url": "https://claude.ai/login"
+         }, {
+            "date_added": "13376481825652016",
+            "date_last_used": "0",
+            "guid": "b10d3152-dc8d-4407-9989-f8478053f427",
+            "id": "74",
+            "meta_info": {
+               "power_bookmark_meta": ""
+            },
+            "name": "2450+ Anime Live Wallpapers 4K & HD",
+            "type": "url",
+            "url": "https://motionbgs.com/tag:anime/"
+         }, {
+            "date_added": "13376576493821768",
+            "date_last_used": "0",
+            "guid": "2204c147-6f1a-4770-a7f6-ed6ad736faa6",
+            "id": "76",
+            "meta_info": {
+               "power_bookmark_meta": ""
+            },
+            "name": "The Street Sees Fireworks Live Wallpaper",
+            "type": "url",
+            "url": "https://livewallpaperpc.com/the-street-sees-fireworks-live-wallpaper/"
+         }, {
+            "date_added": "13377939151646829",
+            "date_last_used": "0",
+            "guid": "8d94648a-414c-4bf1-8598-d3e7697eb812",
+            "id": "78",
+            "meta_info": {
+               "power_bookmark_meta": ""
+            },
+            "name": "CodePen: Online Code Editor and Front End Web Developer Community",
+            "type": "url",
+            "url": "https://codepen.io/"
+         }, {
+            "date_added": "13378225609101465",
+            "date_last_used": "0",
+            "guid": "a18355a4-6282-4353-ad41-7ab3449c563c",
+            "id": "80",
+            "meta_info": {
+               "power_bookmark_meta": ""
+            },
+            "name": "Extensions",
+            "type": "url",
+            "url": "chrome://extensions/shortcuts"
+         }, {
+            "date_added": "13378385237188543",
+            "date_last_used": "0",
+            "guid": "9905b24e-c322-4c29-b2e7-35587f0e74d5",
+            "id": "82",
+            "meta_info": {
+               "power_bookmark_meta": ""
+            },
+            "name": "Anime Live Wallpapers - DesktopHut",
+            "type": "url",
+            "url": "https://www.desktophut.com/category/anime-live-wallpapers?page=2"
+         }, {
+            "date_added": "13378632445910411",
+            "date_last_used": "0",
+            "guid": "4e655bbb-64a7-4963-8229-9333aab5662d",
+            "id": "84",
+            "meta_info": {
+               "power_bookmark_meta": ""
+            },
+            "name": "Amazon Web Services Sign-In",
+            "type": "url",
+            "url": "https://signin.aws.amazon.com/signin?redirect_uri=https%3A%2F%2Fap-south-1.console.aws.amazon.com%2Fec2%2Fhome%3FhashArgs%3D%2523Instances%253AinstanceState%253Drunning%26isauthcode%3Dtrue%26oauthStart%3D1733815980399%26region%3Dap-south-1%26state%3DhashArgsFromTB_ap-south-1_d953ceb7351e1c8f&client_id=arn%3Aaws%3Asignin%3A%3A%3Aconsole%2Fec2-tb&forceMobileApp=0&code_challenge=yGPrMpQgamVsG3YlkAmPVeiBwm1w6-x-CeKRjfQ_LcI&code_challenge_method=SHA-256"
+         } ],
+         "date_added": "13369643435090832",
+         "date_last_used": "0",
+         "date_modified": "13378750054461514",
+         "guid": "82b081ec-3dd3-529c-8475-ab6c344590dd",
+         "id": "2",
+         "name": "Other bookmarks",
+         "type": "folder"
+      },
+      "synced": {
+         "children": [  ],
+         "date_added": "13369643435090833",
+         "date_last_used": "0",
+         "date_modified": "0",
+         "guid": "4cf2e351-0e85-532b-bb37-df045d8f8d0f",
+         "id": "3",
+         "name": "Mobile bookmarks",
+         "type": "folder"
+      }
+   },
+   "version": 1
+}

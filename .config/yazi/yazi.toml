@@ -1,0 +1,37 @@
+[manager]
+show_hidden = true
+
+[opener]
+edit = [
+    { run = 'nvim "$@"', block = true },
+]
+play = [
+    { run = 'mpv "$@"', orphan = true, for = "unix" },
+]
+image=[
+    {run = 'nsxiv "$@"', block = true}
+]
+pdf=[
+    {run = 'zathura "$@"', block = true}
+]
+html=[
+    {run = 'brave "$@"', block = true}
+]
+
+[open]
+rules = [
+{ name = "*.jpg", use = ["image"] },
+{ name = "*.png", use = ["image"] },
+{ name = "*.txt", use = ["edit"] },
+{ name = "*.py", use = ["edit"] },
+{ name = "*.r", use = ["edit"] },
+{ name = "*.ru", use = ["edit"] },
+{ name = "*.cp", use = ["edit"] },
+{ name = "*.cpp", use = ["edit"] },
+{ name = "*.c", use = ["edit"] },
+{ name = "*.sh", use = ["edit"] },
+{ name = "*.json", use = ["edit"] },
+{ name = "*.pdf", use = ["pdf"] },
+{ name = "*.html", use = ["html"] },
+{ name = "*.mp4", use = ["play"] },
+]

@@ -1,0 +1,69 @@
+clear
+ls
+fing
+find
+clear
+asdf
+exit
+clear
+asdf
+exit
+ls
+clear
+yazi
+clear
+pwd
+clear
+eza
+clear
+l
+ls
+clear
+ls -a
+clear
+asdf
+exit
+tmux
+clear
+tree
+tee
+clear
+tee --help
+te
+tee --help
+clear
+ls --help
+curl cht.sh
+clear
+asdf
+exit
+alacritty 
+clear
+ls
+ls -a
+clear
+clea
+clear
+?clear
+cd
+z
+clear
+z
+zi
+clear
+toipe
+clear
+bytes ends-with 
+clear
+nvim
+asdf
+exit
+exit
+ps
+clear
+clea
+clear
+asdf
+exit
+clear
+exit

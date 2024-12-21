@@ -1,0 +1,1 @@
+sudo modprobe ath9k_htc  # run this after connecting the wifi adapter

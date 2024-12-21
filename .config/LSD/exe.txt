@@ -1,0 +1,312 @@
+PROJECT REPORT
+
+Steganography
+
+Submitted in partial fulfillment of the requirements
+for the award of the degree of
+
+Master of Computer Application
+(2024-26, Ist Sem, Batch-2)
+
+
+
+Under the supervision of:				    Submitted By:		    
+Dr. Name			           		               Name 1        Enrollment No. 1
+Designation (SCSET)					     Name 2        Enrollment No. 2
+			
+				                       
+                            
+
+Plot Nos 8-11, TechZone 2, Greater Noida, Uttar Pradesh 201310
+2024-26
+ABSTRACT
+
+**Summary** 
+
+Steganography is the practice of hiding information within text or other non-secret data. This project explores the principles, techniques, and applications of steganography, focusing on digital image steganography due to its popularity and effectiveness in modern communications. Steganography provides a powerful approach to securing communications by embedding secret messages within digital media files, ensuring that unauthorized parties cannot easily detect the presence of hidden information. 
+The project examines various steganography techniques, including the most significant bit (MSB) method, which is widely used for image steganography. This method embeds information in the most significant bits of image pixels, causing minimal change to the original image. In addition, the paper considers alternative methods such as spread spectrum, transform domain techniques, and adaptive steganography, which provide a higher level of security but often come with high computational complexity and cost. 
+To demonstrate the effectiveness of the cryptographic technique, we implemented a basic MSB-based cryptographic system in Python. The system allows users to embed text messages into image files and retrieve them later with minimal loss of quality in the cover image. Tests were performed with different image sizes and formats to evaluate the robustness and accuracy of the system. The results show that text messages can be successfully hidden and recovered without noticeable visual changes to the image, confirming the effectiveness of the MSB steganography for low-risk scenarios.  In summary, steganography proves to be a useful technique for hiding information, providing a secondary layer of security in digital communications. While steganography alone may not be sufficient for high-security needs, it can complement encryption, providing a more robust and discreet method for securely transmitting data. Future improvements may focus on developing more complex steganography algorithms that balance security and efficiency, thereby expanding the practical applications of this technique.
+
+TABLE OF CONTENTS
+
+Title………………………………………………………………………………………….……. I
+Abstract………………………………………………………………………………………….... II
+Contents…………………………………………………………………….….…….…………... III
+INTRODUCTION…………………………………………………………………........................1
+PROBLEM STATEMENT.……………………………………………………………………....2
+LITERATURE REVIEW………………………………………………………….........................4
+PROPOSED MODEL……………....…………………………………………………………….17
+IMPLEMENTATION AND RESULTS……………....…………………………………………18
+CONCLUSION…………………………………………………………………………………...20
+Future Scope………………………………………………………………………………………22
+References………………………………………………………………………………………
+
+INTRODUCTION
+
+Steganography, a term derived from the Greek words steganos (meaning “covered”) and graphia (meaning “writing”), is the practice of concealing information within text or other non-secret data. Unlike encryption, which scrambles the contents of a message to ensure security, steganography conceals the presence of the message itself. By embedding hidden information into digital media, such as images or audio files, steganography enables secret communications that are difficult for unauthorized parties to detect. This project focuses on digital image steganography, a popular form due to the popularity of image sharing in digital communications.
+
+Purpose and Applications of Steganography 
+
+The primary goal of steganography is to enable secret communication by embedding hidden information into seemingly innocuous files, such as images, audio, or video files. In particular, digital image steganography has become very effective and widely used. Images, due to their large data size and natural noise, are ideal for hiding information because small pixel changes are difficult to detect by the human eye. 
+ Steganography is increasingly used in conjunction with encryption to improve data security. While encryption secures the content of a message, steganography adds an additional layer by hiding the presence of the message. This two-layer security is used in a variety of areas, including corporate data protection, intellectual property rights, and government or military communications (Fridrich, 2009). Figure 1 below provides a visual illustration of how steganography works to hide secret messages in images. 
+
+ 
+Figure 1: Schematic representation of an image with hidden message pixels in the MSB steganography process
+
+Digital steganography techniques 
+Digital steganography techniques vary in complexity and security, and the choice of the appropriate technique depends on factors such as file type, security needs, and computer resources. The main techniques include: 
+
+Most significant bit (MSB) steganography: The MSB technique is one of the simplest and most commonly used methods for embedding information in images. In this method, the most significant bits of an image pixel are modified to contain hidden data. Since these bits represent the smallest variations in color, the human eye cannot detect small changes. MSB steganography is relatively simple and computationally efficient, making it suitable for low-risk situations. However, it is easily detected if used without additional techniques (Johnson & Jajodia, 1998). Transform-domain techniques: Transform-domain techniques hide data in the frequency or wavelet domain of the image rather than directly in the pixel values. Techniques such as the discrete cosine transform (DCT) and the discrete wavelet transform (DWT) are popular in this category. They embed hidden information in specific frequency components, making them more resistant to compression or filtering. Although transform domain techniques are more secure than MSB, they require more computational resources (Cox et al., 2002).  Adaptive steganography: Adaptive steganography adjusts the embedding process based on the characteristics of the cover image. Machine learning algorithms are often used to analyze the cover image and select embedding locations that are difficult to detect by statistical or visual means. This adaptive approach improves security but requires more processing power, making it suitable for high-risk applications (Fridrich, 2009).
+
+
+Project Scope and Objectives 
+
+The objective of this project is to explore and implement an MSB-based steganography system using Python, focusing on hiding text messages in digital images. This system will allow users to integrate and recover hidden information with minimal impact on image quality. By using the MSB method, we aim to demonstrate the effectiveness of image steganography in secure and confidential communication.  
+The scope of the project includes: 
+
+Implementation of an MSB-based steganography system.  Testing the robustness of the system to different image sizes and formats. The quality of steganography output is evaluated based on image distortion and recovery accuracy.  Figure 2 below illustrates the basic workflow of an MSB-based steganography system, showing how to embed and extract text messages from images without significant degradation.  
+
+Figure 2: Flowchart of MSB-based steganography process
+
+Decryption :
+
+Encryption : 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Conclusion 
+In summary, steganography provides a useful and flexible approach to information hiding, especially when combined with encryption for a three-layer security system. By implementing and testing an MSB-based steganography system, this project aims to demonstrate the potential of steganography in secure communications. Although the simplicity of the MSB technique may limit its application in high-risk scenarios, it is still an effective method for embedding secret messages into digital images. Future research could further improve the robustness of this method, paving the way for more widespread use in secure digital communication.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+PROBLEM STATEMENT
+
+In the modern digital world, the need for secure and private communications has increased dramatically. Traditional data security methods, such as encryption, focus on scrambling data to make it unreadable to unauthorized users. However, while encryption protects the contents of a message, it does not solve the problem of hiding the existence of the message. This is where steganography, the practice of hiding information within otherwise non-secret data, comes into play. By embedding secret data into ordinary files such as images or audio files, steganography allows messages to be transmitted without drawing attention to their presence. Although steganography is widely used, there are still a number of challenges that hinder its application in practical situations. These challenges arise from issues such as the possibility of detection by cryptanalytic tools, the impact on the quality of the media (e.g., images), and the limitations of current cryptographic techniques when dealing with larger or more complex data. 
+Key issues to address. 
+Detecting hidden messages 
+One of the key issues in steganography is detecting hidden messages. Advanced steganography can analyze various statistical properties of a digital file to detect the presence of hidden data. While steganography aims to make the message undetectable, many simpler methods, such as most significant bit (MSB) embedding, are susceptible to detection, especially with automated analysis tools. This poses a challenge for steganography in environments where privacy is of paramount importance, as any hidden message has the potential to be revealed. Image Degradation 
+Another problem with current steganography techniques, particularly MSB steganography, is the impact on the quality of the cover image. Even if the changes in the most significant bits are minimal, embedding hidden data into an image can still introduce noticeable distortions if not handled properly. These distortions, while often imperceptible to the naked eye, can become apparent upon close inspection or statistical analysis. As steganographic techniques evolve to handle more data, this problem becomes more apparent, potentially impacting the quality of the media. Limited Ability to Integrate Large Data  
+In many steganographic methods, the amount of data that can be integrated is limited by the size and characteristics of the covering medium. For example, in the MSB method, only a small amount of information can be integrated without causing noticeable changes in the image. This limitation poses a challenge for applications that require the integration of larger or more complex messages. In addition, hiding too much data can make the hidden message easier to detect. Therefore, the balance between the amount of data to be integrated and the need for security and image quality is a key issue.  Lack of Resistance to Compression and Processing 
+Digital images often undergo compression and manipulation during use and transmission. Unfortunately, these processes can distort or remove embedded data, making it difficult to reliably extract the hidden message from the image after compression or manipulation. For steganography to be useful in real-world applications, it must be robust to such transformations without significantly altering the integrity of the cover image.
+
+
+Objectives of the Work 
+This work aims to address the aforementioned challenges by developing a robust and efficient steganographic system based on the most significant bit (MSB) method, which is one of the simplest, yet most widely used techniques for hiding information in digital images. The main objective is to create a system that can securely embed text messages in images while maintaining a balance between data capacity, image quality, and security. The main objectives are: 
+Develop a steganographic system using MSB 
+The first objective is to implement an MSB-based steganography system in Python that allows users to embed and retrieve messages from digital images. The system should be simple to use and demonstrate how to hide messages in images without explicitly altering the original content. Verify image quality and message integrity 
+The second objective is to verify the image quality after integrating secret messages. The system must be able to handle different image formats and sizes without significantly reducing the image quality. The goal is to ensure that the hidden message does not cause noticeable distortion of the image, thus ensuring that the technique remains secret.
+ Improving Robustness Against Detection 
+Another important goal is to explore ways to reduce the system's vulnerability to detection. Although the MSB technique is inherently vulnerable to basic cryptanalysis, additional methods such as error detection and correction or the use of more advanced integration strategies can be incorporated to improve the system's robustness. System Security Assessment 
+A comprehensive system security assessment will be conducted, including testing the system's resilience to attacks such as cryptanalysis, image compression, and manipulation. The goal is to create a system that provides a reasonable level of security while maintaining computational efficiency. Significance of the Problem 
+The ability to transmit secret messages in a secret manner is essential in many applications, including personal privacy, protecting corporate data, and securing communications in conflict zones or under oppressive regimes. While current encryption methods ensure the confidentiality of data, steganography provides an additional layer of security by concealing the presence of sensitive information. This makes steganography an important tool in the modern digital world. 
+In addition, as more and more data are transmitted via images and media files, the need for effective steganography techniques that do not degrade the quality of these files or arouse suspicion becomes increasingly important. The research in this project aims to contribute to the development of steganographic systems that balance security, data capacity, and image quality, thereby helping to advance the field of secure communications.
+
+
+
+
+LITERATURE REVIEW
+
+Steganography has evolved significantly over the years, with advances in techniques and methods aimed at improving both security and efficiency. Various approaches have been developed to hide data in digital media, especially images, while minimizing the risk of detection and preserving the integrity of the overlaying medium. This literature review examines the methods used in recent research on digital image steganography, highlighting key findings, discussing the limitations of current work, and suggesting future research directions. 
+
+Methodology 
+Recent studies on image steganography employ a number of different methods to hide information in images. One of the most popular approaches remains the most significant bit (MSB) method, which modifies the least significant pixel value bits to embed a hidden message (Sahu et al., 2020). This approach is widely used due to its simplicity and minimal computational burden. However, MSB steganography is often criticized for being susceptible to detection using statistical analysis and image processing techniques. 
+ Other approaches focus on improving the robustness of steganographic systems. For example, domain transformation techniques, including discrete cosine transform (DCT) and discrete wavelet transform (DWT), have been explored as alternatives to MSB to improve security and resistance to attacks such as compression and filtering (Khan et al., 2019). These techniques modify the frequency components or wavelets of an image rather than its pixel values, making the hidden message more difficult to detect.  Adaptive techniques have also brought improvements to image steganography. These methods modify the integration process based on image characteristics, selecting regions that are less susceptible to statistical or visual analysis. Machine learning and deep learning algorithms have also been incorporated into adaptive methods, improving the accuracy and reliability of data integration (Li et al., 2021). 
+ Findings 
+Several important findings have emerged from recent research on steganography. A study by Sahu et al. (2020) examined the effectiveness of MSB steganography in hiding text messages in images. The study found that although MSB is computationally efficient, it is susceptible to attacks such as histogram analysis and statistical testing, which can detect changes in pixel values. Additionally, the image quality degrades as more data is integrated, which may reveal the presence of a hidden message.  
+Another important contribution comes from Khan et al. (2019), who studied the use of DCT and DWT techniques for steganography. The study concluded that these methods provide better resistance to compression and other image processing operations than MSB. However, the study also found that the computational complexity of these techniques is significantly higher, limiting their feasibility for real-time applications. 
+ In the field of adaptive steganography, Li et al. (2021) presented a machine learning-based approach to embedding messages in images. Their system uses deep learning algorithms to identify regions in images that can securely hide data without being detected. Research shows that this approach provides improved security and reliability, although it requires significant computational resources and large datasets to train the model.
+ 
+Research Gaps/Limitations of Work 
+Despite significant advances in digital image steganography, there are still some gaps and limitations. One of the main limitations is the trade-off between security and image quality. Most steganographic techniques, especially MSB-based methods, face the challenge of cramming too much data into an image without visibly altering the image or making it vulnerable to detection. This trade-off often limits the capabilities of steganographic systems, especially for applications that require large-scale data hiding. 
+
+Another limitation is the vulnerability of steganographic systems to cryptanalysis. Although newer methods such as DCT and DWT provide improved security, they can still be detected using advanced steganographic techniques that analyze the statistical properties of images. The increasing sophistication of these tools makes it difficult to maintain the secrecy of the hidden data. 
+In addition, many steganographic systems lack the ability to resist compression and image manipulation, which are common operations in real-world applications. Studies such as Khan et al. (2019) and Sahu et al. (2020) point out that compression algorithms such as JPEG can degrade the quality of the hidden data, leading to loss of information and making the message more vulnerable to detection. 
+Strengths of Current Methods 
+Despite their limitations, current steganographic techniques have significant advantages. The MSB method, due to its simplicity, is fast and efficient for incorporating small amounts of data into images. It is widely used in applications with limited computational resources and low risk of detection (Sahu et al., 2020).  
+Transform domain techniques such as DCT and DWT increase resistance to compression and noise, making them more robust in environments where images may be modified or compressed (Khan et al., 2019). These methods are particularly useful for high-security applications where the hidden data must remain intact even after multiple image transformations. 
+ Adaptive steganography, especially when combined with machine learning, offers the most promising avenue for improving both the security and efficiency of cryptographic systems. By learning the features of the cover image, these systems can dynamically select areas to incorporate that are less likely to reveal the hidden data, thus making them less susceptible to detection by steganographic tools (Li et al., 2021).  
+Future Scope 
+The future of steganography lies in improving the robustness and capacity of steganographic systems while minimizing their detectability. Research may focus on hybrid methods that combine multiple steganographic techniques, such as MSB with DCT or DWT, to provide better security without compromising image quality. Additionally, deep learning techniques can play an important role in improving the effectiveness of adaptive steganography. By training models to determine optimal embedding locations in images, these systems can significantly improve the security and performance of steganography methods (Li et al., 2021). Future work may also explore quantum steganography methods that leverage quantum computing principles to improve data hiding in digital media.
+
+
+
+
+
+
+
+
+
+
+
+
+
+PROPOSED MODEL/FRAMEWORK
+
+Proposed Model/Framework 
+
+In this section, we describe the proposed model or framework for steganography, including the methodology, data preprocessing steps (if any), and a flowchart visualizing the process. The aim is to provide a comprehensive approach to securely hiding data in digital media, emphasizing the efficiency and robustness of the proposed solution. 
+
+Proposed Model 
+The proposed model for this steganography system is based on image steganography, in which data (text or files) are hidden in images using advanced steganography techniques. The system consists of two main parts: data integration and data extraction. The data integration process involves encoding the secret message in the cover image, while the data extraction process helps to retrieve the hidden data from the stego image. Data Integration: 
+Input image is selected as cover image. Secret message is pre-processed (if required). Secret data is embedded into image using combination of most significant bit (MSB) technique and transform domain technique (e.g. DCT or DWT). Stego image is generated and saved.  Data Extraction: 
+Stego image is input into system for data extraction.  The system analyzes the most significant bits or the transformed components (depending on the integration method).  The secret data is extracted from the image.  Dataset (if any) 
+For this project, the dataset consists of a set of images that will be used as cover images to hide the secret data. The images must have different levels of complexity, such as different resolutions, color formats, and file types (e.g. BMP, PNG, JPEG). These images are used to evaluate the reliability and effectiveness of the proposed model.  Image Dataset: Images will be taken from publicly available datasets, such as Berkeley Segmentation Dataset or Caltech 101, for testing and evaluation purposes.  Text or File Dataset: The secret data can be any text file, document, or small media file that needs to be hidden.  Data Preprocessing Steps 
+Data preprocessing is an essential step to ensure the integrity and confidentiality of the hidden message. For the proposed model, the following preprocessing steps will be used: 
+
+Text to Binary Conversion: 
+The secret message (text or file) is converted to binary format, which can then be embedded into the image.  Message Segmentation: 
+The binary message is divided into smaller chunks or blocks to ensure that the message fits into the image while maintaining the image quality.  Image Normalization: 
+If the input images have different resolutions, they will be resized to a standard resolution to ensure consistency during integration. Noise Management and Compression: 
+The system ensures that the embedded data is robust against common image processing techniques such as compression, cropping, or noise addition.
+
+Methodology 
+The methodology of this steganographic system is based on a hybrid approach that combines the most significant bit (MSB) method with transform domain techniques such as discrete cosine transform (DCT), or discrete wavelet transform (DWT). 
+Most significant bit (MSB) method: 
+ MSB method modifies the most significant bits of image pixels to encode the message.  MSB method is used to integrate small amounts of data because it does not make visible changes to the image. DCT/DWT based fusion: 
+To improve the security and robustness of the system, DCT or DWT is used to integrate the message in the frequency domain. This ensures that the hidden data is more resistant to compression and noise. Ingestion Process: 
+Convert the input message to binary form. Embed binary data into most significant bits or transform image pixel coefficients. Extraction Process: 
+Extract most significant bits or transformed components from the Stegosaurus image. Reconstruct the original message from the extracted data. Organizational Chart 
+Below is a flowchart showing the process of the proposed model for data integration and extraction. 
+
+Flowchart Design 
+The flowchart illustrates the sequence of actions that occur during the data integration and extraction process. This flowchart visualizes the steps from selecting the cover image to generating and saving the stego image. In addition, it shows the reverse process for data extraction, where the stego image is processed to recover the hidden data.
+
+Encoding :  
+
+Decoding : 
+
+
+
+ 
+
+
+
+
+
+
+
+IMPLEMENTATION AND RESULTS
+
+Maximum 3-4 pages. 
+Font Size 10 (Times new Roman) generated based on the implementation. 
+Visualization Based like graphs, plots.
+In Tabular Form
+Discussion about results (How, why)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+CONCLUSION
+
+The proposed model provides a robust and efficient method for hiding data in images. By combining traditional methods such as MSB with advanced techniques such as DCT or DWT, the model ensures enhanced security, reduced detection probability, and better resistance to common image manipulation. This combined approach also opens up prospects for large-scale and real-time applications of steganography, such as secure messaging, digital watermarking, and data protection in multimedia applications.
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+FUTURE SCOPE
+
+Maximum half pages. 
+Font Size 10 (Times new Roman)
+Future Insights of the work.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+REFERENCES
+[1] Font Size 10 (Times new Roman), starting from no. 1 as given. 
+
+IEEE format style for reference 
+Book
+[Ref number] Author’s initials. Author’s Surname, Book Title, edition (if not first). Place of publication: Publisher, Year.
+[1] I.A. Glover and P.M. Grant, Digital Communications, 3rd ed. Harlow: Prentice Hall, 2009.
+Book chapter
+[Ref number] Author’s initials. Author’s Surname, “Title of chapter in book,” in Book Title, edition (if not first), Editor’s initials.
+Editor’s Surname, Ed. Place of publication: Publisher, Year, page numbers.
+[2] C. W. Li and G. J. Wang, "MEMS manufacturing techniques for tissue scaffolding devices," in Mems for Biomedical
+Applications, S. Bhansali and A. Vasudev, Eds. Cambridge: Woodhead, 2012, pp. 192-217.
+Electronic Book
+[Ref number] Author’s initials. Author’s Surname. (Year, Month Day). Book Title (edition) [Type of medium]. Available: URL
+[3] W. Zeng, H. Yu, C. Lin. (2013, Dec 19). Multimedia Security Technologies for Digital Rights Management [Online].
+Available: http://goo.gl/xQ6doi
+Note: If the e-book is a direct equivalent of a print book e.g. in PDF format, you can reference it as a normal print book.
+Journal article
+[Ref number] Author’s initials. Author’s Surname, “Title of article,” Title of journal abbreviated in Italics, vol. number, issue number, page numbers, Abbreviated Month Year.
+[4] F. Yan, Y. Gu, Y. Wang, C. M. Wang, X. Y. Hu, H. X. Peng, et al., "Study on the interaction mechanism between laser and rock during perforation," Optics and Laser Technology, vol. 54, pp. 303-308, Dec 2013.
+Note: the above example article is from a journal which does not use issue numbers, so they are not included in the reference.
