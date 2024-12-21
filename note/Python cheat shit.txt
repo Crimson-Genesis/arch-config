@@ -1,0 +1,5 @@
+pip pacakage list all outdated :- pip list --outdated
+
+pip pacakage update all :- pip freeze | %{$_.split('==')[0]} | %{pip install --upgrade $_}
+
+Django cheat sheet:-https://realpython.com/django-setup/
