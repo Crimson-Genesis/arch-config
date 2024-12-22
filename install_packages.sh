@@ -17,10 +17,9 @@ package_array+=("python-pluggy python-pycosat python-ruamel-yaml")
 package_array+=("wine-gecko wine-mono lib32-glibc lib32-gcc-libs lib32-freetype lib32-libpng")
 package_array+=("sdl2 sdl2_image sdl2_mixer sdl2_ttf")
 package_array+=("lib32-sdl2 lib32-sdl2_image lib32-sdl2_mixer lib32-sdl2_ttf")
-package_array+=("gvfs gvfs-mtp")
 package_array+=("pipewire pipewire-pulse pipewire-alsa pipewire-jack")
 package_array+=("$(pacman -Sgq nerd-fonts)")
-package_array+=("gvfs-mtp gvfs-afc")
+package_array+=("gvfs gvfs-mtp gvfs-afc")
 package_array+=("cuda cudnn")
 package_array+=("mpv xorg-xwininfo xorg-xrandr")
 package_array+=("zathura zathura-pdf-mupdf")
@@ -46,7 +45,7 @@ aseprite kotatsu-dl-git rofi-greenclip tokyonight-gtk-theme-git qt5-graphicaleff
 aws-cli-v2-bin xwinwrap-git gowall yt-dlp
 
 echo "Install Anaconda..."
-wget -P ~/Downloads/ https://repo.anaconda.com/archive/Anaconda3-2024.06-1-Linux-x86_64.sh
+wget -P ~/Downloads/ https://repo.anaconda.com/archive/Anaconda3-2024.10-1-Linux-x86_64.sh
 chmod +x ~/Downloads/Anaconda3-2024.06-1-Linux-x86_64.sh
 bash ~/Downloads/Anaconda3-2024.06-1-Linux-x86_64.sh
 conda init
