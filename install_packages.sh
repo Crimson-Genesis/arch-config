@@ -8,8 +8,9 @@ trap ctrl_c INT
 str_packages="alacritty screenkey btop neovim eza vim fzf yazi xclip unzip wget curl gzip tar bash zsh sh firefox nvtop fastfetch glxinfo entr figlet trash-cli bat rofi vlc libreoffice-still ddgr progress polybar
 nitrogen bluez bluez-utils brightnessctl feh xorg-xinput blueman xsettingsd thefuck lazygit conky ntfs-3g qt5ct lxappearance xdotool xorg-xbacklight gucharmap gimp rofi-emoji rofi-calc alsa-utils flameshot luarocks
 obs-studio xorg-xdpyinfo acpi git tmux grep ripgrep nushell jq kitty man go nodejs zoxide viu wezterm picom github-cli mesa-demos intel-media-driver nsxiv grafana bc materia-gtk-theme papirus-icon-theme python-pywal
-xfce4-clipman-plugin blueberry sddm gvfs thunar-volman numactl ark reflector vkd3d man man-pages power-profiles-daemon dunst kdenlive wine man-db wireplumber tree sof-firmware winetricks udisks2 intel-ucode tldr 
-cronie nmtui thunar-archive-plugin thunar-media-tags-plugin noto-fonts-emoji evtest ffmpegthumbnailer tumbler lshw php bind net-tools usbutils wireshark-qt wireshark-cli lldb cppcheck valgrind acpi_call gptfdisk"
+xfce4-clipman-plugin blueberry sddm gvfs thunar-volman numactl ark reflector vkd3d man man-pages power-profiles-daemon dunst kdenlive wine man-db wireplumber tree sof-firmware winetricks udisks2 intel-ucode tldr
+cronie nmtui thunar-archive-plugin thunar-media-tags-plugin noto-fonts-emoji evtest ffmpegthumbnailer tumbler lshw php bind net-tools usbutils wireshark-qt wireshark-cli lldb cppcheck valgrind acpi_call gptfdisk
+lxsession "
 
 package_array=($str_packages)
 package_array+=("gcc clang libc++ cmake ninja libx11 libxcursor mesa-libgl fontconfig")
