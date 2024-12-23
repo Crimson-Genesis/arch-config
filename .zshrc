@@ -144,6 +144,14 @@ function keymap(){
     fi
 }
 
+function yy() {
+    local tmp="$(mktemp -t "yazi-cwd.XXXXXX")" cwd
+    yazi "$@" --cwd-file="$tmp"
+    if cwd="$(command cat -- "$tmp")" && [ -n "$cwd" ] && [ "$cwd" != "$PWD" ]; then
+        builtin cd -- "$cwd"
+    fi
+}
+
 # Alias:
 alias pp="shotwell *"
 alias ls="eza --icons --group-directories-first -l --hyperlink"
@@ -159,8 +167,8 @@ alias trl="trash-list"
 alias tre="trash-empty"
 alias trp="trash-put"
 alias trr="trash-restore"
-alias trm="trash-rm"
-alias rm="trash -v"
+# alias trm="trash-rm"
+alias trm="trash -v"
 alias vi="nvim"
 alias ff="fastfetch"
 alias ani="ani-cli"
@@ -195,7 +203,7 @@ alias fzf="fzf --cycle --wrap --multi --reverse"
 
 # Bindkey:
 bindkey '^ ' autosuggest-accept
-bindkey -s '^[f' "yazi^M"
+bindkey -s '^[f' "yy^M"
 bindkey -s '^[c' "ndir=\`fzf --walker=dir,hidden --walker-root=/\` && cd \$ndir^M"
 bindkey -s '^[g' "bash ~/.config/LSD/gitacp.sh^M"
 bindkey -s '^[a' "bash ~/.config/LSD/harpoon_on_steroids.sh add^M"
