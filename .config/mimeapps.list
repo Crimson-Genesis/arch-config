@@ -27,6 +27,9 @@ application/xhtml+xml=firefox.desktop;
 application/x-extension-xhtml=firefox.desktop;
 application/x-extension-xht=firefox.desktop;
 image/gif=brave-browser.desktop;aseprite.desktop;feh.desktop;
+image/svg+xml=brave-browser.desktop;
+text/x-chdr=Alacritty.desktop;
+application/x-zerosize=nvim.desktop;
 
 [Default Applications]
 text/plain=nvim.desktop
@@ -58,3 +61,6 @@ application/x-extension-shtml=firefox.desktop
 application/xhtml+xml=firefox.desktop
 application/x-extension-xhtml=firefox.desktop
 application/x-extension-xht=firefox.desktop
+text/x-chdr=Alacritty.desktop
+application/x-zerosize=nvim.desktop
+x-scheme-handler/terminal=alacritty.desktop
