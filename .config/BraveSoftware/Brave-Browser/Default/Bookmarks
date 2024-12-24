@@ -1,5 +1,5 @@
 {
-   "checksum": "d629270d12c1a809a319e670b2e32a1e",
+   "checksum": "5eb11c2020df12eaa187c0378a7f99e0",
    "roots": {
       "bookmark_bar": {
          "children": [  ],
@@ -584,10 +584,21 @@
             "name": "Amazon Web Services Sign-In",
             "type": "url",
             "url": "https://signin.aws.amazon.com/signin?redirect_uri=https%3A%2F%2Fap-south-1.console.aws.amazon.com%2Fec2%2Fhome%3FhashArgs%3D%2523Instances%253AinstanceState%253Drunning%26isauthcode%3Dtrue%26oauthStart%3D1733815980399%26region%3Dap-south-1%26state%3DhashArgsFromTB_ap-south-1_d953ceb7351e1c8f&client_id=arn%3Aaws%3Asignin%3A%3A%3Aconsole%2Fec2-tb&forceMobileApp=0&code_challenge=yGPrMpQgamVsG3YlkAmPVeiBwm1w6-x-CeKRjfQ_LcI&code_challenge_method=SHA-256"
+         }, {
+            "date_added": "13379518668920309",
+            "date_last_used": "0",
+            "guid": "811d3ffc-7c6f-49c7-b96f-bd521fc2cf7a",
+            "id": "86",
+            "meta_info": {
+               "power_bookmark_meta": ""
+            },
+            "name": "Home",
+            "type": "url",
+            "url": "https://reva-university.my.site.com/StudentPortal/s/"
          } ],
          "date_added": "13369643435090832",
          "date_last_used": "0",
-         "date_modified": "13378750054461514",
+         "date_modified": "13379518668920309",
          "guid": "82b081ec-3dd3-529c-8475-ab6c344590dd",
          "id": "2",
          "name": "Other bookmarks",

@@ -582,12 +582,18 @@ exec --no-startup-id /usr/bin/dunst --config ~/.config/dunst/dunstrc
 exec_always --no-startup-id autotiling-rs
 
 # Autostart apps as you like
-exec --no-startup-id brave
-exec --no-startup-id thunar
-exec --no-startup-id sleep 1 && alacritty
+# exec --no-startup-id brave
+# exec --no-startup-id thunar
+# exec --no-startup-id alacritty
+# exec --no-startup-id i3-msg workspace 3:
+# exec --no-startup-id i3-msg workspace 2:
+# exec --no-startup-id i3-msg workspace 1:
 
-# run xrandr for mirroring the screen to the HDMI-1 port
-exec --no-startup-id xrandr --output HDMI-1 --same-as eDP-1 --auto
+exec --no-startup-id ~/.config/Thunar/auto_start.sh
+exec --no-startup-id ~/.config/BraveSoftware/auto_start.sh
+exec --no-startup-id ~/.config/alacritty/auto_start.sh
+
+exec --no-startup-id xrandr --output HDMI-1 --same-as eDP-1 --auto        # run xrandr for mirroring the screen to the HDMI-1 port
 # exec --no-startup-id xrandr --output HDMI-1 --right-of eDP-1 --auto
 
 
