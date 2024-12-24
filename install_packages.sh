@@ -10,7 +10,7 @@ nitrogen bluez bluez-utils brightnessctl feh xorg-xinput blueman xsettingsd thef
 obs-studio xorg-xdpyinfo acpi git tmux grep ripgrep nushell jq kitty man go nodejs zoxide viu wezterm picom github-cli mesa-demos intel-media-driver nsxiv grafana bc materia-gtk-theme papirus-icon-theme python-pywal
 xfce4-clipman-plugin blueberry sddm gvfs thunar-volman numactl ark reflector vkd3d man man-pages power-profiles-daemon dunst kdenlive wine man-db wireplumber tree sof-firmware winetricks udisks2 intel-ucode tldr
 cronie nmtui thunar-archive-plugin thunar-media-tags-plugin noto-fonts-emoji evtest ffmpegthumbnailer tumbler lshw php bind net-tools usbutils wireshark-qt wireshark-cli lldb cppcheck valgrind acpi_call gptfdisk
-lxsession "
+lxsession baobab"
 
 package_array=($str_packages)
 package_array+=("gcc clang libc++ cmake ninja libx11 libxcursor mesa-libgl fontconfig")

@@ -40,3 +40,5 @@
 /run/media/nico/Nova/Lab/c
 /run/media/nico/Nova/python_map
 /home/nico/aircrck
+/run/media/nico/Nova/Lab/_/Tutorial
+/run/media/nico/Nova/Lab/Python/reva_class
