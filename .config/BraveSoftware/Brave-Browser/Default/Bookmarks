@@ -1,5 +1,5 @@
 {
-   "checksum": "5eb11c2020df12eaa187c0378a7f99e0",
+   "checksum": "865ae7fba40460d7087bf1cdd30a8ae5",
    "roots": {
       "bookmark_bar": {
          "children": [  ],
@@ -595,10 +595,21 @@
             "name": "Home",
             "type": "url",
             "url": "https://reva-university.my.site.com/StudentPortal/s/"
+         }, {
+            "date_added": "13379615867144745",
+            "date_last_used": "0",
+            "guid": "265a8fa4-77a4-4dbc-8bf4-920c194064e2",
+            "id": "88",
+            "meta_info": {
+               "power_bookmark_meta": ""
+            },
+            "name": "WhatsApp",
+            "type": "url",
+            "url": "https://web.whatsapp.com/"
          } ],
          "date_added": "13369643435090832",
          "date_last_used": "0",
-         "date_modified": "13379518668920309",
+         "date_modified": "13379615867144745",
          "guid": "82b081ec-3dd3-529c-8475-ab6c344590dd",
          "id": "2",
          "name": "Other bookmarks",

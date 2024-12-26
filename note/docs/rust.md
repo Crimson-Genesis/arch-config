@@ -1,5 +1,7 @@
 Rust is a systems programming language that emphasizes safety, speed, and concurrency. Its syntax and structure revolve around key principles like ownership, borrowing, and type safety. Below is a detailed overview of Rust's syntax and structure.
 
+to start working just run "cargo new <project name>"
+
 ---
 
 ### **1. Basics**

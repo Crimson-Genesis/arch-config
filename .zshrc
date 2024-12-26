@@ -150,8 +150,8 @@ function yy() {
     if cwd="$(command cat -- "$tmp")" && [ -n "$cwd" ] && [ "$cwd" != "$PWD" ]; then
         builtin cd -- "$cwd"
     fi
+    rm -f -- "$tmp"
 }
-
 # Alias:
 alias pp="shotwell *"
 alias ls="eza --icons --group-directories-first -l --hyperlink"
@@ -168,7 +168,7 @@ alias tre="trash-empty"
 alias trp="trash-put"
 alias trr="trash-restore"
 # alias trm="trash-rm"
-alias trm="trash -v"
+alias rm="trash"
 alias vi="nvim"
 alias ff="fastfetch"
 alias ani="ani-cli"
