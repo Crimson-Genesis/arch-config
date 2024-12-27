@@ -14,6 +14,7 @@
     kb-move-char-back: "";
     kb-move-char-forward: "";
     kb-remove-word-forward: "";
+    kb-secondary-copy: "";
     kb-cancel: "";
 
     kb-element-next: "Alt+j";

@@ -58,6 +58,7 @@ bindings = [
     {key = "K", mods ="Alt|Shift", action =  "ScrollLineUp" },
     {key = "V", mods ="Alt", action =  "ToggleViMode" },
     {key = "Space", mods ="Control|Shift", action =  "None" },
+    {key = "F12", mods ="Super", action =  "None" },
 ]
 
 [general]
