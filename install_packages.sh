@@ -42,7 +42,7 @@ fi
 echo "Install Package from Yay...(Will have to do it manually.)"
 yay -S --noconfirm iriunwebcam-bin brave whatsie-git signal-desktop ascii-image-converter ani-cli getnf rxvt-unicode also-utils pywal spotify-adblock-git unicode autotiling-rs-git ascii-draw \
 aseprite kotatsu-dl-git rofi-greenclip tokyonight-gtk-theme-git qt5-graphicaleffects geogebra-6-electron tensorrt dxvk-bin dxvk terraform  \
-aws-cli-v2-bin xwinwrap-git gowall yt-dlp
+aws-cli-v2-bin xwinwrap-git gowall yt-dlp ttf-ms-win11-auto
 
 echo "Install Anaconda..."
 wget -P ~/Downloads/ https://repo.anaconda.com/archive/Anaconda3-2024.10-1-Linux-x86_64.sh
