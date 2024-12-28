@@ -511,6 +511,10 @@ exec_always --no-startup-id picom -b
 # speed up the cursor
 exec --no-startup-id xset r rate 300 40
 
+# Hide the course after 0.5 sec
+
+exec --no-startup-id unclutter -idle 0.4
+
 # for custom config:
 #exec_always --no-startup-id picom --config  ~/.config/picom.conf
 
