@@ -15,7 +15,7 @@ if [ ! -z "$status" ]; then
     if [[ "$confirm" == "y" ]] || [[ "$confirm" == "Y" ]] || [[ "$confirm" == "" ]]; then
         git add . && \
         git commit -m "$message" -m "$(git diff --stat)" && \
-        if [[ ! -z $1 ]]; then
+        if [[ -z $1 ]]; then
             git push -u origin main
         else
             git push -u origin ${1}

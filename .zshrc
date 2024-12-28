@@ -200,6 +200,7 @@ alias fc-list="fc-list | fzf --reverse --multi"
 alias du="du -h"
 alias cp30k="~/.config/LSD/color.sh"
 alias fzf="fzf --cycle --wrap --multi --reverse"
+alias gitacp="bash ~/.config/LSD/gitacp.sh"
 
 # Bindkey:
 bindkey '^ ' autosuggest-accept
