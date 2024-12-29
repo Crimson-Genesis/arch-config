@@ -19,7 +19,7 @@ This is My Arch linux config.
 <!-- * Auto Application Opener   -->
 <!-- > Scripts for opening application automatically in there assigned workspaces.   -->
 
-<video controls>
+<video controls width="600">
   <source src="https://Crimson-Genesis.github.io/arch-config/assets/video/terminal_harpoon.mp4" type="video/mp4">
   Your browser does not support the video tag.
 </video>
