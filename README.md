@@ -2,20 +2,20 @@ This is My _`Arch linux - I3WM`_ config.
 
 ---
 
-* Terminal Harpoon  
+> Terminal Harpoon  
+> A terminal version of ThePrimeagens *[harpoon.nvim](https://github.com/ThePrimeagen/harpoon)*.  
 [![Terminal](http://i.ytimg.com/vi/XA9zofHMY6M/hqdefault.jpg)](https://www.youtube.com/watch?v=XA9zofHMY6M)  
 [![YouTube](https://img.shields.io/badge/YouTube-Watch-red?logo=youtube)](https://www.youtube.com/watch?v=XA9zofHMY6M)  
-> A terminal version of ThePrimeagens *[harpoon.nvim](https://github.com/ThePrimeagen/harpoon)*.  
 
-* asdf  
+> asdf  
+> An alias for the exit command `BUT BETTER`.  
 [![asdf](http://i.ytimg.com/vi/u_j7LdT4ajQ/hqdefault.jpg)](https://www.youtube.com/watch?v=u_j7LdT4ajQ)  
 [![YouTube](https://img.shields.io/badge/YouTube-Watch-red?logo=youtube)](https://www.youtube.com/watch?v=u_j7LdT4ajQ)  
-> An alias for the exit command `BUT BETTER`.  
 
-* Gitacp  
+> **Gitacp  
+> A simple script for Adding, commiting and pushing to the github repo.  
 [![gipacp](http://i.ytimg.com/vi/SPqnFwzqfgQ/hqdefault.jpg)](https://www.youtube.com/watch?v=SPqnFwzqfgQ)  
 [![YouTube](https://img.shields.io/badge/YouTube-Watch-red?logo=youtube)](https://www.youtube.com/watch?v=SPqnFwzqfgQ)  
-> A simple script for Adding, commiting and pushing to the github repo.  
 
 * My Script for Cheat.sh  
 [![Script-for-Cheat.sh](http://i.ytimg.com/vi/GZVUQq0h_to/hqdefault.jpg)](https://www.youtube.com/watch?v=GZVUQq0h_to)  
