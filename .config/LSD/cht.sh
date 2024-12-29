@@ -4,11 +4,11 @@ selected=$(echo "$result" | tail -n 1)
 
 if [ ! -z $search ] || [ ! -z $selected ]; then
     if [[ "$search" == */ ]] || [[ "$selected" == */ ]]; then
-        read -p "query: " query
+        read -e -p "query: " query
     fi
 
     if [ ! -z "$query" ]; then
-        curl cht.sh/$selected`echo $query | tr ' ' '+'` | less
+        curl cht.sh/$selected`echo $query | tr ' ' '+'` | bat
     else
         if [[ "$1" == "man" ]]; then
             man ${selected}
