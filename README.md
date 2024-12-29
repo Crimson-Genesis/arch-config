@@ -51,6 +51,7 @@ This is My _`Arch linux - I3WM`_ config.
     * [LiveWallpaperPC](https://livewallpaperpc.com/the-street-sees-fireworks-live-wallpaper/)  
     * [DesktopHut](https://www.desktophut.com/category/anime-live-wallpapers)  
     * [My wallpaper collection](https://github.com/Crimson-Genesis/wallpaper)  
+
 This are the wallpaper, that i am using.  
 
 * TokyoNight-Theme  
@@ -58,6 +59,7 @@ This are the wallpaper, that i am using.
     * [TokyoNight-Theme-x11](https://www.vinstartheme.com/tokyo-night-theme-for-windows-11/)  
     * [TokyoNight-Theme-rofi](https://github.com/w8ste/Tokyonight-rofi-theme)  
     * [TokyoNight-Theme-tmux](https://github.com/janoamaral/tokyo-night-tmux)  
+
 I love the *[TokyoNight-Theme](https://tokyonight.dev/)* so this are some of which i use sometimes.  
 
 ***I am Still working on some cool scripts for my workflow.***
