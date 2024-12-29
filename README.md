@@ -5,7 +5,7 @@ This is My _`Arch linux - I3WM`_ config.
 * Terminal Harpoon  
 [![Terminal](http://i.ytimg.com/vi/XA9zofHMY6M/hqdefault.jpg)](https://www.youtube.com/watch?v=XA9zofHMY6M)  
 [![YouTube](https://img.shields.io/badge/YouTube-Watch-red?logo=youtube)](https://www.youtube.com/watch?v=XA9zofHMY6M)  
-> A terminal version of ThePrimeagens [harpoon.nvim](https://github.com/ThePrimeagen/harpoon).  
+> A terminal version of ThePrimeagens *[harpoon.nvim](https://github.com/ThePrimeagen/harpoon)*.  
 
 * asdf  
 [![asdf](http://i.ytimg.com/vi/u_j7LdT4ajQ/hqdefault.jpg)](https://www.youtube.com/watch?v=u_j7LdT4ajQ)  
