@@ -1,7 +1,7 @@
 This is My Arch linux config.
 
 * Terminal Harpoon  
-[Harpoon for terminal](https://raw.githubusercontent.com/Crimson-Genesis/arch-config/main/assets/video/terminal_harpoon.mp4)
+[![Harpoon for terminal](https://raw.githubusercontent.com/Crimson-Genesis/arch-config/main/assets/img/dunst.png)](https://raw.githubusercontent.com/Crimson-Genesis/arch-config/main/assets/video/terminal_harpoon.mp4)
 > A terminal version of ThePrimeagens [harpoon.nvim](https://github.com/ThePrimeagen/harpoon).  
 
 * asdf  
