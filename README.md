@@ -1,7 +1,7 @@
 ![Arch](https://img.shields.io/badge/Arch%20Linux-1793D1?logo=arch-linux&logoColor=fff&style=for-the-badge)
+![Bash Script](https://img.shields.io/badge/bash_script-%23121011.svg?style=for-the-badge&logo=gnu-bash&logoColor=white)  
 ![GitHub Repo Stars](https://img.shields.io/github/stars/Crimson-Genesis/arch-config?style=social)
 ![Repo Size](https://img.shields.io/github/repo-size/Crimson-Genesis/arch-config)
-![Bash Script](https://img.shields.io/badge/bash_script-%23121011.svg?style=for-the-badge&logo=gnu-bash&logoColor=white)
 
 
 This is My _`Arch linux - I3WM`_ config.
