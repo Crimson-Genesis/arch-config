@@ -48,7 +48,6 @@ This is My _`Arch linux - I3WM`_ config.
 
 * **My wallpapers are from**  
     * [Motionbgs](https://motionbgs.com/tag:anime/)  
-    * [LiveWallpaperPC](https://livewallpaperpc.com/the-street-sees-fireworks-live-wallpaper/)  
     * [DesktopHut](https://www.desktophut.com/category/anime-live-wallpapers)  
     * [My wallpaper collection](https://github.com/Crimson-Genesis/wallpaper)  
 
@@ -60,6 +59,12 @@ This are the wallpaper, that i am using.
     * [TokyoNight-Theme-rofi](https://github.com/w8ste/Tokyonight-rofi-theme)  
     * [TokyoNight-Theme-tmux](https://github.com/janoamaral/tokyo-night-tmux)  
 
+* Live wallpapers
+    * [LiveWallpaperPC](https://livewallpaperpc.com/the-street-sees-fireworks-live-wallpaper/)  
+    * The application that i am using is a work of some other person.  
+        * [wallset github repo](https://github.com/terroo/wallset)
+            plz check out his work.
+    
 I love the *[TokyoNight-Theme](https://tokyonight.dev/)* so this are some of which i use sometimes.  
 
 ***I am Still working on some cool scripts for my workflow.***
