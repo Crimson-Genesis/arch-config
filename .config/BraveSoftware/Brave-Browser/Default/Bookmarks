@@ -1,5 +1,5 @@
 {
-   "checksum": "d5dd272eb9702e4480b07597ee2027d1",
+   "checksum": "e65d19f04049d283dac55b24874dfc4e",
    "roots": {
       "bookmark_bar": {
          "children": [  ],
@@ -628,10 +628,21 @@
             "name": "The Official Home of YIFY Movies Torrent Download - YTS",
             "type": "url",
             "url": "https://yts.torrentbay.st/"
+         }, {
+            "date_added": "13380038719473853",
+            "date_last_used": "0",
+            "guid": "f5947afb-f1e4-4ad2-b6cd-f9dcb94c491e",
+            "id": "94",
+            "meta_info": {
+               "power_bookmark_meta": ""
+            },
+            "name": "The LLVM Compiler Infrastructure Project",
+            "type": "url",
+            "url": "https://llvm.org/"
          } ],
          "date_added": "13369643435090832",
          "date_last_used": "0",
-         "date_modified": "13379794131642908",
+         "date_modified": "13380038719473853",
          "guid": "82b081ec-3dd3-529c-8475-ab6c344590dd",
          "id": "2",
          "name": "Other bookmarks",

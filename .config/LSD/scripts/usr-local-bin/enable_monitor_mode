@@ -1,0 +1,18 @@
+#!/bin/env bash
+
+INTERFACE=$1
+
+if [ -n "$INTERFACE" ] && [ $EUID -eq 0 ]; then
+	systemctl stop NetworkManager
+	systemctl stop wpa_supplicant
+
+	ip link set $INTERFACE down
+	iw $INTERFACE set type monitor
+	ip link set $INTERFACE up
+
+	systemctl start NetworkManager
+	systemctl start wpa_supplicant
+else
+	echo -e "\033[38;5;1mSUDO NEEEDED!!!\033[0m"
+fi
+

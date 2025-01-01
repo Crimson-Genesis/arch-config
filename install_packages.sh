@@ -24,6 +24,7 @@ package_array+=("gvfs gvfs-mtp gvfs-afc")
 package_array+=("cuda cudnn")
 package_array+=("mpv xorg-xwininfo xorg-xrandr")
 package_array+=("zathura zathura-pdf-mupdf")
+package_array+=("postgresql") # remove for this system only...
 
 for package in "${package_array[@]}"; do
     echo "Installing $package..."

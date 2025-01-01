@@ -1,0 +1,2 @@
+ACTION=="add", SUBSYSTEM=="net", ATTR{idVendor}=="2357", ATTR{idProduct}=="010c", RUN+=""
+
