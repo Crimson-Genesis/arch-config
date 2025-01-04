@@ -1,5 +1,5 @@
 {
-   "checksum": "e65d19f04049d283dac55b24874dfc4e",
+   "checksum": "f510adc66f26a968fe406d8aee4ff27d",
    "roots": {
       "bookmark_bar": {
          "children": [  ],
@@ -639,10 +639,21 @@
             "name": "The LLVM Compiler Infrastructure Project",
             "type": "url",
             "url": "https://llvm.org/"
+         }, {
+            "date_added": "13380466923094851",
+            "date_last_used": "0",
+            "guid": "b47b9813-8e2e-4947-83df-8af30a92e341",
+            "id": "96",
+            "meta_info": {
+               "power_bookmark_meta": ""
+            },
+            "name": "StarK ClouD",
+            "type": "url",
+            "url": "https://new3.scloud.ninja/"
          } ],
          "date_added": "13369643435090832",
          "date_last_used": "0",
-         "date_modified": "13380038719473853",
+         "date_modified": "13380466923094851",
          "guid": "82b081ec-3dd3-529c-8475-ab6c344590dd",
          "id": "2",
          "name": "Other bookmarks",

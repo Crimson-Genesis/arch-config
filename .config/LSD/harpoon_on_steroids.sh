@@ -129,7 +129,7 @@ in
         if [[ $choice_count -eq 1 ]]; then
             dirname="$(echo $choices | awk -F '/' '{print $(NF-1)"-"$(NF)}' | tr "." "_")"
             if [ ! -z $choices ]; then
-                tmux has-session -t "$dirname" > /dev/null 2>&1 
+                tmux has-session -t "$dirname" > /dev/null 2>&1
                 exitcode=$?
                 if [ ! -z $TMUX ]; then
                     if [ 0 -eq $exitcode ]; then

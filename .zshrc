@@ -152,6 +152,29 @@ function yy() {
     fi
     rm -f -- "$tmp"
 }
+
+function compile(){
+    local file_name=$1
+    local output=$(echo $file_name | awk -F "." '{print $1}')
+    gcc ${file_name} -o ${output}
+}
+
+function tt(){
+    local wordlist=$1
+    local num=$2
+    if [[ "$num" =~ ^[0-9]+ ]]; then
+        if [[ "$wordlist" =~ ^[0-9]+ ]]; then
+            toipe -w top${wordlist} -n ${num}
+        elif [[ "$wordlist" == "cms" ]]; then
+            toipe -w commonly-misspelled -n ${num}
+        else
+            toipe -w ${wordlist} -n ${num}
+        fi
+    else
+        echo "Invalid 2nd parameter."
+    fi
+}
+
 # Alias:
 alias pp="shotwell *"
 alias ls="eza --icons --group-directories-first -l --hyperlink"
@@ -173,7 +196,6 @@ alias vi="nvim"
 alias ff="fastfetch"
 alias ani="ani-cli"
 alias lg="lazygit"
-alias tt="toipe"
 alias emoji="rofi -show emoji"
 alias calc="rofi -show calc"
 alias j2p="/usr/bin/env bash ~/.config/LSD/jpg_to_png.sh"
@@ -218,7 +240,6 @@ bindkey -s '^[C' "bash ~/.config/LSD/harpoon_on_steroids.sh killall^M"
 # bindkey -s '^[m' "bash ~/.config/LSD/cht.sh man^M"
 # bindkey -s '^[a' "ddgr^M"
 bindkey -s '^g' "lazygit^M"
-bindkey -s '^[t' "toipe^M"
 bindkey '^[[A' history-substring-search-up
 bindkey '^[[B' history-substring-search-down
 bindkey '^K' history-substring-search-up
