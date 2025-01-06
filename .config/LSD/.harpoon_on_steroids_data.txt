@@ -46,3 +46,5 @@
 /run/media/nico/Nova/Lab/github_metrics
 /run/media/nico/Nova/Lab/golang
 /run/media/nico/Nova/Lab/python_map
+/run/media/nico/Nova/git/notarkhit
+/run/media/nico/Nova/git/notarkhit/ez-ffmpeg

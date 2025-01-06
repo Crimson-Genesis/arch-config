@@ -7,6 +7,7 @@ main(){
     local gitignore_file_path="$1"
     local current_gitignore_file_path="./$gitignore_file_path"
     local gitignore_backup_file_path="./$gitignore_file_path.bak"
+    local gitignore_tmp_file_path="./$gitignore_file_path.tmp"
     local gitignore_data=$(sed -n "2,\$s/^.\(.*\)/\1/p" $gitignore_file_path)
 
     local paths=$(printf "%s\n" "$file_paths $dir_paths" | highlight_existed "$gitignore_data")
@@ -114,6 +115,7 @@ main(){
                 printf "\n" >> ${current_gitignore_file_path}
             done
         fi
+        awk '!seen[$0]++' ${current_gitignore_file_path} > ${gitignore_tmp_file_path} && mv ${gitignore_tmp_file_path} ${current_gitignore_file_path}
     # else
     #     rm ./.gitignore
     fi
@@ -144,5 +146,5 @@ function script_test(){
     printf "%s\n" $(printf "%s\n" "$paths" | highlight_existed $gitignore_data)
 }
 
-# main $1
-script_test $1
+main $1
+# script_test $1
