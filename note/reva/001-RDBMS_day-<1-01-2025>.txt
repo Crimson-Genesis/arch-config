@@ -1,0 +1,131 @@
+[postgres@arch ~]$ psql -U zero
+psql (16.6)
+Type "help" for help.
+
+zero=# CREATE TABLE DEPARTMENT(Dept_no int primary key, Dept_name varchar(50), Location varchar(5));
+CREATE TABLE
+zero=# desecribe DEPARTMENT;
+ERROR:  syntax error at or near "desecribe"
+LINE 1: desecribe DEPARTMENT;
+        ^
+zero=# desecribe DEPARTMENT;
+ERROR:  syntax error at or near "desecribe"
+LINE 1: desecribe DEPARTMENT;
+        ^
+zero=# DESECRIBE DEPARTMENT;
+ERROR:  syntax error at or near "DESECRIBE"
+LINE 1: DESECRIBE DEPARTMENT;
+        ^
+zero=# describe DEPARTMENT;
+ERROR:  syntax error at or near "describe"
+LINE 1: describe DEPARTMENT;
+        ^
+zero=# \d DEPARTMENT;
+                     Table "public.department"
+  Column   |         Type          | Collation | Nullable | Default
+-----------+-----------------------+-----------+----------+---------
+ dept_no   | integer               |           | not null |
+ dept_name | character varying(50) |           |          |
+ location  | character varying(5)  |           |          |
+Indexes:
+    "department_pkey" PRIMARY KEY, btree (dept_no)
+
+zero=# INSERT INTO DEPARTMENT(dept_no, dept_name, location) VALUES (10, "Account","NY");
+ERROR:  column "Account" does not exist
+LINE 1: ...ARTMENT(dept_no, dept_name, location) VALUES (10, "Account",...
+                                                             ^
+zero=# INSERT INTO DEPARTMENT(dept_no, dept_name, location) VALUES (10, Account,"NY");
+ERROR:  column "account" does not exist
+LINE 1: ...ARTMENT(dept_no, dept_name, location) VALUES (10, Account,"N...
+                                                             ^
+zero=# INSERT INTO DEPARTMENT(dept_no, dept_name, location) VALUES (10, 'Account','NY');
+INSERT 0 1
+zero=# INSERT INTO DEPARTMENT(dept_no, dept_name, location) VALUES (20, 'HR','Ny');
+INSERT 0 1
+zero=# INSERT INTO DEPARTMENT(dept_no, dept_name, location) VALUES (30, 'Production','DL'), (40, 'Sales','NY'), (50, 'EDP','MU'), (60, 'TRG','DL'), (110, 'RND', );
+ERROR:  syntax error at or near ")"
+LINE 1: ...','NY'), (50, 'EDP','MU'), (60, 'TRG','DL'), (110, 'RND', );
+                                                                     ^
+zero=# INSERT INTO DEPARTMENT(dept_no, dept_name, location) VALUES (30, 'Production','DL'), (40, 'Sales','NY'), (50, 'EDP','MU'), (60, 'TRG','DL'), (110, 'RND','AH');
+INSERT 0 5
+zero=# SELECT * FROM DEPARTMENT;
+ dept_no | dept_name  | location
+---------+------------+----------
+      10 | Account    | NY
+      20 | HR         | Ny
+      30 | Production | DL
+      40 | Sales      | NY
+      50 | EDP        | MU
+      60 | TRG        | DL
+     110 | RND        | AH
+(7 rows)
+
+zero=# UPDATE DEPARTMENT SET location='NY' WHERE dept_no=20;
+UPDATE 1
+zero=# SELECT * FROM DEPARTMENT WHERE location='NY';
+ dept_no | dept_name | location
+---------+-----------+----------
+      10 | Account   | NY
+      40 | Sales     | NY
+      20 | HR        | NY
+(3 rows)
+
+zero=# SELECT * FROM DEPARTMENT WHERE dept_no=10;
+ dept_no | dept_name | location
+---------+-----------+----------
+      10 | Account   | NY
+(1 row)
+
+zero=# SELECT * FROM DEPARTMENT WHERE dept_name LIKE 'A%';
+ dept_no | dept_name | location
+---------+-----------+----------
+      10 | Account   | NY
+(1 row)
+
+zero=# SELECT * FROM DEPARTMENT WHERE dept_no > 1 AND dept_no < 100;
+ dept_no | dept_name  | location
+---------+------------+----------
+      10 | Account    | NY
+      20 | HR         | NY
+      30 | Production | DL
+      40 | Sales      | NY
+      50 | EDP        | MU
+      60 | TRG        | DL
+(6 rows)
+
+zero=# DELETE FROM DEPARTMENT WHERE dept_name='TRG';
+DELETE 1
+zero=# SELECT * FROM DEOARTMENT;
+ERROR:  relation "deoartment" does not exist
+LINE 1: SELECT * FROM DEOARTMENT;
+                      ^
+zero=# SELECT * FROM DEPARTMENT;
+ dept_no | dept_name  | location
+---------+------------+----------
+      10 | Account    | NY
+      30 | Production | DL
+      40 | Sales      | NY
+      50 | EDP        | MU
+     110 | RND        | AH
+      20 | HR         | NY
+(6 rows)
+
+zero=# UPDATE DEPARTMENT SET detp_name='IT' WHERE dept_name='EDP';
+ERROR:  column "detp_name" of relation "department" does not exist
+LINE 1: UPDATE DEPARTMENT SET detp_name='IT' WHERE dept_name='EDP';
+                              ^
+zero=# UPDATE DEPARTMENT SET dept_name='IT' WHERE dept_name='EDP';
+UPDATE 1
+zero=# SELECT * FROM DEPARTMENT;
+ dept_no | dept_name  | location
+---------+------------+----------
+      10 | Account    | NY
+      30 | Production | DL
+      40 | Sales      | NY
+     110 | RND        | AH
+      20 | HR         | NY
+      50 | IT         | MU
+(6 rows)
+
+zero=#
+
