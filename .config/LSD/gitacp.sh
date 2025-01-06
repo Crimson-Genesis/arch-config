@@ -52,4 +52,3 @@ if [ ! -z "$status" ]; then
 else
     echo -e "\e[31mNOTHING TO COMMIT.\e[0m"
 fi
-read -e -p "Add manully (y|N):- " will_add
