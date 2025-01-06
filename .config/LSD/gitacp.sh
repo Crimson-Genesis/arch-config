@@ -1,10 +1,6 @@
 #!/usr/bin/env bash
 
 function acp(){
-    echo $1
-    echo $2
-    echo $3
-
     if [[ -z $3 ]]; then
         git add .
     else
