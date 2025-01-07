@@ -65,8 +65,8 @@ This is My _`Arch linux - I3WM`_ config.
     * [Motionbgs](https://motionbgs.com/tag:anime/)  
     * [DesktopHut](https://www.desktophut.com/category/anime-live-wallpapers)  
     * [My wallpaper collection](https://github.com/Crimson-Genesis/wallpaper)  
-
-    
+  
+  
 I love the *[TokyoNight-Theme](https://tokyonight.dev/)* so this are some of which i use sometimes.  
 
 ***I am Still working on some cool scripts for my workflow.***
