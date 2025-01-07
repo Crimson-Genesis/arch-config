@@ -1,9 +1,0 @@
-*
-
-!make_gitignore.sh
-!.modules_list.txt
-!scripts/
-!scripts/usr-local-bin/
-!scripts/usr-local-bin/**/*
-!scripts/usr-local-bin/enable_managed_mode
-!scripts/usr-local-bin/enable_monitor_mode

@@ -8,7 +8,7 @@ main(){
     local current_gitignore_file_path="./$gitignore_file_path"
     local gitignore_backup_file_path="./$gitignore_file_path.bak"
     local gitignore_tmp_file_path="./$gitignore_file_path.tmp"
-    local gitignore_data=$(sed -n "2,\$s/^.\(.*\)/\1/p" $gitignore_file_path | grep -v "/$" | sed "s|\(.*\)/\*\*/\*|\1/|")
+    local gitignore_data=$(sed -n "2,\$s/^.\(.*\)/\1/p" $gitignore_file_path 2> /dev/null | grep -v "/$" | sed "s|\(.*\)/\*\*/\*|\1/|")
 
     local paths=$(printf "%s\n" "$file_paths $dir_paths" | highlight_existed "$gitignore_data")
     local choices=$(printf "%s\n" $paths | fzf --multi --reverse --cycle --ansi --wrap --header="Select to not ignore:")
@@ -119,8 +119,8 @@ main(){
             done
         fi
         awk '!seen[$0]++' ${current_gitignore_file_path} > ${gitignore_tmp_file_path} && mv ${gitignore_tmp_file_path} ${current_gitignore_file_path}
-    # else
-    #     rm ./.gitignore
+    else
+        rm ${current_gitignore_file_path} &> /dev/null
     fi
 }
 
@@ -135,21 +135,20 @@ function highlight_existed(){
     done
 }
 
+main $1
+
 # function script_test(){
 #     local dir_paths=$(find . -mindepth 1 -type d | sed "s/^..\(.*\)/\1\//g" | sort)
 #     local file_paths=$(find . -type f | sed "s/^..\(.*\)/\1/g" | sort)
 #     local paths=$(echo "$file_paths $dir_paths")
-#
 #     local gitignore_file_path="$1"
 #     local current_gitignore_file_path="./$gitignore_file_path"
 #     local gitignore_backup_file_path="./$gitignore_file_path.bak"
 #     local gitignore_data=$(sed -n "2,\$s/^.\(.*\)/\1/p" $gitignore_file_path | grep -v "/$" | sed 's|\(.*\)/\*\*/\*|\1/|')
 #     # local filtered_gitignore_data=$(printf "%s\n" $gitignore_data | )
-#
 #     printf "%s\n" $gitignore_data
 #     echo -e "\n"
 #     printf "%s\n" $(printf "%s\n" "$paths" | highlight_existed $gitignore_data)
 # }
-
-main $1
 # script_test $1
+
