@@ -1,0 +1,119 @@
+#!/bin/bash
+
+# Exit on error
+set -e
+
+# Colors for output
+GREEN='\033[0;32m'
+RED='\033[0;31m'
+NC='\033[0m' # No Color
+
+# Log function
+log() {
+    echo -e "${GREEN}[INFO] $1${NC}"
+}
+
+error() {
+    echo -e "${RED}[ERROR] $1${NC}" >&2
+    exit 1
+}
+
+# Ensure script is run as root
+if [[ $EUID -ne 0 ]]; then
+    error "This script must be run as root. Use sudo."
+fi
+
+# Update and install base packages
+log "Updating system and installing base packages..."
+pacman -Syu --noconfirm
+
+BASE_PACKAGES=(
+    git
+    base-devel
+    curl
+    wget
+    vim
+    zsh
+    i3-wm
+    rofi
+    xorg-server
+    xorg-xinit
+    pulseaudio
+    pavucontrol
+    nitrogen
+    alacritty
+    networkmanager
+)
+
+log "Installing base packages..."
+pacman -S --noconfirm "${BASE_PACKAGES[@]}"
+
+# Enable necessary services
+log "Enabling NetworkManager..."
+systemctl enable --now NetworkManager
+
+# Clone configuration repositories
+CONFIG_REPOS=(
+    "https://github.com/yourusername/dotfiles.git"
+    "https://github.com/yourusername/i3-config.git"
+    "https://github.com/yourusername/other-config.git"
+)
+
+CONFIG_DIR="$HOME/.config"
+mkdir -p "$CONFIG_DIR"
+
+log "Cloning configuration repositories..."
+for REPO in "${CONFIG_REPOS[@]}"; do
+    REPO_NAME=$(basename "$REPO" .git)
+    DEST_DIR="$CONFIG_DIR/$REPO_NAME"
+    if [[ -d "$DEST_DIR" ]]; then
+        log "$DEST_DIR already exists. Skipping..."
+    else
+        git clone "$REPO" "$DEST_DIR"
+        log "$REPO cloned to $DEST_DIR"
+    fi
+done
+
+# Install AUR helper (yay)
+AUR_HELPER="yay"
+if ! command -v $AUR_HELPER &> /dev/null; then
+    log "Installing AUR helper (yay)..."
+    git clone https://aur.archlinux.org/yay.git /tmp/yay
+    pushd /tmp/yay
+    makepkg -si --noconfirm
+    popd
+    rm -rf /tmp/yay
+else
+    log "AUR helper (yay) is already installed."
+fi
+
+# Install AUR packages
+AUR_PACKAGES=(
+    polybar
+    ttf-font-awesome
+    betterlockscreen
+)
+
+log "Installing AUR packages..."
+yay -S --noconfirm "${AUR_PACKAGES[@]}"
+
+# Set up user-specific configurations
+log "Setting up user-specific configurations..."
+cp "$CONFIG_DIR/dotfiles/.zshrc" "$HOME/.zshrc"
+cp "$CONFIG_DIR/dotfiles/.vimrc" "$HOME/.vimrc"
+
+# Set default shell to zsh
+log "Changing default shell to zsh..."
+chsh -s $(which zsh)
+
+# Finishing up
+log "Setup complete! Reboot your system to apply changes."
+
+# Here's an installation script to automate setting up your Arch Linux configuration on a new system. It includes:
+# 
+# Updating the system and installing base packages.
+# Enabling NetworkManager.
+# Cloning your configuration repositories.
+# Installing an AUR helper (yay) and AUR packages.
+# Copying configuration files and setting Zsh as the default shell.
+# You can modify the package lists and repository URLs to suit your needs. Let me know if you need further customization!
