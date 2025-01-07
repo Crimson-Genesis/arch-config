@@ -18,8 +18,8 @@ This is My _`Arch linux - I3WM`_ config.
 > An alias for the exit command `BUT BETTER`.  
 
 > * **Gitacp**  
-[![gipacp](http://i.ytimg.com/vi/SPqnFwzqfgQ/hqdefault.jpg)](https://www.youtube.com/watch?v=SPqnFwzqfgQ)  
 [![YouTube](http://i.ytimg.com/vi/wKHZp_6mNzc/hqdefault.jpg)](https://www.youtube.com/watch?v=wKHZp_6mNzc)
+[![YouTube](https://img.shields.io/badge/YouTube-Watch-red?logo=youtube)](https://www.youtube.com/watch?v=wKHZp_6mNzc)  
 > A simple script for Adding, commiting and pushing to the github repo.  
 
 > * **My Script for Cheat.sh**  
