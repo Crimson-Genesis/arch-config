@@ -26,13 +26,14 @@ package_array+=("mpv xorg-xwininfo xorg-xrandr")
 package_array+=("zathura zathura-pdf-mupdf")
 package_array+=("postgresql") # remove for this system only...
 
+echo "Updating System..."
+sudo pacman -Syu
+
 for package in "${package_array[@]}"; do
     echo "Installing $package..."
     sudo pacman -S --noconfirm "$package" || { echo "Failed to install $package"; exit 1; }
 done
 
-echo "Updating System..."
-sudo pacman -Syu
 read -p "Install Yay (Y|n)? " install_yay
 if [ -z $install_yay ] || [ "${install_yay,,}" == "y"]; then
     echo "Install Yay..."
