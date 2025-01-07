@@ -26,7 +26,7 @@ This is My _`Arch linux - I3WM`_ config.
 [![Script-for-Cheat.sh](http://i.ytimg.com/vi/GZVUQq0h_to/hqdefault.jpg)](https://www.youtube.com/watch?v=GZVUQq0h_to)  
 [![YouTube](https://img.shields.io/badge/YouTube-Watch-red?logo=youtube)](https://www.youtube.com/watch?v=GZVUQq0h_to)  
 > My script for opening cheat.sh.  
-> Using <[Cheat.sh github page](https://github.com/chubin/cheat.sh)> as the Spine.  
+> Using [Cheat.sh github page](https://github.com/chubin/cheat.sh) as the Spine.  
 
 > * **Color picker 30k**  
 [![Cp30k](http://i.ytimg.com/vi/D9gJ1LV35Uk/hqdefault.jpg)](https://www.youtube.com/watch?v=D9gJ1LV35Uk)  
@@ -37,6 +37,11 @@ This is My _`Arch linux - I3WM`_ config.
 [![Auto-Application-Opener](http://i.ytimg.com/vi/AHOO84hKNB8/hqdefault.jpg)](https://www.youtube.com/watch?v=AHOO84hKNB8)  
 [![YouTube](https://img.shields.io/badge/YouTube-Watch-red?logo=youtube)](https://www.youtube.com/watch?v=AHOO84hKNB8)  
 > Scripts for opening application automatically in there assigned workspaces.  
+
+> * **Make GitIgnore File**  
+[![Make-Gitignore](http://i.ytimg.com/vi/tPyhZqtI2Kk/hqdefault.jpg)](https://www.youtube.com/watch?v=tPyhZqtI2Kk)  
+[![YouTube](https://img.shields.io/badge/YouTube-Watch-red?logo=youtube)](https://www.youtube.com/watch?v=tPyhZqtI2Kk)  
+> A Script for making the job of creating the .gitignore file easy.  
 
 > * **Polybar**  
 ![Polybar](https://raw.githubusercontent.com/Crimson-Genesis/arch-config/main/assets/img/polybar.png)  
