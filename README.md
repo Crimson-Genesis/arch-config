@@ -46,24 +46,26 @@ This is My _`Arch linux - I3WM`_ config.
 ![Dunst-Theme](https://raw.githubusercontent.com/Crimson-Genesis/arch-config/main/assets/img/dunst.png)  
 > Made it match to [TokyoNight-Theme](https://tokyonight.dev/)  
 
-* **My wallpapers are from**  
-    * [Motionbgs](https://motionbgs.com/tag:anime/)  
-    * [DesktopHut](https://www.desktophut.com/category/anime-live-wallpapers)  
-    * [My wallpaper collection](https://github.com/Crimson-Genesis/wallpaper)  
-
-This are the wallpaper, that i am using.  
-
-* TokyoNight-Theme  
+* **TokyoNight-Theme**  
     * [TokyoNight-Theme-nvim](https://github.com/folke/tokyonight.nvim)  
     * [TokyoNight-Theme-x11](https://www.vinstartheme.com/tokyo-night-theme-for-windows-11/)  
     * [TokyoNight-Theme-rofi](https://github.com/w8ste/Tokyonight-rofi-theme)  
     * [TokyoNight-Theme-tmux](https://github.com/janoamaral/tokyo-night-tmux)  
 
-* Live wallpapers
+* **This are the wallpaper, that i am using.**  
+    * [My Wallpaper Collection](https://github.com/crimson-genesis/wallpaper)
+
+* **Live wallpapers**  
     * [LiveWallpaperPC](https://livewallpaperpc.com/the-street-sees-fireworks-live-wallpaper/)  
     * The application that i am using is a work of some other person.  
         * [wallset github repo](https://github.com/terroo/wallset)
             plz check out his work.
+
+* **The wallpapers are from**  
+    * [Motionbgs](https://motionbgs.com/tag:anime/)  
+    * [DesktopHut](https://www.desktophut.com/category/anime-live-wallpapers)  
+    * [My wallpaper collection](https://github.com/Crimson-Genesis/wallpaper)  
+
     
 I love the *[TokyoNight-Theme](https://tokyonight.dev/)* so this are some of which i use sometimes.  
 
