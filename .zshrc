@@ -89,15 +89,16 @@ function preexec(){
 function config_opener(){
     local config_path=$1
     local program=$2
-    (alacritty -e zsh -c "tmux new-session -s '$program-config' -c $config_path '$program'" &) &>/dev/null
+    local session_name=$2
+    (alacritty -e zsh -c "tmux new-session -s '${session_name}' -c ${config_path} '${program}'" &) &>/dev/null
 }
 
 function nconfig(){
-    config_opener "~/.config/nvim" "nvim"
+    config_opener "~/.config/nvim" "nvim" "nvim-config"
 }
 
 function note(){
-    config_opener "~/note/" "nvim"
+    config_opener "~/note/" "nvim" "note"
 }
 
 function tls() {

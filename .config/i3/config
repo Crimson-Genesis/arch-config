@@ -129,6 +129,9 @@ bindsym $mod+b exec --no-startup-id ~/.config/polybar/launch.sh
 # kill focused window
 bindsym $mod+q kill
 
+bindsym $mod+semicolon exec ~/.config/i3/scripts/opener note
+bindsym $mod+apostrophe exec ~/.config/i3/scripts/opener nconfig
+
 # exit-menu
 bindsym $mod+Escape exec --no-startup-id ~/.config/i3/scripts/powermenu
 

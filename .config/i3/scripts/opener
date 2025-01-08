@@ -1,0 +1,29 @@
+#!/usr/bin/env bash
+
+function config_opener(){
+    local config_path=$1
+    local program=$2
+    local session_name=$3
+    (alacritty -e zsh -c "tmux new-session -s '${session_name}' -c ${config_path} '${program}'" &) &>/dev/null
+}
+
+function nconfig(){
+    config_opener "~/.config/nvim" "nvim" "nvim-config"
+}
+
+function note(){
+    config_opener "~/note/" "nvim" "note"
+}
+
+case "$1"
+in
+    nconfig)
+            nconfig
+        ;;
+    note)
+        note
+        ;;
+    *)
+        echo -e "\033[38;5;9mInvalid Input\033[0m"
+        ;;
+esac

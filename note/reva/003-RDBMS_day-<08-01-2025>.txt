@@ -1,0 +1,195 @@
+zero=# CREATE TABLE empsalary(emp_id int primary key, emp_name varchar(50), dob date, emp_dept varchar(20), salary numeric(10, 2));
+CREATE TABLE
+zero=# Insert into empsalary(emp_id, emp_name, dob, emp_dept, salary) values(1, "Nico Zero", '25-07-2003', "maths", 230000);
+ERROR:  column "Nico Zero" does not exist
+LINE 1: ...mp_id, emp_name, dob, emp_dept, salary) values(1, "Nico Zero...
+                                                             ^
+zero=# Insert into empsalary(emp_id, emp_name, dob, emp_dept, salary) values (1, "Nico Zero", '25-07-2003', "maths", 230000);
+ERROR:  column "Nico Zero" does not exist
+LINE 1: ...p_id, emp_name, dob, emp_dept, salary) values (1, "Nico Zero...
+                                                             ^
+zero=# Insert into empsalary(emp_id, emp_name, dob, emp_dept, salary) values (1, "Nico Zero", '2003-25-07', "maths", 230000);
+ERROR:  column "Nico Zero" does not exist
+LINE 1: ...p_id, emp_name, dob, emp_dept, salary) values (1, "Nico Zero...
+                                                             ^
+zero=# Insert into empsalary(emp_id, emp_name, dob, emp_dept, salary) values (1, 'Nico Zero', '25-07-2003', maths", 230000);
+zero"# Insert into empsalary(emp_id, emp_name, dob, emp_dept, salary) values (1, 'Nico Zero', '2003-25-07', 'maths', 230000);
+zero"# ;
+zero"# ;
+zero"# select * from empsalary;
+zero"# ^C
+zero=# Insert into empsalary(emp_id, emp_name, dob, emp_dept, salary) values (1, 'Nico Zero', '2003-25-07', 'maths', 230000);
+ERROR:  date/time field value out of range: "2003-25-07"
+LINE 1: ...e, dob, emp_dept, salary) values (1, 'Nico Zero', '2003-25-0...
+                                                             ^
+HINT:  Perhaps you need a different "datestyle" setting.
+zero=# Insert into empsalary(emp_id, emp_name, dob, emp_dept, salary) values (1, 'Nico Zero', '2003-07-25', 'maths', 230000);
+INSERT 0 1
+zero=# Insert into empsalary(emp_id, emp_name, dob, emp_dept, salary) values (2, 'Sneha', '2033-07-25', 'comp', 20000);
+INSERT 0 1
+zero=# Insert into empsalary(emp_id, emp_name, dob, emp_dept, salary) values (3, 'Morui', '2000-03-05', 'phys', 90000);
+INSERT 0 1
+zero=# Insert into empsalary(emp_id, emp_name, dob, emp_dept, salary) values (4, 'luck', '2002-07-03', 'maths', 9000);
+INSERT 0 1
+zero=# Insert into empsalary(emp_id, emp_name, dob, emp_dept, salary) values (5, 'dhru', '2003-05-03', 'AI', 800000);
+INSERT 0 1
+zero=# select * from empsalary;
+ emp_id | emp_name  |    dob     | emp_dept |  salary
+--------+-----------+------------+----------+-----------
+      1 | Nico Zero | 2003-07-25 | maths    | 230000.00
+      2 | Sneha     | 2033-07-25 | comp     |  20000.00
+      3 | Morui     | 2000-03-05 | phys     |  90000.00
+      4 | luck      | 2002-07-03 | maths    |   9000.00
+      5 | dhru      | 2003-05-03 | AI       | 800000.00
+(5 rows)
+
+zero=# select sum(salary) as total_salary form empsalary;
+ERROR:  syntax error at or near "form"
+LINE 1: select sum(salary) as total_salary form empsalary;
+                                           ^
+zero=# select sum(salary) as total_salary from empsalary;
+ total_salary
+--------------
+   1149000.00
+(1 row)
+
+zero=# select sum(salary) as total_salary, avg(salary) as avg_salary from empsalary where emp_dept='maths';
+ total_salary |     avg_salary
+--------------+---------------------
+    239000.00 | 119500.000000000000
+(1 row)
+
+zero=# select min(salary) as min_salary, max(salary) as max_salary from empsalary;
+ min_salary | max_salary
+------------+------------
+    9000.00 |  800000.00
+(1 row)
+
+zero=# select * from empsalary orderly name;
+ERROR:  syntax error at or near "name"
+LINE 1: select * from empsalary orderly name;
+                                        ^
+zero=# select * from empsalary orderly emp_name;
+ERROR:  syntax error at or near "emp_name"
+LINE 1: select * from empsalary orderly emp_name;
+                                        ^
+zero=# select * from empsalary orderby emp_name;
+ERROR:  syntax error at or near "emp_name"
+LINE 1: select * from empsalary orderby emp_name;
+                                        ^
+zero=# select * from empsalary order by emp_name;
+ emp_id | emp_name  |    dob     | emp_dept |  salary
+--------+-----------+------------+----------+-----------
+      5 | dhru      | 2003-05-03 | AI       | 800000.00
+      4 | luck      | 2002-07-03 | maths    |   9000.00
+      3 | Morui     | 2000-03-05 | phys     |  90000.00
+      1 | Nico Zero | 2003-07-25 | maths    | 230000.00
+      2 | Sneha     | 2033-07-25 | comp     |  20000.00
+(5 rows)
+
+zero=# select * from empsalary where salary >= 50000 AND salary <= 80000;
+ emp_id | emp_name | dob | emp_dept | salary
+--------+----------+-----+----------+--------
+(0 rows)
+
+zero=# select * from empsalary where salary >= 50000 AND salary <= 800000;
+ emp_id | emp_name  |    dob     | emp_dept |  salary
+--------+-----------+------------+----------+-----------
+      1 | Nico Zero | 2003-07-25 | maths    | 230000.00
+      3 | Morui     | 2000-03-05 | phys     |  90000.00
+      5 | dhru      | 2003-05-03 | AI       | 800000.00
+(3 rows)
+
+zero=# create
+ACCESS METHOD         FOREIGN DATA WRAPPER  POLICY                SUBSCRIPTION          UNIQUE
+AGGREGATE             FOREIGN TABLE         PROCEDURE             TABLE                 UNLOGGED
+CAST                  FUNCTION              PUBLICATION           TABLESPACE            USER
+COLLATION             GROUP                 ROLE                  TEMP                  USER MAPPING FOR
+CONVERSION            INDEX                 RULE                  TEMPORARY             VIEW
+DATABASE              LANGUAGE              SCHEMA                TEXT SEARCH
+DOMAIN                MATERIALIZED VIEW     SEQUENCE              TRANSFORM
+EVENT TRIGGER         OPERATOR              SERVER                TRIGGER
+EXTENSION             OR REPLACE            STATISTICS            TYPE
+zero=# \dt
+          List of relations
+ Schema |    Name    | Type  | Owner
+--------+------------+-------+-------
+ public | department | table | zero
+ public | emp        | table | zero
+ public | empsalary  | table | zero
+(3 rows)
+
+zero=# create table employee(emp_id int primary key, emp_name varchar(50), gender varchar(1));
+CREATE TABLE
+zero=# \dt
+          List of relations
+ Schema |    Name    | Type  | Owner
+--------+------------+-------+-------
+ public | department | table | zero
+ public | emp        | table | zero
+ public | employee   | table | zero
+ public | empsalary  | table | zero
+(4 rows)
+
+zero=# create table departments(dept_id int primary key, dept_name varchar(50));
+CREATE TABLE
+zero=# create table poy(emp_id int, dept_id int, salary numaric(10,2), foreign key (emp_id) ref );
+
+zero=# create table poy(emp_id int, dept_id int, salary numaric(10,2), foreign key (emp_id) references employee(emp_id), foreign key (dept_id) references departments(dept_id) );
+ERROR:  type "numaric" does not exist
+LINE 1: create table poy(emp_id int, dept_id int, salary numaric(10,...
+                                                         ^
+zero=# create table poy(emp_id int, dept_id int, salary numeric(10,2), foreign key (emp_id) references employee(emp_id), foreign key (dept_id) references departments(dept_id) );
+CREATE TABLE
+zero=# \dt
+          List of relations
+ Schema |    Name     | Type  | Owner
+--------+-------------+-------+-------
+ public | department  | table | zero
+ public | departments | table | zero
+ public | emp         | table | zero
+ public | employee    | table | zero
+ public | empsalary   | table | zero
+ public | poy         | table | zero
+(6 rows)
+
+zero=# \d depatments
+Did not find any relation named "depatments".
+zero=# \d depatments;
+Did not find any relation named "depatments".
+zero=# \d departments;
+                     Table "public.departments"
+  Column   |         Type          | Collation | Nullable | Default
+-----------+-----------------------+-----------+----------+---------
+ dept_id   | integer               |           | not null |
+ dept_name | character varying(50) |           |          |
+Indexes:
+    "departments_pkey" PRIMARY KEY, btree (dept_id)
+Referenced by:
+    TABLE "poy" CONSTRAINT "poy_dept_id_fkey" FOREIGN KEY (dept_id) REFERENCES departments(dept_id)
+
+zero=# \d employee;
+                      Table "public.employee"
+  Column  |         Type          | Collation | Nullable | Default
+----------+-----------------------+-----------+----------+---------
+ emp_id   | integer               |           | not null |
+ emp_name | character varying(50) |           |          |
+ gender   | character varying(1)  |           |          |
+Indexes:
+    "employee_pkey" PRIMARY KEY, btree (emp_id)
+Referenced by:
+    TABLE "poy" CONSTRAINT "poy_emp_id_fkey" FOREIGN KEY (emp_id) REFERENCES employee(emp_id)
+
+zero=# \d pou;
+Did not find any relation named "pou".
+zero=# \d poy;
+                    Table "public.poy"
+ Column  |     Type      | Collation | Nullable | Default
+---------+---------------+-----------+----------+---------
+ emp_id  | integer       |           |          |
+ dept_id | integer       |           |          |
+ salary  | numeric(10,2) |           |          |
+Foreign-key constraints:
+    "poy_dept_id_fkey" FOREIGN KEY (dept_id) REFERENCES departments(dept_id)
+    "poy_emp_id_fkey" FOREIGN KEY (emp_id) REFERENCES employee(emp_id)
+

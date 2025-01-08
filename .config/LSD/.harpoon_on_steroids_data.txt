@@ -49,3 +49,4 @@
 /run/media/nico/Nova/git/notarkhit
 /run/media/nico/Nova/git/notarkhit/ez-ffmpeg
 /run/media/nico/Nova/Test
+/home/nico/scripts
