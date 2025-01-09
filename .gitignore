@@ -8,6 +8,9 @@
 !.requirement.txt
 !install_packages.sh
 
+!scripts/
+!scripts/**/*
+
 !other/
 !other/**/*
 
