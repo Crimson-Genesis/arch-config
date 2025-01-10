@@ -120,6 +120,9 @@ bindsym $mod+F3 exec --no-startup-id ~/.config/i3/scripts/screenkey_toggle
 # Color picker
 bindsym $mod+F4 exec --no-startup-id gpick --pick
 
+# Open lxrandr
+bindsym $mod+F5 exec --no-startup-id lxrandr
+
 # start a terminal
 bindsym Mod1+Control+l exec --no-startup-id alacritty
 
@@ -350,7 +353,7 @@ set $ws12 "12:"
 # where you have to replace VGA-0/HDMI-0 with the names for your displays
 # you can get from xrandr command
 #workspace $ws1 output VGA-0
-# workspace $ws2 output HDMI-1
+# workspace $ws1 output HDMI-1
 #workspace $ws3 output HDMI-0
 #workspace $ws4 output HDMI-0
 #workspace $ws5 output HDMI-0
@@ -600,7 +603,7 @@ exec --no-startup-id ~/.config/Thunar/auto_start.sh
 exec --no-startup-id ~/.config/BraveSoftware/auto_start.sh
 exec --no-startup-id ~/.config/alacritty/auto_start.sh
 
-exec --no-startup-id xrandr --output HDMI-1 --same-as eDP-1 --auto        # run xrandr for mirroring the screen to the HDMI-1 port
+# exec --no-startup-id xrandr --output HDMI-1 --same-as eDP-1 --auto        # run xrandr for mirroring the screen to the HDMI-1 port
 # exec --no-startup-id xrandr --output HDMI-1 --right-of eDP-1 --auto
 
 

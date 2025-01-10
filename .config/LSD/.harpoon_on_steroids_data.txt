@@ -50,3 +50,4 @@
 /run/media/nico/Nova/git/notarkhit/ez-ffmpeg
 /run/media/nico/Nova/Test
 /home/nico/scripts
+/run/media/nico/Nova/Lab/Python/Blog_Site
