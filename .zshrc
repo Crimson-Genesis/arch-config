@@ -39,6 +39,7 @@ function config(){
     export LESS="--use-color"
     export GTK_THEME=Materia-dark-compact
     export GTK2_RC_FILES=~/.gtkrc-2.0
+    export CONDA_DEFAULT_ENV="base"
     # export BAT_PAGER="less -FRX"
 
     #Style:
@@ -192,5 +193,9 @@ zsh_alias
 zsh_key_bingings
 
 source ~/.config/zsh-scripts/.zsh_functions
+
+if [[ ! -z $TMUX ]]; then
+    activate_conda
+fi
 
 # zprof
