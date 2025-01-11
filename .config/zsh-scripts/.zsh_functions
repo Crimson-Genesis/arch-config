@@ -1,0 +1,93 @@
+function activate_conda() {
+    source "/home/$USER/anaconda3/etc/profile.d/conda.sh"
+    conda activate
+}
+
+function config_opener(){
+    local config_path=$1
+    local program=$2
+    local session_name=$2
+    (alacritty -e zsh -c "tmux new-session -s '${session_name}' -c ${config_path} '${program}'" &) &>/dev/null
+}
+
+function nconfig(){
+    config_opener "~/.config/nvim" "nvim" "nvim-config"
+}
+
+function note(){
+    config_opener "~/note/" "nvim" "note"
+}
+
+function tls() {
+    active_session="$(tmux list-sessions 2>/dev/null)"
+    if [[ ${#active_session} -ne 0 ]]; then
+        echo "$active_session"
+    else
+        echo "No Session !!!"
+    fi
+}
+
+function quick_tmux_call() {
+    if [[ $# -eq 0 || $1 == "--help" || $1 == "-h" ]]; then
+        echo "-h, --help : Display this help message."
+        echo "\$1 : Name of the tmux session."
+        echo "\$2 : Path to the directory for the session."
+        echo "\$3 : Optional program to start in the session."
+    else
+        local session_name="$1"
+        local dir_path="$2"
+        local program="${3:-}"
+        # Validate session name and directory path
+        if [[ -z "$session_name" || -z "$dir_path" ]]; then
+            echo "Error: Both session name and directory path are required."
+            return 1
+        fi
+        # Check if session already exists
+        if tmux has-session -t "$session_name" 2>/dev/null; then
+            echo "Attaching to existing session '$session_name'."
+            # Attach to the session
+            tmux attach-session -t "$session_name"
+        else
+            # Create a new session in detached mode
+            tmux -u new -s "$session_name" -c "$dir_path" "$program -c 'cd $dir_path'"
+       fi
+    fi
+}
+
+function keymap(){
+    value=$(bindkey | fzf --ansi --reverse --preview="echo {} | awk '{print \$2}' ")
+    if [ ! -z $value ]; then
+        echo $value | awk '{print $2}' | xclip -selection clipboard
+    fi
+}
+
+function yy() {
+    local tmp="$(mktemp -t "yazi-cwd.XXXXXX")"
+    yazi "$@" --cwd-file="$tmp"
+    if cwd="$(cat -- "$tmp")" && [ -n "$cwd" ] && [ "$cwd" != "$PWD" ]; then
+        cd -- "$cwd"
+    fi
+    rm -f -- "$tmp"
+}
+
+function compile(){
+    local file_name=$1
+    local output=$(echo $file_name | awk -F "." '{print $1}')
+    gcc ${file_name} -o ${output}
+}
+
+function tt(){
+    local wordlist=$1
+    local num=$2
+    if [[ "$num" =~ ^[0-9]+ ]]; then
+        if [[ "$wordlist" =~ ^[0-9]+ ]]; then
+            toipe -w top${wordlist} -n ${num}
+        elif [[ "$wordlist" == "cms" ]]; then
+            toipe -w commonly-misspelled -n ${num}
+        else
+            toipe -w ${wordlist} -n ${num}
+        fi
+    else
+        echo "Invalid 2nd parameter."
+    fi
+}

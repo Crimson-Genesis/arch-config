@@ -93,3 +93,6 @@
 
 !.config/kitty/
 !.config/kitty/**/*
+
+!.config/zsh-scripts/
+!.config/zsh-scripts/**/*

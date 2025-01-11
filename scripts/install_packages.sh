@@ -25,7 +25,7 @@ nitrogen bluez bluez-utils brightnessctl feh xorg-xinput blueman xsettingsd thef
 obs-studio xorg-xdpyinfo acpi git tmux grep ripgrep nushell jq kitty go nodejs zoxide viu wezterm picom github-cli mesa-demos intel-media-driver nsxiv grafana bc materia-gtk-theme papirus-icon-theme python-pywal
 xfce4-clipman-plugin blueberry sddm gvfs thunar-volman numactl ark reflector vkd3d man man-pages power-profiles-daemon dunst kdenlive wine man-db wireplumber tree sof-firmware winetricks udisks2 intel-ucode tldr
 cronie nmtui thunar-archive-plugin thunar-media-tags-plugin noto-fonts-emoji evtest ffmpegthumbnailer tumbler lshw php bind net-tools usbutils wireshark-qt wireshark-cli lldb cppcheck valgrind acpi_call gptfdisk
-lxsession baobab composer texlab fd mingw-w64-gcc arandr"
+lxsession baobab composer texlab fd mingw-w64-gcc arandr direnv"
 
 major_package=($major_packages)
 major_package+=("gcc clang libc++ cmake ninja libx11 libxcursor mesa-libgl fontconfig")
@@ -41,7 +41,7 @@ major_package+=("mpv xorg-xwininfo xorg-xrandr")
 major_package+=("zathura zathura-pdf-mupdf")
 
 minimal_packages=("btop" "neovim" "eza" "vim" "fzf" "yazi" "unzip" "wget" "curl" "gzip" "tat" "bash" "zsh" "sh" "fastfetch" "trash-cli" "bat" "ddgr" "brightnessctl" "lazygit" "ntfs-3g" "qt5ct" "git" "tmux"
-                   "grep" "ripgrep" "man-db" "zoxide" "mesa-demos" "bc" "tree" "nmtui" "wireshark-qt" "wireshark-cli" "lxsession" "mingw-w64-gcc")
+                   "grep" "ripgrep" "man-db" "zoxide" "mesa-demos" "bc" "tree" "nmtui" "wireshark-qt" "wireshark-cli" "lxsession" "mingw-w64-gcc" "direnv")
 
 function install_packages(){
     cecho 2 "Installing Packman Packages..."
