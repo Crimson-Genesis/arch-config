@@ -4,6 +4,7 @@
 !.bashrc
 !README.md
 !.Xresources
+!.readthedocs.yaml
 
 !scripts/
 !scripts/**/*
