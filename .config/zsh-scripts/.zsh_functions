@@ -22,7 +22,7 @@ function nconfig(){
 }
 
 function note(){
-    config_opener "~/note/" "nvim" "note"
+    config_opener "~/notes/" "nvim" "note"
 }
 
 function tls() {
