@@ -6,9 +6,9 @@ function acp(){
     else
         git add $3
     fi
-    git commit -m "$1" -m "$(git diff --stat)"
+    git commit -S -m "$1" -m "$(git diff --stat)"
     if [[ -z $2 ]]; then
-        git push -u origin main
+        git push -u origin $(git branch | awk '$1 == "*" {print $2}')
     else
         git push -u origin ${2}
     fi
