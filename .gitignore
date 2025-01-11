@@ -1,12 +1,9 @@
 *
-!setup.sh
 !.gitignore
 !.zshrc
 !.bashrc
 !README.md
 !.Xresources
-!.requirement.txt
-!install_packages.sh
 
 !scripts/
 !scripts/**/*
