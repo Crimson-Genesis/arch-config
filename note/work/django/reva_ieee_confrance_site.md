@@ -71,3 +71,102 @@ or AWS/Heroku for dynamic ones).
 
 If you’d like help with specific parts of this, like a template for the design
 or setup for forms, let me know!
+
+To get started with Django, follow these steps to set up a basic project:
+
+
+
+### 1. **Install Django** If you haven't already, you can install Django using
+`pip`:
+
+```bash pip install django ```
+
+### 2. **Create a Django Project** Once Django is installed, create a new
+Django project:
+
+```bash django-admin startproject ieee_site ```
+
+This will create a new directory called `ieee_site` with the default Django
+structure.
+
+### 3. **Run the Development Server** Navigate to your project directory:
+
+```bash cd ieee_site ```
+
+Then, run the development server:
+
+```bash python manage.py runserver ```
+
+Visit `http://127.0.0.1:8000` in your browser to see the Django welcome page.
+
+### 4. **Create an App** To build your site’s features, create an app within
+your project:
+
+```bash python manage.py startapp conference ```
+
+This will create a `conference` directory within your project.
+
+### 5. **Add the App to Installed Apps** In `ieee_site/settings.py`, add
+`'conference'` to the `INSTALLED_APPS` list:
+
+```python INSTALLED_APPS = [ # other apps 'conference', ] ```
+
+### 6. **Create Models and Migrate** Define the models you need in
+`conference/models.py`, then apply migrations:
+
+```bash python manage.py makemigrations python manage.py migrate ```
+
+### 7. **Set Up Templates** Since you're using `django-bootstrap5`, you can set
+up your templates by creating a `templates` directory in your app and
+configuring it in `settings.py`.
+
+In `settings.py`, add:
+
+```python TEMPLATES = [ { 'BACKEND':
+'django.template.backends.django.DjangoTemplates', 'DIRS': [BASE_DIR /
+    'templates'], # other settings }, ] ```
+
+Now, you can use Bootstrap 5 in your templates by extending the base template
+provided by `django-bootstrap5`.
+
+### 8. **Create Views and URLs** Define views in `conference/views.py` and map
+them to URLs in `conference/urls.py` (you may need to create this file).
+
+In `conference/views.py`:
+
+```python from django.shortcuts import render
+
+def home(request): return render(request, 'home.html') ```
+
+In `conference/urls.py`:
+
+```python from django.urls import path from . import views
+
+urlpatterns = [ path('', views.home, name='home'), ] ```
+
+Then, include these URLs in the main `ieee_site/urls.py`:
+
+```python from django.contrib import admin from django.urls import path,
+include
+
+urlpatterns = [ path('admin/', admin.site.urls), path('',
+                                                      include('conference.urls')),
+               ] ```
+
+### 9. **Create Templates** Create a `home.html` template inside the
+`templates` folder:
+
+```html <!DOCTYPE html> <html lang="en"> <head> <meta charset="UTF-8"> <meta
+name="viewport" content="width=device-width, initial-scale=1.0"> <title>IEEE
+Conference</title> {% load bootstrap5 %} {% bootstrap_css %} </head> <body>
+<div class="container"> <h1>Welcome to the IEEE Conference Site</h1> </div> {%
+bootstrap_js %} </body> </html> ```
+
+### 10. **Run the Server** You can now run the server and visit
+`http://127.0.0.1:8000` to see your site!
+
+```bash python manage.py runserver ```
+
+This will get you started with a simple Django project. You can expand the
+functionality further by adding more models, views, and templates based on your
+needs for the IEEE conference site.

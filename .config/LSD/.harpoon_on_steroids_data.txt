@@ -52,4 +52,5 @@
 /home/nico/scripts
 /run/media/nico/Nova/Lab/Python/Blog_Site
 /home/nico/.config/zsh-scripts
-/run/media/nico/Nova/Lab/Python/reva-ieee-conference-site
+/home/nico/anaconda3/bin
+/run/media/nico/Nova/Lab/Python/reva_ieee_conference

@@ -1,5 +1,5 @@
 {
-   "checksum": "af35e7e37f7ae4b3ade4b66bdaf7cb10",
+   "checksum": "740995167d3e5da32cb69496ada8659f",
    "roots": {
       "bookmark_bar": {
          "children": [  ],
@@ -672,10 +672,32 @@
             "name": "Github YouTube Embed - Online",
             "type": "url",
             "url": "https://githubvideo.com/"
+         }, {
+            "date_added": "13381062916733547",
+            "date_last_used": "0",
+            "guid": "4ef07d8d-ed09-40b0-b7a1-32ad96c3bfe6",
+            "id": "102",
+            "meta_info": {
+               "power_bookmark_meta": ""
+            },
+            "name": "InfiCourses | Download Infinity Of Free Courses",
+            "type": "url",
+            "url": "https://www.inficourses.com/"
+         }, {
+            "date_added": "13381065532308987",
+            "date_last_used": "0",
+            "guid": "7475b320-db3e-491e-af78-7350a59e64b8",
+            "id": "103",
+            "meta_info": {
+               "power_bookmark_meta": ""
+            },
+            "name": "You searched for cybersecurity | FreeCourseSite",
+            "type": "url",
+            "url": "https://freecoursesite.com/?s=cybersecurity"
          } ],
          "date_added": "13369643435090832",
          "date_last_used": "0",
-         "date_modified": "13380753714110044",
+         "date_modified": "13381065532308987",
          "guid": "82b081ec-3dd3-529c-8475-ab6c344590dd",
          "id": "2",
          "name": "Other bookmarks",

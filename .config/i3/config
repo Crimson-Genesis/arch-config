@@ -368,7 +368,7 @@ set $ws12 "12:"
 exec_always xinput set-prop 14 "libinput Natural Scrolling Enabled" 1
 exec_always xinput set-prop 14 "libinput Tapping Enabled" 1
 
-for_window [class="^((?!Alacritty|org.pwmt.zathura|Zathura|Wasistlos|ruffle|mpv|feh|ark|Apvlv|kdenlive|qBittorrent|qbittorrent|Blueberry.py|pavucontrol|Blueman-applet|Xarchiver|xarchiver|nsxiv|Nsxiv| |Navigator|firefox|flameshot|org.wezfurlong.wezterm|yad|Screenkey|Shotwell|kitty|Polkit-gnome-authentication-agent-1|Blueman-manager|Brave-browser|Brave|Navigator|Spotify|Whatsapp-for-linux|Signal|Gimp|obs|matplotlib|Thunar|Xdg-desktop-portal-gtk|vlc).)*$"] move container to workspace $ws10, workspace $ws10
+for_window [class="^((?!Alacritty|Pinentry-gtk|org.pwmt.zathura|Zathura|Wasistlos|ruffle|mpv|feh|ark|Apvlv|kdenlive|qBittorrent|qbittorrent|Blueberry.py|pavucontrol|Blueman-applet|Xarchiver|xarchiver|nsxiv|Nsxiv| |Navigator|firefox|flameshot|org.wezfurlong.wezterm|yad|Screenkey|Shotwell|kitty|Polkit-gnome-authentication-agent-1|Blueman-manager|Brave-browser|Brave|Navigator|Spotify|Whatsapp-for-linux|Signal|Gimp|obs|matplotlib|Thunar|Xdg-desktop-portal-gtk|vlc).)*$"] move container to workspace $ws10, workspace $ws10
 for_window [class="Blueman-manager"] floating enable, resize set 1000 800, move position center
 for_window [class="^.*"] border pixel 0
 
