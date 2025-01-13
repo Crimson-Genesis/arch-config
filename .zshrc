@@ -24,7 +24,7 @@ function config(){
     export SHELL="/usr/bin/zsh"
     export FZF_DEFAULT_OPTS='--bind=alt-k:up,alt-j:down'
     export PAGER='less -FRX'
-    export PATH="/home/$USER/.local/bin:/home/zero/.local/share/gem/ruby/3.0.0/bin:$PATH"
+    export PATH="/home/$USER/anaconda3/bin:/home/$USER/.local/bin:/home/zero/.local/share/gem/ruby/3.0.0/bin:$PATH"
     export PATH="$HOME/.cargo/bin:$PATH"
     export GTK_IM_MODULE=ibus
     export QT_IM_MODULE=ibus
@@ -179,12 +179,13 @@ function zsh_key_bingings(){
 
 # PreExec-Funcitons:
 function preexec() {
-    if [[ "$1" == *"--help"* && "$1" =~ ^(git|docker|mycmd).* ]]; then
-        help=$(command $1 --help 2>/dev/null)
-        [ -n "$help" ] && echo "$help" | less || echo "No help available for $1"
+    if [[ "$1" == *"--help"* ]]; then
+        com=${1%% --help*}
+        $com --help | less || echo "no help available for $1"
         return 0
     fi
 }
+
 
 # zmodload zsh/zprof
 

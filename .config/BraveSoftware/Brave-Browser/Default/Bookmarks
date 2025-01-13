@@ -1,5 +1,5 @@
 {
-   "checksum": "740995167d3e5da32cb69496ada8659f",
+   "checksum": "fea9d42b0c873d3b56ba169356c835da",
    "roots": {
       "bookmark_bar": {
          "children": [  ],
@@ -694,10 +694,32 @@
             "name": "You searched for cybersecurity | FreeCourseSite",
             "type": "url",
             "url": "https://freecoursesite.com/?s=cybersecurity"
+         }, {
+            "date_added": "13381131270789385",
+            "date_last_used": "0",
+            "guid": "6429b5e8-6b94-4b92-a8ee-312322048e70",
+            "id": "105",
+            "meta_info": {
+               "power_bookmark_meta": ""
+            },
+            "name": "Settings - Shortcuts",
+            "type": "url",
+            "url": "chrome://settings/system/shortcuts"
+         }, {
+            "date_added": "13381186734704932",
+            "date_last_used": "0",
+            "guid": "265f0ce0-7253-461e-bad2-27dc06c26df3",
+            "id": "107",
+            "meta_info": {
+               "power_bookmark_meta": ""
+            },
+            "name": "Coding for Enterpreneures is doing Try Doing.",
+            "type": "url",
+            "url": "http://127.0.0.1:8000/about/"
          } ],
          "date_added": "13369643435090832",
          "date_last_used": "0",
-         "date_modified": "13381065532308987",
+         "date_modified": "13381186734704932",
          "guid": "82b081ec-3dd3-529c-8475-ab6c344590dd",
          "id": "2",
          "name": "Other bookmarks",
