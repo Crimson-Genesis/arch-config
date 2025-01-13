@@ -108,6 +108,8 @@ function zsh_alias(){
         alias cp30k="~/.config/LSD/color.sh"
         alias gitacp="bash ~/.config/LSD/gitacp.sh"
         alias j2p="/usr/bin/env bash ~/.config/LSD/jpg_to_png.sh"
+        alias tmux-save="~/.config/tmux/scripts/tmux_resurrect_helper.sh save"
+        alias tmux-restore="~/.config/tmux/scripts/tmux_resurrect_helper.sh restore"
 
         # Other:
             # shortcuts:
