@@ -80,6 +80,8 @@
 !.config/tmux/plugins/
 !.config/tmux/plugins/tokyo-night-tmux/
 !.config/tmux/plugins/tokyo-night-tmux/**/*
+!.config/tmux/themes/
+!.config/tmux/themes/**/*
 
 !.config/BraveSoftware/
 !.config/BraveSoftware/auto_start.sh
