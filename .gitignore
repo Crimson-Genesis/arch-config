@@ -77,9 +77,6 @@
 !.config/tmux/*
 !.config/tmux/scripts/
 !.config/tmux/scripts/**/*
-!.config/tmux/plugins/
-!.config/tmux/plugins/tokyo-night-tmux/
-!.config/tmux/plugins/tokyo-night-tmux/**/*
 !.config/tmux/themes/
 !.config/tmux/themes/**/*
 
