@@ -77,5 +77,3 @@ I love the *[TokyoNight-Theme](https://tokyonight.dev/)* so this are some of whi
 ***I am Still working on some cool scripts for my workflow.***
 
 ---
-
-hello

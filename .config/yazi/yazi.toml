@@ -34,4 +34,5 @@ rules = [
 { name = "*.pdf", use = ["pdf"] },
 { name = "*.html", use = ["html"] },
 { name = "*.mp4", use = ["play"] },
+{ name = "*.webm", use = ["play"] },
 ]
