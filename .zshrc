@@ -90,6 +90,7 @@ function zsh_alias(){
         alias trp="trash-put"
         alias trr="trash-restore"
         alias rm="trash"
+        alias opython="/usr/bin/python3"
         # alias trm="trash-rm"
 
         # Alias-Alias
@@ -110,6 +111,7 @@ function zsh_alias(){
         alias j2p="/usr/bin/env bash ~/.config/LSD/jpg_to_png.sh"
         alias tmux-save="~/.config/tmux/scripts/tmux_resurrect_helper.sh save"
         alias tmux-restore="~/.config/tmux/scripts/tmux_resurrect_helper.sh restore"
+        alias yt_dlq="~/.config/LSD/yt_dlq.sh"
 
         # Other:
             # shortcuts:

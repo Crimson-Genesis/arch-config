@@ -2,7 +2,7 @@
 
 # set -e
 
-exec &> tee log.txt
+exec &> tee /var/log/my_install_script.log
 
 function cecho(){
     local color_code=$1
@@ -25,7 +25,7 @@ nitrogen bluez bluez-utils brightnessctl feh xorg-xinput blueman xsettingsd thef
 obs-studio xorg-xdpyinfo acpi git tmux grep ripgrep nushell jq kitty go nodejs zoxide viu wezterm picom github-cli mesa-demos intel-media-driver nsxiv grafana bc materia-gtk-theme papirus-icon-theme python-pywal
 xfce4-clipman-plugin blueberry sddm gvfs thunar-volman numactl ark reflector vkd3d man man-pages power-profiles-daemon dunst kdenlive wine man-db wireplumber tree sof-firmware winetricks udisks2 intel-ucode tldr
 cronie nmtui thunar-archive-plugin thunar-media-tags-plugin noto-fonts-emoji evtest ffmpegthumbnailer tumbler lshw php bind net-tools usbutils wireshark-qt wireshark-cli lldb cppcheck valgrind acpi_call gptfdisk
-lxsession baobab composer texlab fd mingw-w64-gcc arandr direnv"
+lxsession baobab composer texlab fd mingw-w64-gcc arandr direnv pandoc obsidian os-prober"
 
 major_package=($major_packages)
 major_package+=("gcc clang libc++ cmake ninja libx11 libxcursor mesa-libgl fontconfig")
@@ -41,7 +41,7 @@ major_package+=("mpv xorg-xwininfo xorg-xrandr")
 major_package+=("zathura zathura-pdf-mupdf")
 
 minimal_packages=("btop" "neovim" "eza" "vim" "fzf" "yazi" "unzip" "wget" "curl" "gzip" "tat" "bash" "zsh" "sh" "fastfetch" "trash-cli" "bat" "ddgr" "brightnessctl" "lazygit" "ntfs-3g" "qt5ct" "git" "tmux"
-                   "grep" "ripgrep" "man-db" "zoxide" "mesa-demos" "bc" "tree" "nmtui" "wireshark-qt" "wireshark-cli" "lxsession" "mingw-w64-gcc" "direnv")
+                   "grep" "ripgrep" "man-db" "zoxide" "mesa-demos" "bc" "tree" "nmtui" "wireshark-qt" "wireshark-cli" "lxsession" "mingw-w64-gcc" "direnv" "pandoc" "os-prober")
 
 function install_packages(){
     cecho 2 "Installing Packman Packages..."
@@ -80,13 +80,32 @@ function install_anaconda(){
     wget -P ~/Downloads/ https://repo.anaconda.com/archive/Anaconda3-2024.10-1-Linux-x86_64.sh
     chmod +x ~/Downloads/Anaconda3-2024.06-1-Linux-x86_64.sh
     bash ~/Downloads/Anaconda3-2024.06-1-Linux-x86_64.sh
-     conda init
+    conda init
 }
 
+function setup_git(){
+    git config --global user.email "nico.zero.0x@gmail.com"
+    git config --global user.name "Crimson-Genesis"
+}
+
+function config_git(){
+    cd ~ && mkdir clone
+
+    sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+    git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
+    git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
+    git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ~/powerlevel10k
+}
+
+
 function config_major(){
-    sudo systemctl --user enable pipewire pipewire-pulse wireplumber && sudo systemctl --user start pipewire pipewire-pulse wireplumber
-    sudo systemctl status udisks2
-    sudo grub-mkconfig -o /boot/grub/grub.cfg
+    systemctl --user enable pipewire pipewire-pulse wireplumber && sudo systemctl --user start pipewire pipewire-pulse wireplumber
+    systemctl status udisks2
+    grub-mkconfig -o /boot/grub/grub.cfg
+}
+
+function config_minimal(){
+    install_yay "m"inimal"
 }
 
 function update_system(){

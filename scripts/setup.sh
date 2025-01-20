@@ -92,8 +92,8 @@ function main(){
         rm .zshrc
         git init
         git branch -M main
-        git config --global user.email "zandaxheart955@gmail.com"
-        git config --global user.name "nico-Zero"
+        git config --global user.email "nico.zero.0x@gmail.com"
+        git config --global user.name "Crimson-Genesis"
         git remote add origin git@github.com:nico-Zero/config.git
         git fetch
         git reset origin/main

@@ -295,3 +295,4 @@ in
         echo -e "\033[38;5;1mInvalid command...\033[0m"
         exit
 esac
+

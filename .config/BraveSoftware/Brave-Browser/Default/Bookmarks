@@ -1,5 +1,5 @@
 {
-   "checksum": "fea9d42b0c873d3b56ba169356c835da",
+   "checksum": "50d5a6fb72e2896a748dff58e8142ae9",
    "roots": {
       "bookmark_bar": {
          "children": [  ],
@@ -716,10 +716,21 @@
             "name": "Coding for Enterpreneures is doing Try Doing.",
             "type": "url",
             "url": "http://127.0.0.1:8000/about/"
+         }, {
+            "date_added": "13381366152658078",
+            "date_last_used": "0",
+            "guid": "dead5e29-64fb-4f4f-a3a0-2b9fe215ca5a",
+            "id": "109",
+            "meta_info": {
+               "power_bookmark_meta": ""
+            },
+            "name": "Css Logo SVG Vectors and Icons - SVG Repo",
+            "type": "url",
+            "url": "https://www.svgrepo.com/vectors/css-logo/"
          } ],
          "date_added": "13369643435090832",
          "date_last_used": "0",
-         "date_modified": "13381186734704932",
+         "date_modified": "13381366152658078",
          "guid": "82b081ec-3dd3-529c-8475-ab6c344590dd",
          "id": "2",
          "name": "Other bookmarks",

@@ -1,0 +1,98 @@
+# installing fonts...
+# 1-67" | getnf
+# -------------------------------------------------------------------------------------------------------
+# do all this first...
+# tmux source ~/.config/tmux/tmux.conf (inside tmux)
+# Run <Ctrl-b I> inside tmux.
+# make a shortcut <Alt-Ctrl-l> to Lunch alacritty
+# make a shortcut <Alt-Space> to Lunch rofi (command:- rofi -show drun)
+# Open Nvim and Wait for it to config itself.
+# And then You are all done.
+# Run this command after terminal restart...
+# conda update conda
+# conda install python=3.11
+# conda install build
+# pip install installer
+# pip install jupyterlab-vim
+# pip install neovim
+# pip install PyGObject
+# npm install -g neovim
+# gem install neovim
+# conda install -c conda-forge libstdcxx-ng libffi
+# Add This line (UUID=A232F5EE32F5C6F7 /mnt/Nova ntfs defaults  0  2) in /etc/fstab
+# Add This line (SUBSYSTEM=='backlight', RUN+='/usr/bin/chmod 666 /sys/class/backlight/%k/brightness') in /etc/udev/rules.d/99-backlight.rules
+# run 'sudo udevadm control --reload' and 'sudo udevadm trigger'
+# Restart the terminal.
+# sudo pacman -S dbus libappindicator-gtk3
+# sudo pacman -S xdg-desktop-portal
+# sudo pacman -S ibus
+# sudo pacman -S xscreensaver
+# sudo pacman -S --needed gobject-introspection
+# sudo pacman -S arc-gtk-theme
+# sudo pacman -S pavucontrol
+
+# Dark mode in i3wm.
+# ~/.config/gtk-3.0/settings.ini)
+# [Settings]
+# gtk-theme-name = Materia-dark
+# gtk-icon-theme-name = Papirus-Dark
+# gtk-cursor-theme-name = Jingyuan
+# gtk-cursor-theme-size = 16
+
+# coursor gtk-cursor-theme-name
+# ~/.Xresources
+# Xcursor.theme: Jingyuan
+
+# This is for netural scrolling in i3wm-arch-linux. mouse
+# /etc/X11/xorg.conf.d/40-libinput.conf
+#
+# Section "InputClass"
+#     Identifier "libinput touchpad catchall"
+#     MatchIsTouchpad "on"
+#     Driver "libinput"
+#     Option "Tapping" "on"
+#     Option "NaturalScrolling" "true"  # Optional, if you want natural scrolling
+# EndSection
+# Rorgrongku
+#
+#
+# sudo vim /etc/xdg/reflector/reflector.conf
+# sudo systemctl enable reflector.service reflector.timer
+# sudo systemctl start reflector.service reflector.timer
+#
+# this in /etc/X11/xorg.conf.d/40-libinput.conf
+#    Option "DisableWhileTyping" "off"
+
+# run this to setup dxvk-bin config for wine:-
+# export WINEPREFIX=~/.wine  # Change to your Wine prefix
+# setup_dxvk install
+
+# winetricks directx9
+# winetricks corefonts
+# winetricks vcrun2015
+# winetricks corefonts cjkfonts vcrun2019 dxdx9 dxvk ole32 dotnet35 dotnet48
+# winetricks --force d3d11
+# winetricks --force dxvk
+# winetricks --force vcrun2017
+
+# run this to setup dxvk-bin config for wine:-
+# export WINEPREFIX=~/.wine  # Change to your Wine prefix
+# setup_dxvk install
+#
+# git clone https://github.com/Fumasu/mf-install
+# WINEPREFIX="/home/gaben/.local/share/Steam/steamapps/compatdata/751440/pfx" ./install-mf.sh
+# xwinwrap -fs -ni -s -st -sp -b -nf -ov -- mpv --no-border --wid=%WID --loop /path/to/your/video.mp4
+#
+# grub themes in the /boot/grub/themes/ past the theme here
+# grub default setting in -> /etc/default/grub   # change into this dir to chage the grub settings.\
+# and then run "sudo grub-mkconfig -o /boot/grub/grub.cfg" the command in the terminal after saving the grub file.
+#
+#
+# sudo pacman -Rns $(pacman -Qdtq)
+# to clean up the left overs
+#
+# sudo pacman -S archlinux-keyring
+# sudo pacman-key --refrace-key
+# sudo pacman -Scc
+# sudo modprobe ath9k_htc
+
