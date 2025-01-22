@@ -14,7 +14,6 @@
 /home/nico/.config/BraveSoftware
 /etc/lightdm
 /home/nico/.config/yay
-/home/nico/.config/yazi
 /home/nico/wallpaper
 /home/nico/.config/wezterm
 /run/media/nico/Nova/Lab/Python/curses
@@ -55,3 +54,4 @@
 /home/nico/anaconda3/bin
 /run/media/nico/Nova/Lab/reva_ieee_conference
 /run/media/nico/Nova/other
+/home/nico/.config/yazi

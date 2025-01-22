@@ -25,7 +25,7 @@ if [ ! -z "$status" ]; then
     fi
 
     echo "Changed files:"
-    printf "\033[38;5;2m%s\033[0m\n" $(git diff --name-only)
+    git diff --stat
     read -e -p "message: " message
     read -e -p "Add manully (y|N):- " will_add
 

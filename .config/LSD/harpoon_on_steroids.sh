@@ -123,7 +123,7 @@ in
         exit
         ;;
 
-    gotoS)
+    tmuxselect)
         choices=($(fzf_multi_select "Create Tmux Sessions"))
         choice_count=${#choices[@]}
         if [[ $choice_count -eq 1 ]]; then

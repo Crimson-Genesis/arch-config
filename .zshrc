@@ -151,7 +151,7 @@ function zsh_key_bingings(){
         # Harpoon for terminal:
         bindkey -s '^[a' "bash ~/.config/LSD/harpoon_on_steroids.sh add^M"
         bindkey -s '^[w' "bash ~/.config/LSD/harpoon_on_steroids.sh gotoW^M"
-        bindkey -s '^[s' "bash ~/.config/LSD/harpoon_on_steroids.sh gotoS^M"
+        bindkey -s '^[s' "bash ~/.config/LSD/harpoon_on_steroids.sh tmuxselect^M"
         bindkey -s '^[d' "bash ~/.config/LSD/harpoon_on_steroids.sh deleteline^M"
         bindkey -s '^[k' "bash ~/.config/LSD/harpoon_on_steroids.sh killselect^M"
         bindkey -s '^[C' "bash ~/.config/LSD/harpoon_on_steroids.sh killall^M"

@@ -1,5 +1,5 @@
 {
-   "checksum": "50d5a6fb72e2896a748dff58e8142ae9",
+   "checksum": "6b499f692100df9dbafc08e917b5f75d",
    "roots": {
       "bookmark_bar": {
          "children": [  ],
@@ -727,10 +727,21 @@
             "name": "Css Logo SVG Vectors and Icons - SVG Repo",
             "type": "url",
             "url": "https://www.svgrepo.com/vectors/css-logo/"
+         }, {
+            "date_added": "13381868254453187",
+            "date_last_used": "0",
+            "guid": "daef4932-9fcc-4126-a1dd-fbfdb2d56648",
+            "id": "111",
+            "meta_info": {
+               "power_bookmark_meta": ""
+            },
+            "name": "New Tab",
+            "type": "url",
+            "url": "chrome://newtab/"
          } ],
          "date_added": "13369643435090832",
          "date_last_used": "0",
-         "date_modified": "13381366152658078",
+         "date_modified": "13381868254453187",
          "guid": "82b081ec-3dd3-529c-8475-ab6c344590dd",
          "id": "2",
          "name": "Other bookmarks",
