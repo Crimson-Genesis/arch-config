@@ -20,12 +20,15 @@ function ctrl_c() {
 }
 trap ctrl_c INT
 
-major_packages="alacritty screenkey btop neovim eza vim fzf yazi xclip unzip wget curl gzip tar bash zsh sh firefox nvtop fastfetch glxinfo entr figlet trash-cli bat rofi vlc libreoffice-still ddgr progress polybar
-nitrogen bluez bluez-utils brightnessctl feh xorg-xinput blueman xsettingsd thefuck lazygit conky ntfs-3g qt5ct lxappearance xdotool xorg-xbacklight gucharmap gimp rofi-emoji rofi-calc alsa-utils flameshot luarocks
-obs-studio xorg-xdpyinfo acpi git tmux grep ripgrep nushell jq kitty go nodejs zoxide viu wezterm picom github-cli mesa-demos intel-media-driver nsxiv grafana bc materia-gtk-theme papirus-icon-theme python-pywal
-xfce4-clipman-plugin blueberry sddm gvfs thunar-volman numactl ark reflector vkd3d man man-pages power-profiles-daemon dunst kdenlive wine man-db wireplumber tree sof-firmware winetricks udisks2 intel-ucode tldr
-cronie nmtui thunar-archive-plugin thunar-media-tags-plugin noto-fonts-emoji evtest ffmpegthumbnailer tumbler lshw php bind net-tools usbutils wireshark-qt wireshark-cli lldb cppcheck valgrind acpi_call gptfdisk
-lxsession baobab composer texlab fd mingw-w64-gcc arandr direnv pandoc obsidian os-prober"
+minimal_packages=("btop neovim eza vim fzf yazi unzip wget curl gzip tat bash zsh sh fastfetch trash-cli bat ddgr brightnessctl lazygit ntfs-3g qt5ct git tmux
+                   grep ripgrep man-db zoxide mesa-demos bc tree nmtui wireshark-qt wireshark-cli lxsession mingw-w64-gcc direnv pandoc os-prober cloc")
+
+major_packages="alacritty screenkey xclip firefox nvtop glxinfo entr figlet rofi vlc libreoffice-still progress polybar
+nitrogen bluez bluez-utils feh xorg-xinput blueman xsettingsd conky lxappearance xdotool xorg-xbacklight gucharmap gimp rofi-emoji rofi-calc alsa-utils flameshot luarocks
+obs-studio xorg-xdpyinfo acpi nushell jq kitty go nodejs viu wezterm picom github-cli intel-media-driver nsxiv grafana materia-gtk-theme papirus-icon-theme python-pywal
+xfce4-clipman-plugin blueberry sddm gvfs thunar-volman numactl ark reflector vkd3d man man-pages power-profiles-daemon dunst kdenlive wine wireplumber sof-firmware winetricks udisks2 intel-ucode tldr
+cronie thunar-archive-plugin thunar-media-tags-plugin noto-fonts-emoji evtest ffmpegthumbnailer tumbler lshw php bind net-tools usbutils wireshark-qt lldb cppcheck valgrind acpi_call gptfdisk
+baobab composer texlab fd arandr obsidian"
 
 major_package=($major_packages)
 major_package+=("gcc clang libc++ cmake ninja libx11 libxcursor mesa-libgl fontconfig")
@@ -39,9 +42,7 @@ major_package+=("gvfs gvfs-mtp gvfs-afc")
 major_package+=("cuda cudnn")
 major_package+=("mpv xorg-xwininfo xorg-xrandr")
 major_package+=("zathura zathura-pdf-mupdf")
-
-minimal_packages=("btop" "neovim" "eza" "vim" "fzf" "yazi" "unzip" "wget" "curl" "gzip" "tat" "bash" "zsh" "sh" "fastfetch" "trash-cli" "bat" "ddgr" "brightnessctl" "lazygit" "ntfs-3g" "qt5ct" "git" "tmux"
-                   "grep" "ripgrep" "man-db" "zoxide" "mesa-demos" "bc" "tree" "nmtui" "wireshark-qt" "wireshark-cli" "lxsession" "mingw-w64-gcc" "direnv" "pandoc" "os-prober")
+major_package+=$minimal_packages
 
 function install_packages(){
     cecho 2 "Installing Packman Packages..."
@@ -61,7 +62,7 @@ function install_packages(){
     fi
 }
 
-function install_yay(){
+function setup_yay(){
     read -e -p "Install Yay (Y|n)? " install_yay
     if [ -z $install_yay ] || [ "${install_yay,,}" == "y"]; then
         cecho 2 "Install Yay..."
@@ -88,13 +89,24 @@ function setup_git(){
     git config --global user.name "Crimson-Genesis"
 }
 
-function config_git(){
-    cd ~ && mkdir clone
+function minimal_git_clone(){
+    cd /home/$USER || cd ~
+    mkdir clone && cd clone
+    git clone https://github.com/Crimson-Genesis/nvim
+}
 
+function major_git_clone(){
+    # Post install setup.
+    cd /home/$USER/ || cd ~
     sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
     git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
     git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
     git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ~/powerlevel10k
+
+    mkdir clone && cd clone
+    git clone https://github.com/Crimson-Genesis/arch-config
+    git clone https://github.com/Crimson-Genesis/wallpaper
+    minimal_git_clone
 }
 
 
@@ -105,7 +117,7 @@ function config_major(){
 }
 
 function config_minimal(){
-    install_yay "m"inimal"
+    setup_yay "minimal"
 }
 
 function update_system(){
