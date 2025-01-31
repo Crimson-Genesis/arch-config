@@ -93,6 +93,7 @@ function minimal_git_clone(){
     cd /home/$USER || cd ~
     mkdir clone && cd clone
     git clone https://github.com/Crimson-Genesis/nvim
+    git clone https://github.com/Crimson-Genesis/Notes
 }
 
 function major_git_clone(){

@@ -59,6 +59,7 @@ function config(){
         zsh-autosuggestions
         zsh-syntax-highlighting
         z
+        # zsh-vi-mode
     )
 
     # Source:
@@ -131,6 +132,7 @@ function zsh_alias(){
             alias bb="btop --utf-force"
             alias td="tmux detach"
             alias hnctl="hostnamectl"
+            alias lsl="ls | bat"
 
             # flags or replacement:
             alias cat="bat"
@@ -189,7 +191,6 @@ function preexec() {
         return 0
     fi
 }
-
 
 # zmodload zsh/zprof
 
