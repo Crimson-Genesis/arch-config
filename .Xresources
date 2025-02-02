@@ -1,4 +1,4 @@
 Xcursor.theme: Jingyuan
 Xcursor.size: 16
-Nsxiv.window.background: #000000
-Nsxiv.window.foreground: #ffffff
+Nsxiv.*.background: #000000
+Nsxiv.*.foreground: #ffffff
