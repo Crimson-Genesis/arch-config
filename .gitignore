@@ -94,3 +94,16 @@
 
 !.config/zsh-scripts/
 !.config/zsh-scripts/**/*
+
+!.config/hypr/
+!.config/hypr/**/*
+
+!.config/hyprshot/
+!.config/hyprshot/**/*
+
+!./.config/qt5ct/
+!./.config/qt5ct/**/*
+
+!./.config/qt6ct/
+!./.config/qt6ct/**/*
+

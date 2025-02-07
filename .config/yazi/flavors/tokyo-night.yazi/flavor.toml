@@ -37,9 +37,9 @@ border_style  = { fg = "#414868" }  # Darkened black
 # : Status {{{
 
 [status]
-separator_open  = ""
-separator_close = ""
-separator_style = { fg = "#7aa2f7", bg = "#414868" }  # Blue on Darkened black
+separator_open  = ""
+separator_close = ""
+separator_style = { fg = "#000000", bg = "#7aa2f7" }  # Blue on Darkened black
 
 # Mode
 mode_normal = { fg = "#414868", bg = "#7aa2f7", bold = true }  # Darkened black on Blue

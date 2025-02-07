@@ -3,8 +3,8 @@ function activate_conda() {
     local is_env=$(awk -F/ -v name="$current_dir_name" '$NF == name {print $NF}' ~/.conda/environments.txt )
 
     if [[ ! -z $is_env ]]; then
-        source "/home/$USER/anaconda3/etc/profile.d/conda.sh"
-        conda activate $current_dir_name
+        source "/home/$USER/anaconda3/etc/profile.d/conda.sh" &> /dev/null
+        conda activate $current_dir_name &> /dev/null
     # else
     #     conda activate $CONDA_DEFAULT_ENV
     fi

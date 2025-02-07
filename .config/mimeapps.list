@@ -3,7 +3,7 @@ text/csv=vim.desktop;nvim.desktop;
 video/webm=vlc.desktop;mpv.desktop;
 application/pdf=org.gnome.Papers.desktop;org.pwmt.zathura.desktop;brave-browser.desktop;libreoffice-impress.desktop;krita_pdf.desktop;xreader.desktop;gimp.desktop;libreoffice-draw.desktop;firefox.desktop;apvlv.desktop;
 application/json=nvim.desktop;vim.desktop;Alacritty.desktop;
-video/x-matroska=vlc.desktop;
+video/x-matroska=mpv.desktop;vlc.desktop;
 video/mp4=vlc.desktop;mpv.desktop;
 application/x-desktop=libreoffice-impress.desktop;
 application/zip=org.kde.ark.desktop;
@@ -30,11 +30,13 @@ image/gif=brave-browser.desktop;aseprite.desktop;feh.desktop;
 image/svg+xml=brave-browser.desktop;
 text/x-chdr=Alacritty.desktop;
 application/x-zerosize=nvim.desktop;
+image/png=nsxiv.desktop;swappy.desktop;feh.desktop;org.gnome.Loupe.desktop;
+image/jpeg=feh.desktop;
 
 [Default Applications]
 text/plain=nvim.desktop
-image/jpeg=nsxiv.desktop
-image/png=nsxiv.desktop
+image/jpeg=feh.desktop
+image/png=feh.desktop
 image/gif=nsxiv.desktop
 image/bmp=nsxiv.desktop
 image/tiff=nsxiv.desktop

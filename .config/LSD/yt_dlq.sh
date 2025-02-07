@@ -14,13 +14,13 @@ function main(){
     link_type=$1
     youtube_link=$2
 
-    if [[ $link_type == "playlist" ]]; then
+    if [[ $link_type == "list" ]]; then
         cecho 2 "Starting the download of Playlist ${youtube_link}"
-        yt-dlp -f bestvideo+bestaudio -o '%(playlist_index)s - %(title)s.%(ext)s' ${youtube_link}
+        yt-dlp -f bestvideo+bestaudio -o '%(playlist_index)s - %(title)s.%(ext)s' --merge-output-format mp4 ${youtube_link}
         cecho 2 "Download completed..."
     elif [[ $link_type == "video" ]]; then
         cecho 2 "Starting the download of Video ${youtube_link}"
-        yt-dlp -f bestvideo+bestaudio -o '%(title)s.%(ext)s' ${youtube_link}
+        yt-dlp -f bestvideo+bestaudio -o '%(title)s.%(ext)s' --merge-output-format mp4 ${youtube_link}
         cecho 2 "Download completed..."
     else
         cecho 1 "Invalid download type..."

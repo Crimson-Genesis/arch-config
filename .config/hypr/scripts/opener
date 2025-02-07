@@ -1,0 +1,50 @@
+#!/usr/bin/env bash
+
+function config_opener(){
+    local config_path=$1
+    local program=$2
+    local session_name=$3
+    local title=$4
+    (alacritty -T "$title" -e zsh -c "tmux new-session -s '${session_name}' -c ${config_path} '${program}'" &) &>/dev/null
+}
+
+function tui_opener(){
+    local program=$1
+    local title=$2
+    (alacritty --config-file ~/.config/alacritty/alacritty-floating.toml -T "$title" -e zsh  -c "${program}" &) &>/dev/null
+}
+
+function nconfig(){
+    config_opener "~/.config/nvim" "nvim" "nvim-config"
+}
+
+function note(){
+    config_opener "~/note" "nvim" "note"
+}
+
+function hyprconfig(){
+    config_opener "~/.config/hypr" "nvim" "hypr-config"
+}
+
+function open_nmtui(){
+    tui_opener 'nmtui' 'nmtui'
+}
+
+case "$1"
+in
+    nconfig)
+        nconfig
+        ;;
+    note)
+        note
+        ;;
+    hyprconfig)
+        hyprconfig
+        ;;
+    opennmtui)
+        open_nmtui
+        ;;
+    *)
+        echo -e "\033[38;5;9mInvalid Input\033[0m"
+        ;;
+esac
