@@ -101,9 +101,14 @@
 !.config/hyprshot/
 !.config/hyprshot/**/*
 
-!./.config/qt5ct/
-!./.config/qt5ct/**/*
+!.config/qt5ct/
+!.config/qt5ct/**/*
 
-!./.config/qt6ct/
-!./.config/qt6ct/**/*
+!.config/qt6ct/
+!.config/qt6ct/**/*
 
+!.config/Kvantum/
+!.config/Kvantum/**/*
+
+!.config/waybar/
+!.config/waybar/**/*
