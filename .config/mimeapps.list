@@ -31,7 +31,7 @@ image/svg+xml=brave-browser.desktop;
 text/x-chdr=Alacritty.desktop;
 application/x-zerosize=nvim.desktop;
 image/png=nsxiv.desktop;swappy.desktop;feh.desktop;org.gnome.Loupe.desktop;
-image/jpeg=feh.desktop;
+image/jpeg=swappy.desktop;feh.desktop;
 
 [Default Applications]
 text/plain=nvim.desktop

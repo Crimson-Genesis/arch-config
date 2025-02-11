@@ -55,3 +55,4 @@
 /run/media/nico/Nova/Lab/reva_ieee_conference
 /run/media/nico/Nova/other
 /home/nico/.config/yazi
+/run/media/nico/Nova/Lab/Python/maths_django_site
