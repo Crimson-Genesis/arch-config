@@ -1,5 +1,5 @@
 {
-   "checksum": "6b499f692100df9dbafc08e917b5f75d",
+   "checksum": "0f362612c70933beeaa451dcfdd79823",
    "roots": {
       "bookmark_bar": {
          "children": [  ],
@@ -738,10 +738,21 @@
             "name": "New Tab",
             "type": "url",
             "url": "chrome://newtab/"
+         }, {
+            "date_added": "13384033734401541",
+            "date_last_used": "0",
+            "guid": "33496538-27c1-4dcb-944c-9cc5514137b7",
+            "id": "113",
+            "meta_info": {
+               "power_bookmark_meta": ""
+            },
+            "name": "cppreference.com",
+            "type": "url",
+            "url": "https://en.cppreference.com/w/"
          } ],
          "date_added": "13369643435090832",
          "date_last_used": "0",
-         "date_modified": "13381868254453187",
+         "date_modified": "13384033734401541",
          "guid": "82b081ec-3dd3-529c-8475-ab6c344590dd",
          "id": "2",
          "name": "Other bookmarks",

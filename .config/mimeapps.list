@@ -67,3 +67,4 @@ text/x-chdr=Alacritty.desktop
 application/x-zerosize=nvim.desktop
 x-scheme-handler/terminal=alacritty.desktop
 inode/directory=alacritty-open.desktop
+x-scheme-handler/mailto=brave-browser.desktop
