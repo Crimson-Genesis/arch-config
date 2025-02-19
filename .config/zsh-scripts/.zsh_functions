@@ -80,7 +80,8 @@ function yy() {
 function compile(){
     local file_name=$1
     local output=$(echo $file_name | awk -F "." '{print $1}')
-    gcc ${file_name} -o ${output}
+    shift
+    gcc ${file_name} -o ${output} $@
 }
 
 function tt(){

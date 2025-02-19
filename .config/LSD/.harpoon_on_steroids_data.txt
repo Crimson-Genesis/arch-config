@@ -57,3 +57,4 @@
 /home/nico/.config/yazi
 /run/media/nico/Nova/Lab/Python/maths_django_site
 /run/media/nico/Nova/Lab/c/reva-ds
+/run/media/nico/Nova/Lab/Python/devops
