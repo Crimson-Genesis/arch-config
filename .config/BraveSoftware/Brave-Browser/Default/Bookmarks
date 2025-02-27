@@ -1,5 +1,5 @@
 {
-   "checksum": "3ca65e5caa8c65f893b554aed880fb3b",
+   "checksum": "bd335b143b4174015e13b59aa65abdde",
    "roots": {
       "bookmark_bar": {
          "children": [  ],
@@ -223,7 +223,7 @@
             "url": "https://spamassassin.apache.org/old/"
          }, {
             "date_added": "13371562723293034",
-            "date_last_used": "13383325958285023",
+            "date_last_used": "13384718615412743",
             "guid": "2523e990-e349-41b7-a57d-4c00647e9eb2",
             "id": "31",
             "meta_info": {
@@ -760,10 +760,54 @@
             "name": "Placeit | Create Amazing Mockups, Logos, Videos & Designs",
             "type": "url",
             "url": "https://placeit.net/"
+         }, {
+            "date_added": "13384529362578265",
+            "date_last_used": "0",
+            "guid": "3328b360-521f-4cdf-a8bf-3d2a64ec4f18",
+            "id": "117",
+            "meta_info": {
+               "power_bookmark_meta": ""
+            },
+            "name": "Box Drawing, ‭─ ━ │‬, 128 symbols, Unicode Range: 2500-257F (◕‿◕) SYMBL",
+            "type": "url",
+            "url": "https://symbl.cc/en/unicode/blocks/box-drawing/"
+         }, {
+            "date_added": "13384718839152296",
+            "date_last_used": "0",
+            "guid": "905c1e9b-66d8-4bb8-8aaf-cfee22e4c808",
+            "id": "119",
+            "meta_info": {
+               "power_bookmark_meta": ""
+            },
+            "name": "Watch Solo Leveling Season 2 -Arise from the Shadow- · Miruro",
+            "type": "url",
+            "url": "https://www.miruro.tv/watch?id=176496&ep=1"
+         }, {
+            "date_added": "13385055946418680",
+            "date_last_used": "0",
+            "guid": "ce3c8ce1-3079-4bb5-8280-d5440490ebca",
+            "id": "121",
+            "meta_info": {
+               "power_bookmark_meta": ""
+            },
+            "name": "Similarweb Digital Intelligence: Unlock Your Digital Growth",
+            "type": "url",
+            "url": "https://www.similarweb.com/"
+         }, {
+            "date_added": "13385061722517237",
+            "date_last_used": "0",
+            "guid": "f0ef1039-11fd-4482-9e83-83b96aa91e86",
+            "id": "122",
+            "meta_info": {
+               "power_bookmark_meta": ""
+            },
+            "name": "Looker Studio",
+            "type": "url",
+            "url": "https://lookerstudio.google.com/u/0/"
          } ],
          "date_added": "13369643435090832",
          "date_last_used": "0",
-         "date_modified": "13384398258007010",
+         "date_modified": "13385061722517237",
          "guid": "82b081ec-3dd3-529c-8475-ab6c344590dd",
          "id": "2",
          "name": "Other bookmarks",
