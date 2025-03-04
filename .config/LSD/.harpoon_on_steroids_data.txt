@@ -60,3 +60,4 @@
 /run/media/nico/Nova/Lab/Python/devops
 /home/nico/.config/waybar
 /home/nico/project_x
+/home/nico/.config/mako

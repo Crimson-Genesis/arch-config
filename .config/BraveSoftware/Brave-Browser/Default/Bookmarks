@@ -1,5 +1,5 @@
 {
-   "checksum": "bd335b143b4174015e13b59aa65abdde",
+   "checksum": "28125e8a90f9b96807077f2a4503fbbb",
    "roots": {
       "bookmark_bar": {
          "children": [  ],
@@ -804,10 +804,54 @@
             "name": "Looker Studio",
             "type": "url",
             "url": "https://lookerstudio.google.com/u/0/"
+         }, {
+            "date_added": "13385118847412111",
+            "date_last_used": "0",
+            "guid": "d07de7a0-134c-4d2d-81b0-98748ac4c2ae",
+            "id": "124",
+            "meta_info": {
+               "power_bookmark_meta": ""
+            },
+            "name": "Home | Infosys Springboard",
+            "type": "url",
+            "url": "https://infyspringboard.onwingspan.com/web/en/page/home"
+         }, {
+            "date_added": "13385282905583298",
+            "date_last_used": "0",
+            "guid": "0a7c5642-d891-455a-97a7-31c1008dacb0",
+            "id": "126",
+            "meta_info": {
+               "power_bookmark_meta": ""
+            },
+            "name": "LLVM Cookbook Search On Libgen | Libgen",
+            "type": "url",
+            "url": "https://libgen.mx/s/LLVM%20Cookbook?"
+         }, {
+            "date_added": "13385380275622786",
+            "date_last_used": "0",
+            "guid": "ca89c865-3739-41db-9fbd-b70d4df60976",
+            "id": "128",
+            "meta_info": {
+               "power_bookmark_meta": ""
+            },
+            "name": "Ground News",
+            "type": "url",
+            "url": "https://ground.news/"
+         }, {
+            "date_added": "13385388216414540",
+            "date_last_used": "0",
+            "guid": "a5813d9a-cbea-4055-87b1-49dbe6ea334b",
+            "id": "129",
+            "meta_info": {
+               "power_bookmark_meta": ""
+            },
+            "name": "runner-images/images/ubuntu/Ubuntu2404-Readme.md at main · actions/runner-images",
+            "type": "url",
+            "url": "https://github.com/actions/runner-images/blob/main/images/ubuntu/Ubuntu2404-Readme.md"
          } ],
          "date_added": "13369643435090832",
          "date_last_used": "0",
-         "date_modified": "13385061722517237",
+         "date_modified": "13385388216414540",
          "guid": "82b081ec-3dd3-529c-8475-ab6c344590dd",
          "id": "2",
          "name": "Other bookmarks",
