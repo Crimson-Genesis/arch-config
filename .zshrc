@@ -42,6 +42,10 @@ function config(){
     export GTK2_RC_FILES=~/.gtkrc-2.0
     export CONDA_DEFAULT_ENV="base"
     # export BAT_PAGER="less -FRX"
+    export DXVK_HUD=full
+    export WINEPREFIX=~/.wine64
+    export WINEARCH=win64 winecfg
+    # export DXVK_LOG_LEVEL=info
 
     #Style:
     zstyle ':completion:*' verbose true

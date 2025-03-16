@@ -1,5 +1,5 @@
 {
-   "checksum": "28125e8a90f9b96807077f2a4503fbbb",
+   "checksum": "01439e2694cd041fbbcd422a928becbd",
    "roots": {
       "bookmark_bar": {
          "children": [  ],
@@ -848,10 +848,43 @@
             "name": "runner-images/images/ubuntu/Ubuntu2404-Readme.md at main · actions/runner-images",
             "type": "url",
             "url": "https://github.com/actions/runner-images/blob/main/images/ubuntu/Ubuntu2404-Readme.md"
+         }, {
+            "date_added": "13385615017685715",
+            "date_last_used": "0",
+            "guid": "44540872-2953-4c58-9ec1-dbb2ff880ae7",
+            "id": "131",
+            "meta_info": {
+               "power_bookmark_meta": ""
+            },
+            "name": "Test My Skills",
+            "type": "url",
+            "url": "https://app.testmyskills.ai/"
+         }, {
+            "date_added": "13386177709348141",
+            "date_last_used": "0",
+            "guid": "4156a8d6-23dd-49cb-ab76-89951550cae3",
+            "id": "133",
+            "meta_info": {
+               "power_bookmark_meta": ""
+            },
+            "name": "Archived Problems - Project Euler",
+            "type": "url",
+            "url": "https://projecteuler.net/archives"
+         }, {
+            "date_added": "13386305095537901",
+            "date_last_used": "0",
+            "guid": "5c99f2d6-d786-4109-829d-e30e393eadc8",
+            "id": "135",
+            "meta_info": {
+               "power_bookmark_meta": ""
+            },
+            "name": "Exploit Database - Exploits for Penetration Testers, Researchers, and Ethical Hackers",
+            "type": "url",
+            "url": "https://www.exploit-db.com/"
          } ],
          "date_added": "13369643435090832",
          "date_last_used": "0",
-         "date_modified": "13385388216414540",
+         "date_modified": "13386305095537901",
          "guid": "82b081ec-3dd3-529c-8475-ab6c344590dd",
          "id": "2",
          "name": "Other bookmarks",
