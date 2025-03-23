@@ -46,6 +46,12 @@ function config(){
     export WINEPREFIX=~/.wine64
     export WINEARCH=win64 winecfg
     # export DXVK_LOG_LEVEL=info
+    export QT_QPA_PLATFORM=xcb
+    # export QT_QPA_PLATFORM=wayland
+    export QT_QPA_PLATFORMTHEME=qt5ct
+    export QT_WAYLAND_DISABLE_WINDOWDECORATION=1  # Disable extra borders in some apps
+    export QT_QPA_ENABLE_PLATFORMAUXBUFFERS=1     # Fix rendering issues in some cases
+
 
     #Style:
     zstyle ':completion:*' verbose true

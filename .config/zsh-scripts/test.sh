@@ -1,14 +1,11 @@
-function activate_conda() {
-    source "/home/$USER/anaconda3/etc/profile.d/conda.sh"
-
-    local current_dir_name=$(basename "$PWD")
-    local is_env=$(awk -F/ -v name="$current_dir_name" '$NF == name {print $NF}' ~/.conda/environments.txt )
-
-    if [[ ! -z $is_env ]]; then
-        conda activate $current_dir_name
-    else
-        conda activate $CONDA_DEFAULT_ENV
+function mirror(){
+    if [[ 'on' == $1 ]]; then
+        # hyprctl keyword monitor "eDP-1, 1920x1080@30, auto, 1, mirror, HDMI-A-1"
+        echo 'on'
+    elif [[ 'off' == $1 ]]; then
+        # hyprctl keyword monitor "HDMI-A-1, disable"
+        echo 'off'
+    else 
+        echo 'Invalid Value.'
     fi
 }
-
-activate_conda

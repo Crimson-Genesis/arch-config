@@ -64,3 +64,4 @@
 /run/media/nico/Nova/Lab/golang/hackthon_ride_share
 /run/media/nico/Nova/Lab/c/placement_traning
 /run/media/nico/Nova/ctf-site/ctf-site/algorift
+/run/media/nico/Nova/Lab/Python/unit_4

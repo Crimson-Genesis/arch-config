@@ -99,3 +99,29 @@ function tt(){
         echo "Invalid 2nd parameter."
     fi
 }
+
+function mirror() {
+    case "$1" in
+        on)
+            echo 'Turning Mirror on...'
+            hyprctl keyword monitor "eDP-1, 1920x1080@30, auto, 1, mirror, HDMI-A-1"
+            ;;
+        off)
+            echo 'Turning Mirror off...'
+            hyprctl keyword monitor "eDP-1, 1920x1080@60, auto, 1"
+            hyprctl keyword monitor "HDMI-A-1, 1920x1080@60, auto, 1"
+            ;;
+        *)
+            echo "Usage: mirror {on|off}"
+            ;;
+    esac
+}
+
+function start_droidcam(){
+    sudo kill -9 1640 2634 31438
+    sudo fuser -k /dev/video0
+    sudo modprobe -r v4l2loopback
+    sudo modprobe v4l2loopback devices=1 video_nr=0 card_label="DroidCam" exclusive_caps=1
+    pkill droidcam
+    droidcam
+}

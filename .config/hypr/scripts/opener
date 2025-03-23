@@ -26,6 +26,10 @@ function hyprconfig(){
     config_opener "~/.config/hypr" "nvim" "hypr-config"
 }
 
+function exovita_doc(){
+    config_opener "/run/media/nico/Nova/ctf-site/Documentation" "nvim" "exovita-doc"
+}
+
 function open_nmtui(){
     tui_opener 'nmtui' 'nmtui'
 }
@@ -43,6 +47,9 @@ in
         ;;
     opennmtui)
         open_nmtui
+        ;;
+    exovitadoc)
+        exovita_doc
         ;;
     *)
         echo -e "\033[38;5;9mInvalid Input\033[0m"
