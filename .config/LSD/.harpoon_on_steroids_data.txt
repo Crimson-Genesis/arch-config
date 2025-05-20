@@ -65,3 +65,16 @@
 /run/media/nico/Nova/Lab/c/placement_traning
 /run/media/nico/Nova/ctf-site/ctf-site/algorift
 /run/media/nico/Nova/Lab/Python/unit_4
+/home/nico/.config/presenterm
+/etc/default
+/run/media/nico/Nova/Lab/Python/django_sde
+/run/media/nico/Nova/Lab/Python/django_sde/other
+/run/media/nico/Nova/ai_model/text-generation-webui
+/run/media/nico/Nova/ai_model/text-generation-webui/models
+/run/media/nico/Nova/Lab/Rust/learn-to-code-with-rust
+/run/media/nico/Nova/games/Factorio/bin/x64
+/home/nico/.wine64/drive_c/users/nico/AppData/Roaming/Factorio/mods
+/run/media/nico/Nova/Lab/Python/reva_class/sem2/ml
+/run/media/nico/Nova/Lab/Python/reva_class/sem2/java
+/run/media/nico/Nova/Lab/Python/reva_class/sem2/web
+/run/media/nico/Nova/Lab/cpp

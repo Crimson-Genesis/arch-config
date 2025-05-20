@@ -80,8 +80,13 @@ function yy() {
 function compile(){
     local file_name=$1
     local output=$(echo $file_name | awk -F "." '{print $1}')
+    local file_type=$(echo $file_name | awk -F "." '{print $2}')
     shift
-    gcc ${file_name} -o ${output} $@
+    if [[ "$file_type" == "c" ]]; then
+        gcc ${file_name} -o ${output} -lm $@
+    elif [[ "$file_type" == "cpp" ]]; then
+        g++ ${file_name} -o ${output} -lm $@
+    fi
 }
 
 function tt(){

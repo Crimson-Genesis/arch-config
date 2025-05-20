@@ -1,12 +1,12 @@
 [Added Associations]
 text/csv=vim.desktop;nvim.desktop;
 video/webm=vlc.desktop;mpv.desktop;
-application/pdf=org.gnome.Papers.desktop;org.pwmt.zathura.desktop;brave-browser.desktop;libreoffice-impress.desktop;krita_pdf.desktop;xreader.desktop;gimp.desktop;libreoffice-draw.desktop;firefox.desktop;apvlv.desktop;
+application/pdf=org.pwmt.zathura.desktop;libreoffice-draw.desktop;org.gnome.Papers.desktop;brave-browser.desktop;libreoffice-impress.desktop;krita_pdf.desktop;xreader.desktop;gimp.desktop;firefox.desktop;apvlv.desktop;
 application/json=nvim.desktop;vim.desktop;Alacritty.desktop;
 video/x-matroska=mpv.desktop;vlc.desktop;
 video/mp4=vlc.desktop;mpv.desktop;
 application/x-desktop=libreoffice-impress.desktop;
-application/zip=org.kde.ark.desktop;
+application/zip=peazip.desktop;brave-browser.desktop;org.kde.ark.desktop;
 application/x-pak=wine-extension-lz.desktop;wine-Programs-7-Zip-7-Zip File Manager.desktop;org.kde.ark.desktop;nvim.desktop;
 application/vnd.adobe.flash.movie=vlc.desktop;mpv.desktop;brave-browser.desktop;firefox.desktop;rs.ruffle.Ruffle.desktop;
 application/xml=vim.desktop;rs.ruffle.Ruffle.desktop;
@@ -32,6 +32,7 @@ text/x-chdr=Alacritty.desktop;
 application/x-zerosize=nvim.desktop;
 image/png=nsxiv.desktop;swappy.desktop;feh.desktop;org.gnome.Loupe.desktop;
 image/jpeg=swappy.desktop;feh.desktop;
+application/vnd.microsoft.portable-executable=wine.desktop;
 
 [Default Applications]
 text/plain=nvim.desktop

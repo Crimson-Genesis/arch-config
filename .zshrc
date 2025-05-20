@@ -51,6 +51,9 @@ function config(){
     export QT_QPA_PLATFORMTHEME=qt5ct
     export QT_WAYLAND_DISABLE_WINDOWDECORATION=1  # Disable extra borders in some apps
     export QT_QPA_ENABLE_PLATFORMAUXBUFFERS=1     # Fix rendering issues in some cases
+    export JAVA_HOME=/usr/lib/jvm/java-17-openjdk
+    export PATH=$JAVA_HOME/bin:$PATH
+
 
 
     #Style:
