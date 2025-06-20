@@ -53,7 +53,7 @@ function config(){
     export QT_QPA_ENABLE_PLATFORMAUXBUFFERS=1     # Fix rendering issues in some cases
     export JAVA_HOME=/usr/lib/jvm/java-17-openjdk
     export PATH=$JAVA_HOME/bin:$PATH
-
+    export JAVA_HOME=/usr/lib/jvm/java-24-openjdk
 
 
     #Style:
