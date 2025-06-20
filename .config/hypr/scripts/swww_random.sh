@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-WALLPAPER_DIR="/run/media/nico/Nova/wallpaper/wallpapers-main/"
+WALLPAPER_DIR="/run/media/nico/nova/wallpaper/wallpapers-main/"
 
 # Get a random wallpaper that is not the current one
 WALLPAPER=$(find "$WALLPAPER_DIR" -type f | shuf -n 1)

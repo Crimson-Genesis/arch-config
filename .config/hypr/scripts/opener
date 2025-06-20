@@ -27,7 +27,7 @@ function hyprconfig(){
 }
 
 function exovita_doc(){
-    config_opener "/run/media/nico/Nova/ctf-site/Documentation" "nvim" "exovita-doc"
+    config_opener "/run/media/nico/nova/ctf-site/Documentation" "nvim" "exovita-doc"
 }
 
 function open_nmtui(){

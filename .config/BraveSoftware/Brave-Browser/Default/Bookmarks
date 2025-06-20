@@ -1,5 +1,5 @@
 {
-   "checksum": "3578ee430eabf4245a4e75f90875f7a2",
+   "checksum": "05e210167afa8549cbe020dbe6ea83ef",
    "roots": {
       "bookmark_bar": {
          "children": [  ],
@@ -223,7 +223,7 @@
             "url": "https://spamassassin.apache.org/old/"
          }, {
             "date_added": "13371562723293034",
-            "date_last_used": "13384718615412743",
+            "date_last_used": "0",
             "guid": "2523e990-e349-41b7-a57d-4c00647e9eb2",
             "id": "31",
             "meta_info": {
@@ -892,10 +892,140 @@
             "name": "YTS: The Official Home of YIFY Movies Download",
             "type": "url",
             "url": "https://unblocked.watch/rarbg/"
+         }, {
+            "date_added": "13394120340669990",
+            "date_last_used": "0",
+            "guid": "1a2ee310-7b97-472d-bf26-3befbb7d0a17",
+            "id": "139",
+            "meta_info": {
+               "power_bookmark_meta": ""
+            },
+            "name": "Anara | Faster research",
+            "type": "url",
+            "url": "https://anara.com/new?checkDevice=true"
+         }, {
+            "children": [ {
+               "date_added": "13394122879912793",
+               "date_last_used": "13394609683239412",
+               "guid": "988c45c6-36a1-488d-abe7-d99fcf2748d8",
+               "id": "140",
+               "meta_info": {
+                  "power_bookmark_meta": ""
+               },
+               "name": "Ai2 PaperFinder",
+               "type": "url",
+               "url": "https://paperfinder.allen.ai/chat?code=5TwgUgA6JlsxXrRitNz14XCDoJsZrfi5XQ9cXhPu1tPTB&state=Lkt1bWVYcVJMYms3LmVodkxXNHJjMlJnNFd2M3U5eExKUGo3YlB%2Bdm5pNQ%3D%3D"
+            }, {
+               "date_added": "13394123915544904",
+               "date_last_used": "0",
+               "guid": "9570e095-b93d-4b80-bc0a-b26596ad71f1",
+               "id": "142",
+               "meta_info": {
+                  "power_bookmark_meta": ""
+               },
+               "name": "Ai2 ScholarQA",
+               "type": "url",
+               "url": "https://ai2-scholar-qa.allen.ai/"
+            }, {
+               "date_added": "13394124547496762",
+               "date_last_used": "13394605241806772",
+               "guid": "de7efaa2-0f15-44fc-b06d-e25a590416c5",
+               "id": "143",
+               "meta_info": {
+                  "power_bookmark_meta": ""
+               },
+               "name": "Semantic Scholar | AI-Powered Research Tool",
+               "type": "url",
+               "url": "https://www.semanticscholar.org/"
+            }, {
+               "date_added": "13394125341288550",
+               "date_last_used": "13394126041921480",
+               "guid": "39f7edd7-109e-43c1-b645-7c243efa9554",
+               "id": "144",
+               "meta_info": {
+                  "power_bookmark_meta": ""
+               },
+               "name": "New Conversation",
+               "type": "url",
+               "url": "https://storm.genie.stanford.edu/"
+            }, {
+               "date_added": "13394125575701310",
+               "date_last_used": "13394174652272371",
+               "guid": "6e005eaa-bfce-4f6e-8efc-3fc7bbdbc73a",
+               "id": "146",
+               "meta_info": {
+                  "power_bookmark_meta": ""
+               },
+               "name": "NotebookLM",
+               "type": "url",
+               "url": "https://notebooklm.google.com/"
+            }, {
+               "date_added": "13394126414729169",
+               "date_last_used": "0",
+               "guid": "9a1f3381-1238-40e9-903a-9acf8b94c8ac",
+               "id": "147",
+               "meta_info": {
+                  "power_bookmark_meta": ""
+               },
+               "name": "Research Rabbit",
+               "type": "url",
+               "url": "https://researchrabbitapp.com/home"
+            }, {
+               "date_added": "13394126889804566",
+               "date_last_used": "13394609525657377",
+               "guid": "c856532d-5a4d-4a73-9c19-ee0346a501fe",
+               "id": "148",
+               "meta_info": {
+                  "power_bookmark_meta": ""
+               },
+               "name": "Elicit: The AI Research Assistant",
+               "type": "url",
+               "url": "https://elicit.com/"
+            }, {
+               "date_added": "13394127081213422",
+               "date_last_used": "13394609351042113",
+               "guid": "ceb64eac-a230-431b-b2fc-e2073bddde6d",
+               "id": "149",
+               "meta_info": {
+                  "power_bookmark_meta": ""
+               },
+               "name": "Tavarageri, 2021",
+               "type": "url",
+               "url": "https://app.litmaps.com/map/cfb7dce7-d5d1-4acf-9b52-08c91b2d954a/explore"
+            }, {
+               "date_added": "13394128451817050",
+               "date_last_used": "13394609534045659",
+               "guid": "93f7448a-bedc-416e-bdf0-fb92185cc0f6",
+               "id": "150",
+               "meta_info": {
+                  "power_bookmark_meta": ""
+               },
+               "name": "Connected Papers | Find and explore academic papers",
+               "type": "url",
+               "url": "https://www.connectedpapers.com/"
+            }, {
+               "date_added": "13394606463984340",
+               "date_last_used": "0",
+               "guid": "f69f2efa-c87c-4e08-a1fd-96bdc4a6f734",
+               "id": "152",
+               "meta_info": {
+                  "power_bookmark_meta": ""
+               },
+               "name": "ASCIIFlow",
+               "type": "url",
+               "url": "https://asciiflow.com/#/"
+            } ],
+            "date_added": "13394122919575727",
+            "date_last_used": "0",
+            "date_modified": "13394606463984340",
+            "guid": "ff4c2e23-1f2d-41a9-ad5b-6cc0370bcce7",
+            "id": "141",
+            "name": "Ai-websites",
+            "type": "folder"
          } ],
          "date_added": "13369643435090832",
          "date_last_used": "0",
-         "date_modified": "13387119185764596",
+         "date_modified": "13394122879912793",
          "guid": "82b081ec-3dd3-529c-8475-ab6c344590dd",
          "id": "2",
          "name": "Other bookmarks",
