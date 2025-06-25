@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-if [[ -z "$1" ]] || [[ -z "$2" ]]; then
+if [[ -z "$1" ]]; then
     exit
 fi
 
@@ -12,7 +12,7 @@ function cecho(){
 
 function main(){
     link_type=$1
-    youtube_link=$2
+    read -e -p "Youtube Link:- " youtube_link
 
     if [[ $link_type == "list" ]]; then
         cecho 2 "Starting the download of Playlist ${youtube_link}"

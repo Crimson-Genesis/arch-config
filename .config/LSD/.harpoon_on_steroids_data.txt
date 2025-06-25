@@ -79,3 +79,5 @@
 /run/media/nico/nova/Lab/Python/reva_class/sem2/web
 /run/media/nico/nova/Lab/cpp
 /run/media/nico/nova/Lab/ml_k
+/run/media/nico/nova/anime
+/run/media/nico/nova/manga
