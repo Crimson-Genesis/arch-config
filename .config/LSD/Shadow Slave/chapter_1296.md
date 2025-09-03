@@ -1,0 +1,35 @@
+
+# Chapter 1296
+
+
+---
+
+Sunny was not sure that he was buying what Ananke believed … but at the same time , he couldn't completely discard it . 'Damn Weaver … '
+Just why did the creator of the Spell have to be a nebulous and elusive creature — not only surrounded in mystery , but also obsessed with lies ? Could there be anyone more untrustworthy ? Even though Sunny had inherited Weaver's forbidden Lineage , wore Weaver's Mask , and had a high affinity to fate , which was Weaver's Domain … he still knew close to nothing about the Demon of Fate .
+Where had Weaver come from ? Who hid behind the fearsome black mask ? What motives had guided them ? What goals had they pursued ?
+He shook his head with resignation and looked at Ananke , frowning .
+'Whatever . If I can't learn about Weaver , I should at least learn everything else . '
+Sunny collected his thoughts before asking the next question . " Grandmother , you said that the purpose of the Nightmare Spell is to save the future from the doom of the great war between the daemons and the gods . To be honest … I am not entirely sure what that really means . What exactly is that doom ? What made the war so terrible ?"
+The old woman gazed at the flowing expanse of the Great River , lingered for a moment , and sighed . " It was indeed terrible . Of course , I have not experienced the horror of those days myself . What I do know was passed down to me from my elders , who had … granted , they escaped the war before the end came , so even they didn't know how and why the true devastation happened ."
+She paused to catch her breath , then continued in her creaky voice :
+" No one really knows what resentment pushed the daemons to rise against the gods . It happened soon after the Demon of Desire escaped her chains . The youngest among them , the Demon of Destiny , called upon his siblings to wage war against the heavens … five answered his call , and only the Demon of Fate refused ."
+Ananke moved the steering oar a little , her frail hand as dark as the polished wood . " Many blamed the daemons for everything terrible that happened . But , truly , things weren't going well long before their rebellion . Most of the gods had grown … distant , and people quarrelled with each other , forgetting the days when everything stood Her cloudy eyes were distant , as if the old woman was imagining the wide world that she had never seen or known . She slowly shook her head . together against the Corruption . Humans fought against humans , and against other noble creatures . Followers of War burned the temples of Shadow , and their empire spread , consuming many weaker realms ." Her cloudy eyes were distant , as if the old woman was imagining the wide world that she had never seen or known . She slowly shook her head . " So , maybe , the great war was merely the result , and not the cause of the end . In any case , the six Demons assembled vast armies and led them against the gods . What was different about that war … was that they were not immediately defeated . After all , there were many lesser deities , but none of them were as feared as the daemons — let alone if six of them united . Others joined their cause , and even the great gods couldn't defeat such an enemy with ease ."
+The old woman trembled .
+" The war was furious and merciless . Many realms had become battlefields and were devoured by flames . But … the worst was still to come . Because instead of coming to a conclusion , the war only continued to grow fiercer . Those loyal to the gods took up arms , and in response , the Demons recruited more allies — mortal champions who had suffered the tyranny of the Empire , ancient creatures that had been banished into the darkest corners of the Underworld , and everyone else who bore deep grudges against the divine … even the harrowing nephilim . Utter madness was unleashed , and soon , there was no place untouched by the war . Everywhere turned into the battlefield ."
+Ananke glanced at the flowing waters of the Great River and remained silent for a while . Eventually , she said :
+" Nowhere was safe . The forests burned , the fields turned to deserts , the rivers dried up . A passing blow from the fighting deities could destroy entire cities . Over time , countless humans were displaced or lost their lives . That was when we started calling it the Doom War , believing that it would become the end of everything … it was also when Weaver created the Nightmare Spell , and gifted it to us mortals ."
+Sunny suddenly remembered the Forgotten Shore , and the ruin that had befallen that land when the shining figure fell from the sky . Was that radiant creature one of the soldiers in the dreadful war between the six daemons and the six gods ? Was it , perhaps , one of the nephilim ?
+Or … an actual angel ?
+If what had happened on the Forgotten Shore was happening all across the Dream Realm , then it was no surprise that the ancient humans there saw it as the end of the world . Ananke sighed . " Weaver offered us a path to salvation , but … back then , the Demon of Fate was despised by all — the followers of the gods , the followers of the daemons , and even those who did not want anything to do with the war . We , the priests of the Nightmare Spell , were despised as well . Few listened to us … still , some did . The Nightmare Spell was alluring , after all , even in its infant state ."
+Sunny tilted his head . "... Alluring ?"
+The old woman nodded . " Of course ! It gave its carriers so many abilities . The ability to possess Memories and Echoes , the ability to instantly be able to enter your Soul Sea , awaken your Aspect , be guided on the path of Ascension … the Nightmare Spell promised people who desperately wished for power means to defend themselves ."
+'Huh … '
+So , Weaver was not only the most insidious Demon , but also a devious salesman . The Nightmare Spell was packed with all kinds of boons that desperate people would find irresistible — boons that the humans of the waking world took for granted , since they had nothing to compare them to . No wonder the Spell spread like a plague despite the contemptible reputation of its creator .
+" So , what happened then ?"
+Ananke lingered for a moment . " The priests of the Nightmare Spell helped it spread , trying their best to bestow its gifts on new carriers . That … was when my elders entered the Tomb of Ariel . We never learned what happened after we left . The war must have turned even more harrowing , somehow , and neither side emerged victorious . Instead , everyone was destroyed . Even the gods perished ."
+She hesitated .
+"... I heard that more Outsiders appeared after the voices of the gods grew silent . Maybe they brought news to the Tomb of Ariel . But by then , we were already chased far upstream , so we never met them ." The old woman's voice grew wistful as she said :
+" By now , most of them must have been consumed by the Defilement . My Lord … perhaps you can learn more if you speak to Dusk of Fallen Grace . She is one of the sybils , after all . She must know more than a humble exile like me does …"
+
+---
+

@@ -1,0 +1,41 @@
+
+# Chapter 2153
+
+
+---
+
+After the dinner with the Esteemed Temporary Governor , the dome did not seem orderly and neat to Jest anymore . Instead , it looked morbid and revolting . Back there in the opulent room , the amicable tyrant had eagerly explained his unhinged views to the members of Warden's team … rather , he had complained about his hardships to fellow Awakened , not even bothering to check if they shared his delusion .
+As if it was a matter of course . What the Esteemed Temporary Governor believed … in short , it was that only Awakened were real people , and therefore deserved to be treated as such . With the descent of the Nightmare Spell , humanity was separated into two distinct groups — those who had been chosen by the Spell , and those whom it ignored . The first group was stronger , faster , and more resilient . Awakened possessed mystical powers , and were given deadly trials to prove their worth . Naturally , it was only to be expected that they would play a greater role in society going forward , and would earn greater privileges as a result . However , the damn maniac had taken it to a whole other level . He seemed to consider being chosen by the Spell as the will of Heaven , anointing the Awakened as true inheritors of Earth . Awakened were holy … and therefore , those not chosen by the Spell were wicked . They were mere beasts who walked through their lives asleep , unable of real emotions or rational thought , clumsily imitating human behavior . It was only right to treat them as cattle — or dispose of them if they outlived their use .
+At least that was what the Governor believed . It was unclear if his soldiers shared in this demented belief or simply followed his whims because their abuse of the mundane population went unpunished under his rule . There was indeed order and safety … but it was not because people were united in the task of maintaining the dome . Instead , it was because people were treated as slaves , and anyone who failed to accomplish the tasks given to them by the Awakened were cruelly punished , or outright killed . Warden's expression was stiff as they walked to their accommodations . Eventually , he said :
+" I … knew it was going to be bad . But I didn't think that it would get this bad , this fast ."
+Jest looked at him . " Who's the optimist now , huh ?"
+Warden just stared back blankly . Jest sighed . " Well , it doesn't matter . None of our people is in this dome , anyway — we'll need to cross over to other domes if we want to get to them ."
+It was not that surprising , really . The Governor did take his views way too far , but he was definitely not the only member of the nascent Awakened supremacy movement . It was only natural that there would be some who saw Awakened as inherently different and innately superior beings when compared to ordinary humans . It was also not that rare to see people get all kinds of weird ideas about the Nightmare Spell , seeing it as some kind of divine intervention . There were at least a dozen odd cults spreading in NQSC , growing in numbers and developing extremist tendencies at a rapid pace .
+And that was just what crazy people did . There were also those who were quite sane , but callously exploited the lunacy of others with malicious intent . It was a proper mess . Warden's expression darkened , but he did not say anything else . … For a while . In the morning , after they had witnessed more of how atrociously mundane people were treated inside the dome , Warden called out for Jest quietly . To be fair , by then , even Jest himself was a little pale . He had even left his breakfast untouched , feeling sick to his stomach at the sight of the lavish meal .
+That was probably the first time Jest had neglected free food . Warden looked at him for a while , then said evenly :
+" About what you said . That we should just move on to the next dome ."
+" What if I don't want to ?"
+Jest raised an eyebrow . " Yeah ?"
+Warden lingered for a moment . " What if I don't want to ?"
+He frowned , then added slowly :
+" What if I want to start working on that … obvious solution … right now ? Won't I need to eliminate competition if I want to become one of the eventual rulers of humanity ?"
+Jest smiled . It seemed to him like the order was reversed … what Warden really wanted was for the trash like the Esteemed Temporary Governor to be eliminated , and since no one else was cleaning the streets , he had no choice but to become the garbage disposal specialist himself . So that his son could grow up in a cleaner world . Jest shrugged . " Then , the Esteemed Governor will have to die ."
+Warden's expression changed , becoming colder and more dangerous than before . Eventually , he said indifferently :
+" We can't kill him without justification , though ."
+Jest laughed . " Can't we ? Well , leave that to me . If he attacks me first , we'll be justified in defending ourselves , won't we ? Ah , but make no mistake . It won't be just the Governor … his people are just as guilty , and they won't be happy to see their own justification disappear . In fact , they'll quickly appoint a new figurehead and continue perpetrating monstrous acts with impunity ."
+Warden looked at him darkly . " Haven't we gotten pretty good at killing monsters , though ?"
+Jest smiled . " That we did …"
+The Warden remained silent for a while , then nodded .
+" Then . I'll delegate that part to you ."
+***
+Two days later , the interior of the dome was neither orderly nor neat anymore . Instead , it was a bloodbath . The Esteemed Temporary Governor was dead . His most loyal warriors were dead , too — the others have either surrendered or ran away . It was quite a feat , for the small group of Awakened warriors led by Warden to dismantle the entire local force despite being outnumbered one to ten . However , numbers did not matter too much against a well - coordinated attack . Especially if it started with a sudden decapitation strike .
+Plus , the local Awakened were no match for Warden and his people . After all , those who habitually trampled the weak usually fell apart when facing the strong … and the warriors who had conquered the ancient castle were very strong . Jest had killed the Governor himself . He incited the poor fool to attack by combining his Awakened and Dormant Abilities , then gutted him right there in the opulent dining room . It had not been too hard . In fact , it had been rather easy … he usually struggled when fighting abominations , since those were mindless beasts . But humans were intelligence creatures , and extreme anger robbed them of their most dangerous weapon — their intellect . So , for him , killing humans was both easier and more rewarding .
+The Governor was a powerful Awakened , but he succumbed to Jest's knife all the same . As the fool's body hit the floor , Jest did not feel much pride … or much of any kind of emotion , really . Just the satisfaction of feeling his body becoming stronger . After that , they swiftly and strategically dealt with the Governor's supporters . Now , there were a few dozen captive soldiers kneeling in the courtyard of the luxurious mansion while they searched it for any stragglers . That was when they discovered the hidden cellar . … A few minutes later , Jest came back on weak legs and crouched in the hallway , breathing heavily . Then , he shuddered and vomited on the luxurious carpet , his eyes trembling slightly . Warden emerged from the basement a minute or two later , pale as a ghost . Both of them remained silent for a while , looking at each other with pale faces . In the end , Jest was the first one to speak :
+" I … I think I understand what you meant . Back there , on the wall of the castle . These people … someone needs to stop them , right ?"
+Warden took a deep breath . A few moments later , he said coldly :
+" They are not people ."
+In the end , the captives did not survive the day , either . Warden did not execute them — instead , he simply handed them to the mundane inhabitants of the dome in restraints . Perhaps executing them swiftly would have been more merciful .
+Observing the bloody spectacle outside the wall , Jest sighed ... It pained him to see all these soul fragments going to waste .
+
+---
+

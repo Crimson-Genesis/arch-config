@@ -29,10 +29,10 @@ application/x-extension-xht=firefox.desktop;zen-beta.desktop;
 image/gif=brave-browser.desktop;aseprite.desktop;feh.desktop;
 image/svg+xml=brave-browser.desktop;
 text/x-chdr=Alacritty.desktop;
-application/x-zerosize=nvim.desktop;
 image/png=nsxiv.desktop;swappy.desktop;feh.desktop;org.gnome.Loupe.desktop;
 image/jpeg=swappy.desktop;feh.desktop;
 application/vnd.microsoft.portable-executable=wine.desktop;
+application/x-zerosize=brave-browser.desktop;
 
 [Default Applications]
 text/plain=nvim.desktop
@@ -65,7 +65,7 @@ application/xhtml+xml=zen-beta.desktop
 application/x-extension-xhtml=zen-beta.desktop
 application/x-extension-xht=zen-beta.desktop
 text/x-chdr=Alacritty.desktop
-application/x-zerosize=nvim.desktop
+application/x-zerosize=brave-browser.desktop
 x-scheme-handler/terminal=alacritty.desktop
 inode/directory=alacritty-open.desktop
 x-scheme-handler/mailto=brave-browser.desktop

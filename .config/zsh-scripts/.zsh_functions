@@ -130,3 +130,21 @@ function start_droidcam(){
     pkill droidcam
     droidcam
 }
+
+function mk() {
+  vared -p 'Path: ' -c var
+  mkdir "$var"
+}
+
+function to_audio() {
+    if [ -z "$1" ]; then
+        echo "Usage: to_audio <input_video_file>"
+        return 1
+    fi
+
+    input="$1"
+    filename=$(basename -- "$input")
+    name="${filename%.*}"
+    ffmpeg -i "$input" -vn -acodec copy "${name}_audio.aac"
+}
+

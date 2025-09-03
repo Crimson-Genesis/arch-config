@@ -10,6 +10,8 @@ alias grep='grep --color=auto'
 PS1='[\u@\h \W]\$ '
 export GTK_THEME=Materia-dark-compact
 export GTK2_RC_FILES=~/.gtkrc-2.0
+export KDEWallet=disabled
+
 
 # >>> conda initialize >>>
 # !! Contents within this block are managed by 'conda init' !!

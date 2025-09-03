@@ -1,0 +1,33 @@
+
+# Chapter 1125
+
+
+---
+
+Today , luck was on Sunny's side . Usually , he would not have been able to listen in on the really important conversations between the emissaries of the great clans . They were too cautious ... and he was very cautious , as well . Perhaps he could overcome the defensive measures his targets had in place , but the cost of failure was too great . So , he had been reluctant to try .
+But today , maybe because of the clamor and pressure of the ongoing clash with the Nightmare Creatures that had been drawn to the battlefield , the representatives of both Song and Valor had been slightly neglectful . And since Sunny had already spent a month learning how to get closer to them , he managed to witness two very interesting conversations .
+The first one was between Morgan and Madoc . The two members of the Valor family remained in the stone fort on top of the giant Echo's carapace , speaking about something as they observed the constant stream of abominations being ground against the outer perimeter of the camp . Of course , no one could hear what they were saying , since the two were surrounded by an invisible barrier that prevented any sound from coming out . Even the movement of their lips was obscured . There were Memories active that made it almost impossible for someone to divine the conversation , as well .
+... However , Sunny was not a diviner . Much more importantly , he managed to get inside the circle of silence by hiding his own shadows in the shadow of one of Valor's Awakened . The man had been invited to make a report , and so , Morgan herself led him through the layers of wards surrounding the fort .
+When the Awakened arrived , she studied him for a few moments , then asked in a neutral tone : " Is there news , Squire Warren ?"
+The Awakened shifted slightly . He tried to hide his excitement at the fact that she knew his name , but failed miserably - Sunny mentally rolled his eyes , while Morgan pretended not to notice . Well , the poor man could not be blamed . How often did ordinary Awakened retainers in service of the great clan closely interact with its princess ? Very rarely , most likely .
+Morgan was a striking person , as well - despite her coldness and sharpness , she was someone even Sunny found hard to look away from . There was just something about the young woman and her vibrant vermilion eyes that demanded attention . Not to mention the fact that she was quite literally a member of exalted royalty .
+In any case , Squire Warren did have something to report . He bowed to Morgan and Madoc , then spoke in a deep , respectful voice : " We received word from Knight Shtad , my lady . His cohort had survived the second night and secured a fortified position . Their report indicates that the divination seems to have been correct ."
+At the mention of that last part , Madoc and Morgan exchanged a glance , their expressions subtly changing . Back in the tent , Sunny frowned . 'Knight Shtad ... ' He was one of the Masters that had arrived with Summer Knight . His cohort had been among those secretly sent to search for suitable Nightmare Gates . It appeared that they were already in the Dream Realm , and had found something important to boot .
+Morgan lingered for a few moments , then sighed . " Finally , some good news ... what about the rest of the scouts ?"
+Squire Warren looked down and gritted his teeth . " Lost or forced to enter the Seeds , my lady . However , now that we have secured several entry points ... the next cohorts we send will survive , honoring their sacrifice ."
+She nodded . " Indeed ..."
+At that point , Madoc finally spoke . " The most important thing right now is to reinforce Shtad . His mission might very well decide the outcome of this phase of the conflict . Warren ... tell your men to prepare . Once we return to the siege capital , I will personally transport you to the desert . You must succeed at any cost ." He lingered for a moment , and then added : "... If my niece does not object , of course ."
+Morgan smiled . " Why would I ? Squire Warren has a sharp blade , and his comrades are the same . They will bring clan Valor glory ."
+The Awakened man lowered his head , his eyes igniting with exhilaration and zeal . " You honor me , Lady Morgan ! Sir Madoc ... we won't let you down !" Whispering Blade smiled . " Of course you won't . You are warriors of Valor , after all ..."
+Beaming with pride , Squire Warren left . Sunny's shadow , however , remained . Which was why it heard Morgan's voice change slightly as she addressed Madoc : " Shouldn't we send someone more powerful ?" Whispering Blade shook his head . " Don't be impatient . It's too early to risk our champions . Once the target is secured , we will have an almost insurmountable advantage over the Blood Daughters ... then , we can truly begin ."
+Morgan looked away and grimaced . " I know . It's just that ... you know what is at stake ." She remained silent for a few moments , then smiled . "... Should we send Nephis , then ?"
+Madoc's face changed slightly . " Don't even think about it . You know how your father feels about her ."
+Morgan sighed , then looked in the direction of the battlefield . " Fickle man ..."
+Far away , hidden safely in the tent , Sunny was frowning . What exactly had the scouts found in the desert ? What was the insurmountable advantage Valor wanted to secure at all costs ? At this stage in the race toward the Black Pyramid , both clans were trying to establish a foothold in the desert . They were slowly ramping up the search for Nightmare Gates that led to relatively safe areas , to use them as entry points for the expedition forces .
+A few of these areas had apparently already been found . What else could Knight Shtad be hunting for ? Some kind of precious resource or revelation about that region of the Dream Realm ? A natural stronghold that could serve as a fortress for the forces of Valor ? A Citadel , even ? There was that last part of the conversation , as well ... It was , honestly , rather disturbing . There seemed to be something complicated going on within clan Valor . But Sunny had no idea what .
+Strangely enough ... it was the emissaries of Song that helped him shed some light on that situation . Because they were currently talking about Nephis , as well .
+In a distant part of the camp , within the circle of armored vehicles , a lavish tent had been raised . Beastmaster and Seishan were inside . At the moment , Beastmaster was enjoying a bowl of fresh fruit as she looked at her sister with a pleasant smile . Her words , however , were anything but pleasant .
+Beastmaster was saying : "... should we kill that girl , Changing Star ?"
+
+---
+

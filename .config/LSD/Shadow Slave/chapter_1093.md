@@ -1,0 +1,36 @@
+
+# Chapter 1093
+
+
+---
+
+The APC was a little cramped , but the four Masters were able to make themselves comfortable . They were sitting on empty ammunition crates , enjoying some of the snacks Kai had presented them with . The mood in the interior of the armored vehicle was surprisingly relaxed , and the Awakened crew under the archer's command were respectfully giving them some space .
+Effie was talking : "... wait , wait , wait . What ? That is hilarious !" The conversation had taken a random turn , leading to Kai sharing the details of how he and Sunny first met . At the time , one of them had been imprisoned in a deep well , while the other had gone more than a little feral after living alone in the Dark City .
+The huntress knew what had happened in broad strokes , but this was her first time hearing the full story . She couldn't stop laughing . " I can just imagine it ..." Effie wiped her eyes , then glanced at Jet and asked with curiosity : " What about you , Colonel ? How did you become Sunny's fairy godmother ?"
+Soul Reaper smiled , leaning back with a can of a refreshing beverage in her hand . "... What's a fairy grandmother ? Is it some kind of Nightmare Creature ?" Effie stared at her for a few moments , then shook her head despondently . " What's a fairy go ... damn . They really are two peas in the same pod ..."
+Jet chuckled . " I guess not . Well , there's not much of a story . I've been assigned to hold vigil over an Aspirant , and that Aspirant turned out to be Sunny . It's rare for us kids from the outskirts to survive the First Nightmare , so I kept in touch ."
+Sunny let out a relieved sigh when he realized that she wasn't going to describe the exact moment he had woken up ... and what transpired right after . There was no need to give Effie more ammunition ! If Jet spilled the beans , he would never hear the end of it ...
+He opened his mouth to change the topic , but at that moment , the sound of an urgent message resounded in the interior of the APC . Sunny did not like that sound at all . Looking up at the communication terminal , he frowned . Almost at the same time , his own comm vibrated , receiving a message as well .
+As Kai rose to access the terminal , the other three checked their comms . The messages Sunny and Jet had received were probably a little different , since the Special Reconnaissance Unit was privy to more information ... but the gist of it was the same . " Damnation ."
+Sunny glanced at his friends , reading the same somber tension on their faces . The Chain of Nightmares ... had just gone into another period of rapid escalation . Dozens of Gates had opened across East Antarctica at the same time , and the initial readings showed that most , if not all of them , were of the Third Category .
+Much worse , it had already been confirmed that several titans had emerged , ready to wreak havoc across the continent . Even though the three Saints had slain several such creatures in the past months , the situation was still eerily similar to what had happened in the Antarctic Center . Would the entirety of the Evacuation Army be able to handle the sudden crisis ? Sunny was not sure .
+Their chances were much higher than what the Antarctic Center contingent's had been , but still ... Things had just gone from bad to worse .
+Jet sighed . " More titans , huh ... I wonder if any of them are Corrupted ."
+Effie continued to munch on her snack , seemingly unbothered by the dire news . She simply shrugged . " We'll find out soon enough . There is no point in worrying about it now , is there ?"
+Soul Reaper grinned . " True . Well ... unless one of those titans happened to appear right between us and the siege capital ." The huntress suddenly stopped chewing , which was very abnormal behavior in her case , and glared at Jet silently .
+" Colonel Jet ... you just had to go and say it , didn't you ?"
+At that moment , Kai returned from the terminal with a troubled face . He looked at them for a few moments , then sighed . " There has been a change of plans . The path we were supposed to take back is no longer available , so ... Army Command sent orders to reroute the expedition force . We will be retreating to a different city , to be stationed there until further notice ."
+Effie sighed and shook her head despondently . " See ..."
+Sunny and Jet glanced at each other . They had not received new orders , so the SRU still expected them to accompany the two companies . That was a relief .
+Kai turned to them and forced out a smile . " Sunny , Ascended Jet ... we will have to trouble you with helping us navigate the wilderness , as well as provide help to our scouts . I hope you don't mind . If everything goes well , we'll be behind walls in three days ."
+Sunny looked around . " Why would we mind ? This is like a luxury hotel ... I haven't been fed this much delicious stuff in a while ." A small smile appeared on his face . Kai nodded . " Great ! Then , please excuse me . I'll go arrange for the column to change course ."
+He went back to the communication terminal , leaving the three of them alone . Sunny sighed , the smile disappearing from his face . 'This is it , then . A perfect moment ... '
+Two days passed in a tense , but manageable atmosphere . The expedition force was persisting in its march , traversing the great plains of East Antarctica with acceptable speed . The skirmishes they fought increased in frequency and ferocity , but with Sunny's shadows scouting out the way , they were able to escape major battles .
+The rest of the continent was not doing as well . East Antarctica was in turmoil , with the assaults on the siege capitals growing more dreadful every day . The Evacuation Army was holding , for now , but the future seemed grim . At the same time , the Saints had united to face the rampaging titans . Their battle had lasted for several ruinous hours , and ended in a bitter draw .
+Two of the titans perished , but the Transcendents had to retreat , each sustaining heavy wounds . Several more creatures remained , including one confirmed Corrupted Titan . For now , none of them was actively moving toward the siege capitals . But it was only a matter of time .
+'Bad ... this smells really bad . ' Sunny was at the back of Kai's APC , sitting on a crate with his eyes closed . His shadows were out scouting , and Jet was sleeping on a neighboring crate , using a military coat as a blanket .
+Suddenly , her communicator produced a melodic sound . Since it was not a notification from Army Command , Sunny paid it no attention . Soul Reaper , however , sat up , yawned , and glanced at the message with a sullen expression . She remained silent for a few moments , then grimaced and showed him the screen of the communicator .
+Sunny opened his eyes and read the title of a government propaganda article attached to the message . His eyes turned a little darker . The title read : " The Great Legacy Clans announce full support for the Southern Quadrant evacuation effort ! In humanity's hour of need , its greatest warriors are rising against the forces of the Nightmare Spell . The best of Bastion and Ravenheart are already en route to reinforce the valiant soldiers of the Evacuation Army ..."
+
+---
+

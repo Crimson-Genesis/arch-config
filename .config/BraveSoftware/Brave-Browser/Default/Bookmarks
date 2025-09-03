@@ -1,5 +1,5 @@
 {
-   "checksum": "05e210167afa8549cbe020dbe6ea83ef",
+   "checksum": "4058cf6ebd612629481d730364cfdc9d",
    "roots": {
       "bookmark_bar": {
          "children": [  ],
@@ -950,7 +950,7 @@
                "url": "https://storm.genie.stanford.edu/"
             }, {
                "date_added": "13394125575701310",
-               "date_last_used": "13394174652272371",
+               "date_last_used": "13397483120861239",
                "guid": "6e005eaa-bfce-4f6e-8efc-3fc7bbdbc73a",
                "id": "146",
                "meta_info": {
@@ -1014,10 +1014,54 @@
                "name": "ASCIIFlow",
                "type": "url",
                "url": "https://asciiflow.com/#/"
+            }, {
+               "date_added": "13396110019585718",
+               "date_last_used": "13396506128148278",
+               "guid": "e73b60d3-360c-418b-ad58-451658877c32",
+               "id": "154",
+               "meta_info": {
+                  "power_bookmark_meta": ""
+               },
+               "name": "UCI Machine Learning Repository",
+               "type": "url",
+               "url": "https://archive.ics.uci.edu/"
+            }, {
+               "date_added": "13396364610130279",
+               "date_last_used": "0",
+               "guid": "53ef1154-4d27-4cb9-a95d-00e07d72a955",
+               "id": "156",
+               "meta_info": {
+                  "power_bookmark_meta": ""
+               },
+               "name": "Stirling PDF",
+               "type": "url",
+               "url": "https://stirlingpdf.io/?lang=en_US"
+            }, {
+               "date_added": "13396366956154240",
+               "date_last_used": "13396506118261576",
+               "guid": "19047dc0-0c25-4e66-8fd9-0b7fae57dff4",
+               "id": "157",
+               "meta_info": {
+                  "power_bookmark_meta": ""
+               },
+               "name": "Staying Code Visualization Platform | Real-time Code Visualization for Python/JS/C++",
+               "type": "url",
+               "url": "https://staying.fun/en"
+            }, {
+               "date_added": "13397477555648211",
+               "date_last_used": "0",
+               "guid": "ff97c22b-fa4a-4f73-8c86-6e8a9aeec8cd",
+               "id": "159",
+               "meta_info": {
+                  "power_bookmark_meta": ""
+               },
+               "name": "Nuclear Power Plant | Definition, Principles & Components | nuclear-power.com",
+               "type": "url",
+               "url": "https://www.nuclear-power.com/nuclear-power-plant/"
             } ],
             "date_added": "13394122919575727",
             "date_last_used": "0",
-            "date_modified": "13394606463984340",
+            "date_modified": "13397477555648211",
             "guid": "ff4c2e23-1f2d-41a9-ad5b-6cc0370bcce7",
             "id": "141",
             "name": "Ai-websites",
