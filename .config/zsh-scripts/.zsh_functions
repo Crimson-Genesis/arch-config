@@ -86,7 +86,11 @@ function compile(){
         gcc ${file_name} -o ${output} -lm $@
     elif [[ "$file_type" == "cpp" ]]; then
         g++ ${file_name} -o ${output} -lm $@
+    else 
+        echo "Unsupported file type: $file_type"
+        return 1
     fi
+    time ./"$output"
 }
 
 function tt(){

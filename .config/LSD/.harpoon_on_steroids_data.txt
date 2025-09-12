@@ -94,3 +94,7 @@
 /home/nico/Downloads/Factorio-jc141/data/factorio/Factorio.Space.Age/bin/x64
 /run/media/nico/nova/Lab/manga
 /home/nico/Downloads/Factorio_Linux/factorio/mods
+/home/nico/openmc-env
+/home/nico/qt5
+/home/nico/qt6
+/run/media/nico/nova/Lab/cuda

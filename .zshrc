@@ -55,7 +55,8 @@ function config(){
     export PATH=$JAVA_HOME/bin:$PATH
     export JAVA_HOME=/usr/lib/jvm/java-24-openjdk
     export KDEWallet=disabled
-
+    export OPENMC_CROSS_SECTIONS=/run/media/nico/nova/Lab/Python/nuclear_sim/endfb71/endfb-vii.1-hdf5/cross_sections.xml
+    export OMP_NUM_THREADS=4
 
     #Style:
     zstyle ':completion:*' verbose true
@@ -131,7 +132,7 @@ function zsh_alias(){
             alias :q="exit"
             alias ee="exit"
             alias pp="shotwell *"
-            alias cd="z"
+            # alias cd="z"
             alias aic="ascii-image-converter"
             alias vi="nvim"
             alias ff="fastfetch"
@@ -170,6 +171,7 @@ function zsh_key_bingings(){
         bindkey -s '^[k' "bash ~/.config/LSD/harpoon_on_steroids.sh killselect^M"
         bindkey -s '^[C' "bash ~/.config/LSD/harpoon_on_steroids.sh killall^M"
         bindkey -s '^[g' "bash ~/.config/LSD/gitacp.sh^M"
+        bindkey -s '^[i' "archwiki-offline -o w3m -m 'fzf --wrap --cycle --ansi --reverse'^M"
 
     # fzf:
     bindkey -s '^[c' "ndir=\`fzf --walker=dir,hidden --walker-root=/\` && cd \$ndir^M"
