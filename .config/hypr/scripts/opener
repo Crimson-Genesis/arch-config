@@ -11,7 +11,13 @@ function config_opener(){
 function tui_opener(){
     local program=$1
     local title=$2
-    (alacritty --config-file ~/.config/alacritty/alacritty-floating.toml -T "$title" -e zsh  -c "${program}" &) &>/dev/null
+    (alacritty --config-file ~/.config/alacritty/alacritty-floating.toml -T "$title" -e zsh -c "${program}" &) &>/dev/null
+}
+
+function tui_opener_norm(){
+    local program=$1
+    local title=$2
+    alacritty -e zsh -c "${program}" -T "$title"
 }
 
 function nconfig(){
@@ -28,6 +34,10 @@ function hyprconfig(){
 
 function exovita_doc(){
     config_opener "/run/media/nico/nova/ctf-site/Documentation" "nvim" "exovita-doc"
+}
+
+function sec_controller(){
+    tui_opener "python -u /home/nico/.config/LSD/sec-controller.py" "god-controller"
 }
 
 function open_nmtui(){
@@ -50,6 +60,9 @@ in
         ;;
     exovitadoc)
         exovita_doc
+        ;;
+    secontroller)
+        sec_controller
         ;;
     *)
         echo -e "\033[38;5;9mInvalid Input\033[0m"

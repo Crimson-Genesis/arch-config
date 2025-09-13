@@ -98,3 +98,6 @@
 /home/nico/qt5
 /home/nico/qt6
 /run/media/nico/nova/Lab/cuda
+/run/media/nico/nova/anime
+/run/media/nico/nova/internshit_cyber
+/run/media/nico/nova/Lab/Python/test

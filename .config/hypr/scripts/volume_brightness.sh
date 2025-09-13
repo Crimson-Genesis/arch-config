@@ -60,7 +60,7 @@ show_brightness_notif() {
         return
     fi
 
-    notify-send -i display-brightness -t 1000 -r 1001 -u normal "$brightness_icon  $brightness%" -h int:value:$brightness
+    notify-send -i display-brightness -t 1000 -r 1001 -u normal $brightness_icon $brightness% -h int:value:$brightness
 }
 
 case $1 in
