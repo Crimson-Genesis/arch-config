@@ -1,5 +1,5 @@
 {
-   "checksum": "02e3c7ae002060da7f994d3cb667177f",
+   "checksum": "98881e744f7668ac7041efadff5e4205",
    "roots": {
       "bookmark_bar": {
          "children": [  ],
@@ -1069,10 +1069,21 @@
                "name": "www.1337x.to",
                "type": "url",
                "url": "https://www.1337x.to/"
+            }, {
+               "date_added": "13402308249466547",
+               "date_last_used": "0",
+               "guid": "153b3377-43f1-4568-a09e-d6d4325dc24b",
+               "id": "163",
+               "meta_info": {
+                  "power_bookmark_meta": ""
+               },
+               "name": "NASM Tutorial",
+               "type": "url",
+               "url": "https://cs.lmu.edu/~ray/notes/nasmtutorial/?utm_source=chatgpt.com"
             } ],
             "date_added": "13394122919575727",
             "date_last_used": "0",
-            "date_modified": "13402128831517361",
+            "date_modified": "13402308249466547",
             "guid": "ff4c2e23-1f2d-41a9-ad5b-6cc0370bcce7",
             "id": "141",
             "name": "Ai-websites",

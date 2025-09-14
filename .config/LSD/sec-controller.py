@@ -2,6 +2,7 @@
 
 import subprocess
 import time
+import os
 import faker
 
 
@@ -11,6 +12,7 @@ class Operations:
         # self.options = "\n".join(["Brightness"])
         self._options = {
             0: "Brightness",
+            1: "Volume",
             -1: "Exit - asdf",
         }
         if indexed:
@@ -20,7 +22,6 @@ class Operations:
 
     def _selector(
         self,
-        type_=str,
         qin=False,
         opts="",
     ):
@@ -39,16 +40,8 @@ class Operations:
                     text=True,
                     capture_output=True,
                 ).stdout.strip()
-            if type_ == int:
-                if result.isdecimal():
-                    result = int(result)
-                else:
-                    result = self._selector(type_=type_, qin=qin)
-                return result
-            else:
-                return result
+            return result
         except KeyboardInterrupt:
-            # exit(0)
             ...
 
     def send_notfi(
@@ -74,17 +67,30 @@ class Operations:
         else:
             ...
 
+    def get_int(self):
+        rows, cols = os.get_terminal_size()
+        print("\n" * (rows - 2))
+        j = input(":- ")
+        os.system("clear");
+        if j.isdecimal():
+            return int(j)
+        else:
+            return None
+
     def menu(self, opts=None):
         if opts == None:
             opts = "\n".join(self.opts)
         selection = self._selector(opts=opts)
         ops = self.get_index(self.opts, selection)
         if ops == 0:
-            inp = self._selector(type_=int, qin=True)
-            if inp > 100:
+            inp = self.get_int()
+            if inp == None:
+                return;
+            elif inp > 100:
                 inp = 100
             elif inp < 0:
                 inp = 0
+
             brightness = (inp / 100) * 96000
             subprocess.run(
                 ["brightnessctl", "set", f"{brightness}"],
@@ -96,6 +102,17 @@ class Operations:
 
         elif ops == -1:
             exit(0);
+        elif ops == 1:
+            inp = self.get_int()
+            if inp == None:
+                return;
+            elif inp > 100:
+                inp = 100
+            elif inp < 0:
+                inp = 0
+            vol = (inp/100)*2
+            subprocess.run(["wpctl","set-volume","@DEFAULT_AUDIO_SINK@", f"{vol}"])
+            self.send_notfi(cmd=f"notify-send -i audio-volume-medium -t 1000 -r 1001 -u normal 🔊 {inp*2}% -h int:value:{inp*2}")
         else:
             ...
 
