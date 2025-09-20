@@ -77,6 +77,10 @@ function yy() {
     rm -f -- "$tmp"
 }
 
+
+nasm -f elf64 test.asm -o test.o   # assemble
+ld test.o -o test                  # link                             # run
+
 function compile(){
     local file_name=$1
     local output=$(echo $file_name | awk -F "." '{print $1}')
@@ -86,11 +90,13 @@ function compile(){
         gcc ${file_name} -o ${output} -lm $@
     elif [[ "$file_type" == "cpp" ]]; then
         g++ ${file_name} -o ${output} -lm $@
+    elif [[ "$file_type" == "asm" ]]; then
+        nasm -f elf64 -o "${output}.o" "${file_name}"
+        ld "${output}.o" -o "${output}"
     else 
         echo "Unsupported file type: $file_type"
         return 1
     fi
-    time ./"$output"
 }
 
 function tt(){

@@ -101,3 +101,4 @@
 /run/media/nico/nova/anime
 /run/media/nico/nova/internshit_cyber
 /run/media/nico/nova/Lab/Python/test
+/home/nico/.local/state/nvim
