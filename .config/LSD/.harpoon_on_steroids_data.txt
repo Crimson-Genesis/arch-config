@@ -102,3 +102,5 @@
 /run/media/nico/nova/internshit_cyber
 /run/media/nico/nova/Lab/Python/test
 /home/nico/.local/state/nvim
+/run/media/nico/nova/drawing_application
+/run/media/nico/nova/Lab/_/Tutorial/Channels

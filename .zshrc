@@ -2,12 +2,14 @@ function config(){
     # Enable Powerlevel10k instant prompt. Should stay close to the top of ~/.zshrc.
     # Initialization code that may require console input (password prompts, [y/n]
     # confirmations, etc.) must go above this block; everything else may go below.
+    # POWERLEVEL9K_INSTANT_PROMPT=off
+    typeset -g POWERLEVEL9K_INSTANT_PROMPT=quiet
+
     if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]; then
       source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
     fi
 
     GITSTATUS_LOG_LEVEL=DEBUG
-    POWERLEVEL9K_INSTANT_PROMPT=off
 
     # Set Config:
     HISTFILE=~/.histfile
@@ -30,7 +32,17 @@ function config(){
     export GTK_IM_MODULE=ibus
     export QT_IM_MODULE=ibus
     export XMODIFIERS=@im=ibus
-    eval $(dbus-launch)
+
+    # Only start a dbus session if none exists (avoid duplication on each shell)
+    if [[ -z "$DBUS_SESSION_BUS_ADDRESS" ]]; then
+    # On systems where systemd user DBus exists this is unnecessary; check before starting.
+      if command -v dbus-launch >/dev/null 2>&1; then
+        eval "$(dbus-launch --sh-syntax)" 2>/dev/null || true
+        export DBUS_SESSION_BUS_ADDRESS
+      fi
+    fi
+    # eval $(dbus-launch)
+
     export DBUS_SESSION_BUS_ADDRESS
     export TF_ENABLE_ONEDNN_OPTS=0
     export TF_CPP_MIN_LOG_LEVEL=3
@@ -43,15 +55,14 @@ function config(){
     export CONDA_DEFAULT_ENV="base"
     # export BAT_PAGER="less -FRX"
     export DXVK_HUD=full
-    export WINEPREFIX=~/.wine64
-    export WINEARCH=win64 winecfg
+    # export WINEPREFIX=~/.wine64
+    # export WINEARCH=win64 winecfg
     # export DXVK_LOG_LEVEL=info
     export QT_QPA_PLATFORM=xcb
     # export QT_QPA_PLATFORM=wayland
     export QT_QPA_PLATFORMTHEME=qt5ct
     export QT_WAYLAND_DISABLE_WINDOWDECORATION=1  # Disable extra borders in some apps
     export QT_QPA_ENABLE_PLATFORMAUXBUFFERS=1     # Fix rendering issues in some cases
-    export JAVA_HOME=/usr/lib/jvm/java-17-openjdk
     export PATH=$JAVA_HOME/bin:$PATH
     export JAVA_HOME=/usr/lib/jvm/java-24-openjdk
     export KDEWallet=disabled
@@ -80,11 +91,38 @@ function config(){
 
     # Source:
     source $ZSH/oh-my-zsh.sh
-    source <(fzf --zsh)
     source ~/powerlevel10k/powerlevel10k.zsh-theme
 
-    # Zoxide:
-    eval "$(zoxide init zsh)"
+    # Lazy-load fzf completions/keybindings
+    if command -v fzf >/dev/null 2>&1; then
+      _fzf_loaded=0
+      _load_fzf() {
+        if (( _fzf_loaded == 0 )); then
+          # try both forms; some fzf versions use --completion, older ones use --zsh
+          source <(fzf --completion 2>/dev/null) 2>/dev/null || source <(fzf --zsh 2>/dev/null) 2>/dev/null || true
+          _fzf_loaded=1
+        fi
+      }
+      # Trigger loader when fzf called or when completion system asks for it
+      function fzf() { _load_fzf; command fzf "$@"; }
+      # lazy completion: call loader on first completion attempt for fzf
+      compdef _load_fzf fzf 2>/dev/null || true
+    fi
+
+    # Lazy-load zoxide
+    if command -v zoxide >/dev/null 2>&1; then
+      _zoxide_loaded=0
+      _load_zoxide() {
+        if (( _zoxide_loaded == 0 )); then
+          eval "$(zoxide init zsh)" 2>/dev/null || true
+          _zoxide_loaded=1
+        fi
+      }
+      # Wrap the most common entry points (z and zoxide)
+      function z() { _load_zoxide; command z "$@"; }
+      function zoxide() { _load_zoxide; command zoxide "$@"; }
+    fi
+
 
     # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
     [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
@@ -218,24 +256,26 @@ if [[ ! -z $TMUX ]]; then
     activate_conda
 fi
 
-# zprof
-
-# # >>> conda initialize >>>
-# # !! Contents within this block are managed by 'conda init' !!
-# __conda_setup="$('/home/nico/anaconda3/bin/conda' 'shell.zsh' 'hook' 2> /dev/null)"
-# if [ $? -eq 0 ]; then
-#     eval "$__conda_setup"
-# else
-#     if [ -f "/home/nico/anaconda3/etc/profile.d/conda.sh" ]; then
-#         . "/home/nico/anaconda3/etc/profile.d/conda.sh"
-#     else
-#         export PATH="/home/nico/anaconda3/bin:$PATH"
-#     fi
-# fi
-# unset __conda_setup
-# # <<< conda initialize <<<
-#
-
+# Lazy-load NVM
 export NVM_DIR="$HOME/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
-[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+
+__nvmlazy() {
+  # Remove stubs
+  unset -f nvm node npm npx
+  # Load actual nvm if present
+  if [ -s "$NVM_DIR/nvm.sh" ]; then
+    . "$NVM_DIR/nvm.sh"
+  fi
+  if [ -s "$NVM_DIR/bash_completion" ]; then
+    . "$NVM_DIR/bash_completion"
+  fi
+  # Forward command to the real binary/function
+  if (( $# )); then
+    command "$@"
+  fi
+}
+
+# Create tiny stubs that call loader on first use
+for cmd in nvm node npm npx; do
+  eval "function $cmd() { __nvmlazy \"$cmd\" \"\$@\"; }"
+done

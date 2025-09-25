@@ -3,11 +3,29 @@ function activate_conda() {
     local is_env=$(awk -F/ -v name="$current_dir_name" '$NF == name {print $NF}' ~/.conda/environments.txt )
 
     if [[ ! -z $is_env ]]; then
+        # # Lazy-load conda
+        # if [ -d "$HOME/anaconda3" ]; then
+        #   _conda_loaded=0
+        #   _load_conda() {
+        #     if (( _conda_loaded == 0 )); then
+        #       if [ -f "$HOME/anaconda3/etc/profile.d/conda.sh" ]; then
+        #         source "$HOME/anaconda3/etc/profile.d/conda.sh" &> /dev/null
+        #       else
+        #         export PATH="$HOME/anaconda3/bin:$PATH"
+        #       fi
+        #       _conda_loaded=1
+        #     fi
+        #   }
+        #   function conda() { _load_conda; command conda "$@"; }
+        #   # If you want automatic environment activation in certain directories, keep your activate_conda(); it can call conda after _load_conda.
+        # fi
         source "/home/$USER/anaconda3/etc/profile.d/conda.sh" &> /dev/null
         conda activate $current_dir_name &> /dev/null
     # else
     #     conda activate $CONDA_DEFAULT_ENV
     fi
+
+
 }
 
 function config_opener(){
@@ -76,10 +94,6 @@ function yy() {
     fi
     rm -f -- "$tmp"
 }
-
-
-nasm -f elf64 test.asm -o test.o   # assemble
-ld test.o -o test                  # link                             # run
 
 function compile(){
     local file_name=$1

@@ -1,5 +1,5 @@
 {
-   "checksum": "98881e744f7668ac7041efadff5e4205",
+   "checksum": "ba06c7ef0cb952d939f7a33a338b0828",
    "roots": {
       "bookmark_bar": {
          "children": [  ],
@@ -1080,10 +1080,21 @@
                "name": "NASM Tutorial",
                "type": "url",
                "url": "https://cs.lmu.edu/~ray/notes/nasmtutorial/?utm_source=chatgpt.com"
+            }, {
+               "date_added": "13402815578943955",
+               "date_last_used": "0",
+               "guid": "3163ff79-8d57-44a7-9620-ed7c2ac58f01",
+               "id": "165",
+               "meta_info": {
+                  "power_bookmark_meta": ""
+               },
+               "name": "IDT · Linux Inside",
+               "type": "url",
+               "url": "https://0xax.gitbooks.io/linux-insides/content/KernelStructures/linux-kernelstructure-1.html"
             } ],
             "date_added": "13394122919575727",
             "date_last_used": "0",
-            "date_modified": "13402308249466547",
+            "date_modified": "13402815578943955",
             "guid": "ff4c2e23-1f2d-41a9-ad5b-6cc0370bcce7",
             "id": "141",
             "name": "Ai-websites",
