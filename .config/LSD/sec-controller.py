@@ -3,12 +3,34 @@
 import subprocess
 import time
 import os
-import faker
+# import faker
 
+def send_notfi(
+    self,
+    msg:None|str=None,
+    cmd=None,
+):
+    if cmd:
+        command = cmd.split(
+            " "
+        )
+        subprocess.run(
+            command,
+            stdout=subprocess.PIPE,
+            stderr=subprocess.PIPE,
+        )
+    elif msg:
+        subprocess.run(
+            ["notify-send", msg],
+            stdout=subprocess.PIPE,
+            stderr=subprocess.PIPE,
+        )
+    else:
+        ...
 
 class Operations:
     def __init__(self, indexed=True) -> None:
-        self.fake = faker.Faker()
+        # self.fake = faker.Faker()
         # self.options = "\n".join(["Brightness"])
         self._options = {
             0: "Brightness",
@@ -137,8 +159,12 @@ if __name__ == "__main__":
         opts = Operations(indexed=False)
         opts.main()
 
-    except KeyboardInterrupt:
+    except KeyboardInterrupt as e:
         print("Good Bye...")
+        send_notfi(e);
         exit(0)
+    except Exception as e:
+        send_notfi(e);
+        exit(1)
 else:
     exit(1)

@@ -256,26 +256,26 @@ if [[ ! -z $TMUX ]]; then
     activate_conda
 fi
 
-# Lazy-load NVM
-export NVM_DIR="$HOME/.nvm"
-
-__nvmlazy() {
-  # Remove stubs
-  unset -f nvm node npm npx
-  # Load actual nvm if present
-  if [ -s "$NVM_DIR/nvm.sh" ]; then
-    . "$NVM_DIR/nvm.sh"
-  fi
-  if [ -s "$NVM_DIR/bash_completion" ]; then
-    . "$NVM_DIR/bash_completion"
-  fi
-  # Forward command to the real binary/function
-  if (( $# )); then
-    command "$@"
-  fi
-}
-
-# Create tiny stubs that call loader on first use
-for cmd in nvm node npm npx; do
-  eval "function $cmd() { __nvmlazy \"$cmd\" \"\$@\"; }"
-done
+# # Lazy-load NVM
+# export NVM_DIR="$HOME/.nvm"
+#
+# __nvmlazy() {
+#   # Remove stubs
+#   unset -f nvm node npm npx
+#   # Load actual nvm if present
+#   if [ -s "$NVM_DIR/nvm.sh" ]; then
+#     . "$NVM_DIR/nvm.sh"
+#   fi
+#   if [ -s "$NVM_DIR/bash_completion" ]; then
+#     . "$NVM_DIR/bash_completion"
+#   fi
+#   # Forward command to the real binary/function
+#   if (( $# )); then
+#     command "$@"
+#   fi
+# }
+#
+# # Create tiny stubs that call loader on first use
+# for cmd in nvm node npm npx; do
+#   eval "function $cmd() { __nvmlazy \"$cmd\" \"\$@\"; }"
+# done

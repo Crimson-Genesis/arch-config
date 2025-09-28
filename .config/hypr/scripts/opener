@@ -11,7 +11,9 @@ function config_opener(){
 function tui_opener(){
     local program=$1
     local title=$2
-    (alacritty --config-file ~/.config/alacritty/alacritty-floating.toml -T "$title" -e zsh -c "${program}" &) &>/dev/null
+    (alacritty --config-file ~/.config/alacritty/alacritty-floating.toml -T "$title" -e sh -c "${program}" &) &>/dev/null
+    # ( alacritty -T "$title" -e zsh -c "tmux new-session -s '${session_name}' -c '${config_path}' '${program}'; exec zsh -i" & ) &>/dev/null
+
 }
 
 function tui_opener_norm(){

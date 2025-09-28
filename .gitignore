@@ -112,3 +112,6 @@
 
 !.config/waybar/
 !.config/waybar/**/*
+
+!docs/
+!docs/**/*
