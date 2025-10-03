@@ -95,23 +95,68 @@ function yy() {
     rm -f -- "$tmp"
 }
 
-function compile(){
-    local file_name=$1
-    local output=$(echo $file_name | awk -F "." '{print $1}')
-    local file_type=$(echo $file_name | awk -F "." '{print $2}')
-    shift
-    if [[ "$file_type" == "c" ]]; then
-        gcc ${file_name} -o ${output} -lm $@
-    elif [[ "$file_type" == "cpp" ]]; then
-        g++ ${file_name} -o ${output} -lm $@
-    elif [[ "$file_type" == "asm" ]]; then
-        nasm -f elf64 -o "${output}.o" "${file_name}"
-        ld "${output}.o" -o "${output}"
-    else 
-        echo "Unsupported file type: $file_type"
-        return 1
+function compile() {
+    local file_name="$1"
+    if [[ -z "$file_name" ]]; then
+        echo "Usage: compile <file> [extra flags...]"
+        return 2
     fi
+    # output = filename without final extension
+    local output="${file_name%.*}"
+    # file_type = text after last '.'
+    local file_type="${file_name##*.}"
+    shift  # now "$@" contains extra flags passed by the user
+    case "$file_type" in
+        c)
+            # pass through extra flags (e.g. -O2 -Iinclude)
+            gcc -g -Wall -- "$file_name" -o "$output" -lm "$@" || return $?
+            ;;
+        cpp|cc|cxx)
+            g++ -g -Wall -- "$file_name" -o "$output" -lm "$@" || return $?
+            ;;
+        asm)
+            # assemble
+            nasm -f elf64 -o "${output}.o" "$file_name" || return $?
+            # parse ld-related args: support -e ENTRY or --entry ENTRY, pass remaining args to ld
+            local entry=""
+            local ld_args=()
+            while (($#)); do
+                case "$1" in
+                    -e|--entry)
+                        if [[ -n "$2" ]]; then
+                            entry="$2"
+                            shift 2
+                        else
+                            echo "Error: $1 needs an argument" >&2
+                            return 3
+                        fi
+                        ;;
+                    --) # explicit end of options
+                        shift
+                        while (($#)); do ld_args+=("$1"); shift; done
+                        ;;
+                    *)
+                        ld_args+=("$1")
+                        shift
+                        ;;
+                esac
+            done
+            if [[ -n "$entry" ]]; then
+                ld "${output}.o" -o "${output}" -e "$entry" "${ld_args[@]}" || return $?
+            else
+                ld "${output}.o" -o "${output}" "${ld_args[@]}" || return $?
+            fi
+            # optional: remove object file (uncomment if you want)
+            # rm -f "${output}.o"
+            ;;
+        *)
+            echo "Unsupported file type: $file_type" >&2
+            return 1
+            ;;
+    esac
+    return 0
 }
+
 
 function tt(){
     local wordlist=$1
