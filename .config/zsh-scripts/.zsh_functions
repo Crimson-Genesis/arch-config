@@ -105,6 +105,7 @@ function compile() {
     local output="${file_name%.*}"
     # file_type = text after last '.'
     local file_type="${file_name##*.}"
+    local objfile="${output}.o"
     shift  # now "$@" contains extra flags passed by the user
     case "$file_type" in
         c)
@@ -114,11 +115,12 @@ function compile() {
         cpp|cc|cxx)
             g++ -g -Wall -- "$file_name" -o "$output" -lm "$@" || return $?
             ;;
-        asm)
-            # assemble
-            nasm -f elf64 -o "${output}.o" "$file_name" || return $?
-            # parse ld-related args: support -e ENTRY or --entry ENTRY, pass remaining args to ld
+        asm|s)
+            # parse ld-related args: support -e ENTRY or --entry ENTRY, pass remaining args to ld, -f or --format
             local entry=""
+            local nasm_format=""
+            local ld_format=""
+            local keep_obj=0
             local ld_args=()
             while (($#)); do
                 case "$1" in
@@ -131,6 +133,18 @@ function compile() {
                             return 3
                         fi
                         ;;
+                    -f|--format)
+                        if [[ -n "$2" ]]; then
+                            nasm_format="$2"
+                            shift 2
+                        else
+                            echo "Error: $1 needs an argument" >&2
+                            return 3
+                        fi
+                        ;;
+                    --keep-obj)
+                        keep_obj=1; shift
+                        ;;
                     --) # explicit end of options
                         shift
                         while (($#)); do ld_args+=("$1"); shift; done
@@ -141,13 +155,40 @@ function compile() {
                         ;;
                 esac
             done
-            if [[ -n "$entry" ]]; then
-                ld "${output}.o" -o "${output}" -e "$entry" "${ld_args[@]}" || return $?
+            case "$nasm_format" in 
+                elf32) ld_format="elf_i386" ;;
+                elf64) ld_format="elf_x86_64" ;;
+                macho32) ld_format="macho_i386" ;;
+                macho64) ld_format="macho_x86_64" ;;
+                *) ld_format="" ;;
+            esac
+
+            # assemble
+            if [[ -n "$nasm_format" ]]; then
+                nasm -f "$nasm_format" -o "${objfile}" "$file_name" || return $?
+                if [[ -n "$ld_format" ]]; then
+                    if [[ -n "$entry" ]]; then
+                        ld "$objfile" -o "${output}" -e "$entry" -m "$ld_format" "${ld_args[@]}" || return $?
+                    else
+                        ld "$objfile" -o "${output}" -m "$ld_format" "${ld_args[@]}" || return $?
+                    fi
+                else
+                    echo "Error: no 'ld' equivalent format found for NASM format '$nasm_format'." >&2
+                    return 4
+                fi
             else
-                ld "${output}.o" -o "${output}" "${ld_args[@]}" || return $?
+                nasm -f elf64 -o "$objfile" "$file_name" || return $?
+                if [[ -n "$entry" ]]; then
+                    ld "$objfile" -o "${output}" -e "$entry" "${ld_args[@]}" || return $?
+                else
+                    ld "$objfile" -o "${output}" "${ld_args[@]}" || return $?
+                fi
             fi
-            # optional: remove object file (uncomment if you want)
-            # rm -f "${output}.o"
+
+            if [[ $keep_obj -eq 0 ]]; then
+                rm -f "${objfile}"
+            fi
+
             ;;
         *)
             echo "Unsupported file type: $file_type" >&2
