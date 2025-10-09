@@ -108,12 +108,9 @@ function compile() {
     local objfile="${output}.o"
     shift  # now "$@" contains extra flags passed by the user
     case "$file_type" in
-        c)
+        c|cpp|cc|cxx)
             # pass through extra flags (e.g. -O2 -Iinclude)
-            gcc -g -Wall -- "$file_name" -o "$output" -lm "$@" || return $?
-            ;;
-        cpp|cc|cxx)
-            g++ -g -Wall -- "$file_name" -o "$output" -lm "$@" || return $?
+            gcc -g -Wall "$file_name" -o "$output" -lm "$@" || return $?
             ;;
         asm|s)
             # parse ld-related args: support -e ENTRY or --entry ENTRY, pass remaining args to ld, -f or --format

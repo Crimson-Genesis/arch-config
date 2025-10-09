@@ -23,4 +23,10 @@
     kb-move-char-forward: "Alt+l";
     kb-remove-word-back: "Alt+BackSpace";
     kb-cancel: "Control+c";
+    calc {
+        no-bold: true;
+        terse: true;
+        no-history: false;
+        no-persist-history: true;
+    }
 }
