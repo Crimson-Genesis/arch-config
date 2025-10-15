@@ -94,20 +94,21 @@ function config(){
     source ~/powerlevel10k/powerlevel10k.zsh-theme
 
     # Lazy-load fzf completions/keybindings
-    if command -v fzf >/dev/null 2>&1; then
-      _fzf_loaded=0
-      _load_fzf() {
-        if (( _fzf_loaded == 0 )); then
-          # try both forms; some fzf versions use --completion, older ones use --zsh
-          source <(fzf --completion 2>/dev/null) 2>/dev/null || source <(fzf --zsh 2>/dev/null) 2>/dev/null || true
-          _fzf_loaded=1
-        fi
-      }
-      # Trigger loader when fzf called or when completion system asks for it
-      function fzf() { _load_fzf; command fzf "$@"; }
-      # lazy completion: call loader on first completion attempt for fzf
-      compdef _load_fzf fzf 2>/dev/null || true
-    fi
+    # if command -v fzf >/dev/null 2>&1; then
+    #   _fzf_loaded=0
+    #   _load_fzf() {
+    #     if (( _fzf_loaded == 0 )); then
+    #       # try both forms; some fzf versions use --completion, older ones use --zsh
+    #       source <(fzf --completion 2>/dev/null) 2>/dev/null || source <(fzf --zsh 2>/dev/null) 2>/dev/null || true
+    #       _fzf_loaded=1
+    #     fi
+    #   }
+    #   # Trigger loader when fzf called or when completion system asks for it
+    #   function fzf() { _load_fzf; command fzf "$@"; }
+    #   # lazy completion: call loader on first completion attempt for fzf
+    #   compdef _load_fzf fzf 2>/dev/null || true
+    # fi
+    source <(fzf --zsh)
 
     # Lazy-load zoxide
     if command -v zoxide >/dev/null 2>&1; then

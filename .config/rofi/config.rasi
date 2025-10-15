@@ -25,8 +25,8 @@
     kb-cancel: "Control+c";
     calc {
         no-bold: true;
-        terse: true;
-        no-history: false;
+        terse: false;
+        no-history: true;
         no-persist-history: true;
     }
 }
