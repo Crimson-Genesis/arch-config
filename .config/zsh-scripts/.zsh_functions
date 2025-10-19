@@ -102,119 +102,80 @@ function compile() {
         return 2
     fi
 
-    # output = filename without final extension
     local output="${file_name%.*}"
-    # file_type = text after last '.'
     local file_type="${file_name##*.}"
     local objfile="${output}.o"
-    shift  # now "$@" contains extra flags passed by the user
+    shift
+
+    # New: trace flag and helper
+    local TRACE=0
+    run() {
+        # print the command in a nice way when TRACE=1
+        if (( TRACE )); then
+            # show the command like a shell would
+            printf '+ %s\n' "$(printf "%q " "$@")"
+        fi
+        "$@"
+    }
 
     case "$file_type" in
         c|cpp|cc|cxx)
-            # For C++ you might want to call g++ — left as gcc for simplicity
-            gcc -g -Wall "$file_name" -o "$output" -lm "$@" || return $?
+            run gcc -g -Wall "$file_name" -o "$output" -lm "$@" || return $?
             ;;
         asm|s)
-            # parse ld-related args: support -e ENTRY or --entry ENTRY, pass remaining args to ld, -f or --format
-            local entry=""
-            local nasm_format=""
-            local ld_format=""
-            local keep_obj=0
-            local use_gcc=0
-            local gcc_format_flag=""
-            local no_pie=""
-            local ld_args=()
+            local entry="" nasm_format="" ld_format="" keep_obj=0 use_gcc=0 gcc_format_flag="" no_pie="" ld_args=()
 
             while (($#)); do
                 case "$1" in
                     -e|--entry)
-                        if [[ -n "$2" ]]; then
-                            entry="$2"
-                            shift 2
-                        else
-                            echo "Error: $1 needs an argument" >&2
-                            return 3
-                        fi
+                        if [[ -n "$2" ]]; then entry="$2"; shift 2; else echo "Error: $1 needs an argument" >&2; return 3; fi
                         ;;
                     -f|--format)
-                        if [[ -n "$2" ]]; then
-                            nasm_format="$2"
-                            shift 2
-                        else
-                            echo "Error: $1 needs an argument" >&2
-                            return 3
-                        fi
+                        if [[ -n "$2" ]]; then nasm_format="$2"; shift 2; else echo "Error: $1 needs an argument" >&2; return 3; fi
                         ;;
-                    --keep-obj)
-                        keep_obj=1; shift
-                        ;;
-                    --gcc)
-                        use_gcc=1; shift
-                        ;;
-                    -no-pie|--no-pie)
-                        no_pie="$1"; shift
-                        ;;
-                    --) # explicit end of options; remaining args go to ld_args
-                        shift
-                        while (($#)); do ld_args+=("$1"); shift; done
-                        ;;
-                    *)
-                        ld_args+=("$1")
-                        shift
-                        ;;
+                    --keep-obj) keep_obj=1; shift ;;
+                    --gcc) use_gcc=1; shift ;;
+                    -no-pie|--no-pie) no_pie="$1"; shift ;;
+                    -v|--verbose) TRACE=1; shift ;;
+                    --) shift; while (($#)); do ld_args+=("$1"); shift; done ;;
+                    *) ld_args+=("$1"); shift ;;
                 esac
             done
 
-            case "$nasm_format" in 
+            case "$nasm_format" in
                 elf32) ld_format="elf_i386"; gcc_format_flag="-m32" ;;
                 elf64) ld_format="elf_x86_64"; gcc_format_flag="-m64" ;;
                 macho32) ld_format="macho_i386"; gcc_format_flag="-m32" ;;
                 macho64) ld_format="macho_x86_64"; gcc_format_flag="-m64" ;;
-                *)
-                    # default if user didn't set format
-                    ld_format=""
-                    gcc_format_flag="-m64"
-                    ;;
+                *) ld_format=""; gcc_format_flag="-m64" ;;
             esac
 
-            # assemble
+            # assemble (use run to show command when TRACE=1)
             if [[ -n "$nasm_format" ]]; then
-                nasm -f "$nasm_format" -o "${objfile}" "$file_name" || return $?
+                run nasm -f "$nasm_format" -o "${objfile}" "$file_name" || return $?
             else
-                # default to elf64 if no -f passed
-                nasm -f elf64 -o "$objfile" "$file_name" || return $?
+                run nasm -f elf64 -o "$objfile" "$file_name" || return $?
             fi
 
-            # Link with ld or gcc depending on flags
+            # link
             if [[ -n "$ld_format" && $use_gcc -eq 0 ]]; then
-                # use ld directly; pass -m format if available
                 if [[ -n "$entry" ]]; then
-                    ld "$objfile" -o "${output}" -e "$entry" -m "$ld_format" "${ld_args[@]}" || return $?
+                    run ld "$objfile" -o "${output}" -e "$entry" -m "$ld_format" "${ld_args[@]}" || return $?
                 else
-                    ld "$objfile" -o "${output}" -m "$ld_format" "${ld_args[@]}" || return $?
+                    run ld "$objfile" -o "${output}" -m "$ld_format" "${ld_args[@]}" || return $?
                 fi
             elif [[ $use_gcc -eq 1 ]]; then
-                # link via gcc; pass entry to linker via -Wl,--entry=...
                 local cmd=(gcc "$objfile" -o "${output}")
-                if [[ -n "$entry" ]]; then
-                    cmd+=(-Wl,--entry="$entry")
-                fi
-                if [[ -n "$no_pie" ]]; then
-                    cmd+=("$no_pie")
-                fi
-                if [[ -n "$gcc_format_flag" ]]; then
-                    cmd+=("$gcc_format_flag")
-                fi
-                if ((${#ld_args[@]})); then
-                    cmd+=("${ld_args[@]}")
-                fi
-                "${cmd[@]}" || return $?
+                if [[ -n "$entry" ]]; then cmd+=(-Wl,--entry="$entry"); fi
+                if [[ -n "$no_pie" ]]; then cmd+=("$no_pie"); fi
+                if [[ -n "$gcc_format_flag" ]]; then cmd+=("$gcc_format_flag"); fi
+                if ((${#ld_args[@]})); then cmd+=("${ld_args[@]}"); fi
+                run "${cmd[@]}" || return $?
             else
-                # fallback: if we have no ld_format and not using gcc, try plain ld/gcc
                 if [[ -n "$entry" ]]; then
-                    ld "$objfile" -o "${output}" -e "$entry" "${ld_args[@]}" || return $?
+                    run ld "$objfile" -o "${output}" -e "$entry" "${ld_args[@]}" || return $?
                 else
-                    ld "$objfile" -o "${output}" "${ld_args[@]}" || return $?
+                    run ld "$objfile" -o "${output}" "${ld_args[@]}" || return $?
                 fi
             fi
 
@@ -230,7 +191,6 @@ function compile() {
 
     return 0
 }
-
 
 function tt(){
     local wordlist=$1
