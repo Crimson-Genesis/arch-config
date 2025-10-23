@@ -185,6 +185,7 @@ function zsh_alias(){
             alias td="tmux detach"
             alias hnctl="hostnamectl"
             alias lsl="ls | bat"
+            alias enter="distrobox enter"
 
             # flags or replacement:
             alias cat="bat"
