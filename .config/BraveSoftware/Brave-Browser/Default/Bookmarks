@@ -1,5 +1,5 @@
 {
-   "checksum": "ba06c7ef0cb952d939f7a33a338b0828",
+   "checksum": "476e783cea6e0e84cb751e7451ea2a32",
    "roots": {
       "bookmark_bar": {
          "children": [  ],
@@ -1091,10 +1091,21 @@
                "name": "IDT · Linux Inside",
                "type": "url",
                "url": "https://0xax.gitbooks.io/linux-insides/content/KernelStructures/linux-kernelstructure-1.html"
+            }, {
+               "date_added": "13406300258231715",
+               "date_last_used": "0",
+               "guid": "93f60796-e62a-4bb3-8cec-06eb34b072af",
+               "id": "167",
+               "meta_info": {
+                  "power_bookmark_meta": ""
+               },
+               "name": "Linux anonymity setup",
+               "type": "url",
+               "url": "https://chatgpt.com/c/69035607-0bdc-8324-9d63-ecd4564b9a3b"
             } ],
             "date_added": "13394122919575727",
             "date_last_used": "0",
-            "date_modified": "13402815578943955",
+            "date_modified": "13406300258231715",
             "guid": "ff4c2e23-1f2d-41a9-ad5b-6cc0370bcce7",
             "id": "141",
             "name": "Ai-websites",

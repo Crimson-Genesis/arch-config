@@ -106,3 +106,5 @@
 /run/media/nico/nova/Lab/_/Tutorial/Channels
 /home/nico/personal
 /run/media/nico/nova/datasets
+/run/media/nico/nova/anime/Infinite Stratos
+/run/media/nico/nova/Lab/R

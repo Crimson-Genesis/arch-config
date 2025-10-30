@@ -251,3 +251,29 @@ function to_audio() {
     ffmpeg -i "$input" -vn -acodec copy "${name}_audio.aac"
 }
 
+function mk_ct_file() {
+    local file_time
+    file_time="$(date +'%Y-%m-%d_%H-%M-%S')"
+    local file_extension file_name
+
+    printf "Enter name: "
+    read -r file_name
+
+    # Add '_' only if name is non-empty
+    if [[ -n "$file_extension" ]]; then
+        file_name="${file_name}_"
+    fi
+
+    printf "Enter extension: "
+    read -r file_extension
+
+    # Add '.' only if extension is non-empty
+    if [[ -n "$file_extension" ]]; then
+        file_extension=".$file_extension"
+    fi
+
+    local file_path="${file_name}${file_time}${file_extension}"
+    touch "$file_path"
+
+    printf "File created: %s\n" "$file_path"
+}

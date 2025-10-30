@@ -43,7 +43,8 @@ function main() {
     esac
   done
 
-  local fmt sel
+  local fmt=""
+  local sel=""
   if [ "$use_quiet_picker" -eq 1 ]; then
     sel=$(
       yt-dlp --no-color --list-formats "$youtube_link" 2>&1 \
@@ -85,4 +86,4 @@ function main() {
     && cecho 2 "✅ Download completed!"
 }
 
-main $1 $2
+main $@

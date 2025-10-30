@@ -2,18 +2,16 @@
 show_hidden = true
 ratio = [1,3,4]
 linemode = "permissions"
-# sort_by = "size"
+sort_by = "natural"
 show_symlink = true
 
 [preview]
 wrap = "yes"
+image_filter = "nearest"
 
 [opener]
 edit = [
     { run = 'nvim "$@"', block = true },
-]
-play = [
-    { run = 'mpv "$@"', orphan = true, for = "unix" },
 ]
 image=[
     {run = 'feh "$@"', block = true}
@@ -23,6 +21,10 @@ pdf=[
 ]
 html=[
     {run = 'brave "$@"', block = true}
+]
+video = [
+     # { run = 'mpv "$@"', desc = "Play video", orphan = true, confirm = false, block = true }
+    { run = 'nohup mpv "$@" >/dev/null 2>&1 &', desc = "Play video", confirm = false }
 ]
 
 [open]
@@ -40,7 +42,9 @@ rules = [
     { name = "*.json", use = ["edit"] },
     { name = "*.pdf", use = ["pdf"] },
     { name = "*.html", use = ["html"] },
-    { name = "*.mp4", use = ["play"] },
-    { name = "*.webm", use = ["play"] },
+    # { name = "*.mp4", use = ["video"] },
+    # { name = "*.webm", use = ["video"] },
+    # { name = "*.mpv", use = ["video"] },
+    { mime = "video/*", use = "video" },
     { name = "*", use = ["edit"] },
 ]
