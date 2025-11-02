@@ -88,7 +88,6 @@
 /home/nico/.config
 /run/media/nico/nova/Lab/Python/dj_pridection_project
 /run/media/nico/nova/Lab/sdp/cloud_and_devops/House-price-prediction-master/HousePred
-/home/nico/Downloads/images_iso
 /run/media/nico/nova/Lab/django_mms
 /home/nico/Downloads/Factorio-jc141
 /home/nico/Downloads/Factorio-jc141/data/factorio/Factorio.Space.Age/bin/x64
