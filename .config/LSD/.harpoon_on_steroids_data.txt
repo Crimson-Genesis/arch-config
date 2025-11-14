@@ -23,7 +23,6 @@
 /run/media/nico/nova/Lab/Python/chess
 /home/nico/.oh-my-zsh
 /home/nico/.config/dunst
-/run/media/nico/nova/games
 /run/media/nico/nova/Lab/Python/nueral_network
 /run/media/nico/nova/Lab/ASM
 /run/media/nico/nova/Lab/ec_councile
@@ -56,10 +55,8 @@
 /run/media/nico/nova/other
 /home/nico/.config/yazi
 /run/media/nico/nova/Lab/Python/maths_django_site
-/run/media/nico/nova/Lab/c/reva-ds
 /run/media/nico/nova/Lab/Python/devops
 /home/nico/.config/waybar
-/home/nico/project_x
 /home/nico/.config/mako
 /run/media/nico/nova/Lab/golang/hackthon_ride_share
 /run/media/nico/nova/Lab/c/placement_traning
@@ -89,10 +86,7 @@
 /run/media/nico/nova/Lab/Python/dj_pridection_project
 /run/media/nico/nova/Lab/sdp/cloud_and_devops/House-price-prediction-master/HousePred
 /run/media/nico/nova/Lab/django_mms
-/home/nico/Downloads/Factorio-jc141
-/home/nico/Downloads/Factorio-jc141/data/factorio/Factorio.Space.Age/bin/x64
 /run/media/nico/nova/Lab/manga
-/home/nico/Downloads/Factorio_Linux/factorio/mods
 /home/nico/openmc-env
 /home/nico/qt5
 /home/nico/qt6
@@ -107,3 +101,8 @@
 /run/media/nico/nova/datasets
 /run/media/nico/nova/anime/Infinite Stratos
 /run/media/nico/nova/Lab/R
+/run/media/nico/nova/game
+/run/media/nico/nova/research_works
+/run/media/nico/nova/projects
+/run/media/nico/nova/downloads/Factorio_Linux
+/run/media/nico/nova/Lab/c/reva_sdp_4
