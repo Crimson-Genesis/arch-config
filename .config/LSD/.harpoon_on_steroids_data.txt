@@ -106,3 +106,6 @@
 /run/media/nico/nova/projects
 /run/media/nico/nova/downloads/Factorio_Linux
 /run/media/nico/nova/Lab/c/reva_sdp_4
+/run/media/nico/nova/projects/chess
+/run/media/nico/nova/projects/interview_site_reva_project
+/run/media/nico/nova/images_iso

@@ -119,8 +119,11 @@ function compile() {
     }
 
     case "$file_type" in
-        c|cpp|cc|cxx)
+        c|cc)
             run gcc -g -Wall "$file_name" -o "$output" -lm "$@" || return $?
+            ;;
+        cpp|cxx)
+            run g++ -g -Wall "$file_name" -o "$output" -lm "$@" || return $?
             ;;
         asm|s)
             local entry="" nasm_format="" ld_format="" keep_obj=0 use_gcc=0 gcc_format_flag="" no_pie="" ld_args=()

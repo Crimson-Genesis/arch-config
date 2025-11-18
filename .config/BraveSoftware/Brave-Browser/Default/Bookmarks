@@ -1,5 +1,5 @@
 {
-   "checksum": "476e783cea6e0e84cb751e7451ea2a32",
+   "checksum": "dbcb08e7647099dddbf2a7261c2896e7",
    "roots": {
       "bookmark_bar": {
          "children": [  ],
@@ -1102,10 +1102,21 @@
                "name": "Linux anonymity setup",
                "type": "url",
                "url": "https://chatgpt.com/c/69035607-0bdc-8324-9d63-ecd4564b9a3b"
+            }, {
+               "date_added": "13406622914153121",
+               "date_last_used": "0",
+               "guid": "f5710140-5899-451a-b389-efafa30c4669",
+               "id": "169",
+               "meta_info": {
+                  "power_bookmark_meta": ""
+               },
+               "name": "EbookFoundation/free-programming-books: :books: Freely available programming books",
+               "type": "url",
+               "url": "https://github.com/EbookFoundation/free-programming-books"
             } ],
             "date_added": "13394122919575727",
             "date_last_used": "0",
-            "date_modified": "13406300258231715",
+            "date_modified": "13406622914153121",
             "guid": "ff4c2e23-1f2d-41a9-ad5b-6cc0370bcce7",
             "id": "141",
             "name": "Ai-websites",

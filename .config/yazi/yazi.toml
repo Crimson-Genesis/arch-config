@@ -30,6 +30,7 @@ video = [
 [open]
 rules = [
     { name = "*.jpg", use = ["image"] },
+    { name = "*.jpeg", use = ["image"] },
     { name = "*.png", use = ["image"] },
     { name = "*.txt", use = ["edit"] },
     { name = "*.py", use = ["edit"] },
@@ -42,6 +43,7 @@ rules = [
     { name = "*.json", use = ["edit"] },
     { name = "*.pdf", use = ["pdf"] },
     { name = "*.html", use = ["html"] },
+    { mime = "image/*", use = "image" },
     # { name = "*.mp4", use = ["video"] },
     # { name = "*.webm", use = ["video"] },
     # { name = "*.mpv", use = ["video"] },
