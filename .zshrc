@@ -237,14 +237,14 @@ function zsh_key_bingings(){
     # bindkey -s '^[a' "ddgr^M"
 }
 
-# PreExec-Funcitons:
-function preexec() {
-    if [[ "$1" == *"--help"* ]]; then
-        com=${1%% --help*}
-        $com --help | less || echo "no help available for $1"
-        return 0
-    fi
-}
+# # PreExec-Funcitons:
+# function preexec() {
+#     if [[ "$1" == *"--help"* ]]; then
+#         com=${1%% --help*}
+#         $com --help | less || echo "no help available for $1"
+#         return 0
+#     fi
+# }
 
 # zmodload zsh/zprof
 
