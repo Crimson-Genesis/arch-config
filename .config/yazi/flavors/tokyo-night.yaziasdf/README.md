@@ -12,14 +12,6 @@
 
 ## 🎨 Installation
 
-### Using package manager
-
-```bash
-ya pkg add BennyOe/tokyo-night
-```
-
-### Manual install
-
 ```bash
 # Linux/macOS
 git clone https://github.com/BennyOe/tokyo-night.yazi.git ~/.config/yazi/flavors/tokyo-night.yazi
@@ -36,8 +28,6 @@ Add the these lines to your `theme.toml` configuration file to use it:
 ```toml
 [flavor]
 use = "tokyo-night"
-# For Yazi 0.4 and above
-dark = "tokyo-night"
 ```
 
 ## 📜 License

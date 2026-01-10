@@ -1,0 +1,63 @@
+* {
+  font-family: JetBrainsMono Nerd Font;
+  font-size: 11px;
+  border: none;
+}
+
+window#waybar {
+  background: #1a1b26;
+  color: #c0caf5;
+}
+
+/* GLOBAL SPACING */
+.modules-left,
+.modules-right {
+  padding: 10px 6px;
+}
+
+/* CLOCK – TOP ANCHOR */
+#clock {
+  font-size: 26px;
+  color: #9ece6a;
+  padding-top: 16px;
+  padding-bottom: 20px;
+}
+
+/* WORKSPACES */
+#workspaces button {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  margin-top: 2px;
+  margin-bottom: 2px;
+  color: #565f89;
+}
+
+#workspaces button.active {
+  color: #7aa2f7;
+}
+
+/* SYSTEM MODULES */
+#cpu,
+#memory,
+#disk,
+#temperature,
+#network,
+#bluetooth,
+#pulseaudio,
+#idle_inhibitor,
+#battery,
+#tray {
+  padding-top: 6px;
+  padding-bottom: 6px;
+}
+
+/* ALERT STATES */
+#temperature.critical,
+#battery.critical {
+  color: #f7768e;
+}
+
+#battery.warning {
+  color: #e0af68;
+}
+
