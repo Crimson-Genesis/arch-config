@@ -1,5 +1,5 @@
 {
-   "checksum": "dbcb08e7647099dddbf2a7261c2896e7",
+   "checksum": "c4216689ba46b434e29112850f510a4e",
    "roots": {
       "bookmark_bar": {
          "children": [  ],
@@ -1113,10 +1113,65 @@
                "name": "EbookFoundation/free-programming-books: :books: Freely available programming books",
                "type": "url",
                "url": "https://github.com/EbookFoundation/free-programming-books"
+            }, {
+               "date_added": "13410631055989284",
+               "date_last_used": "0",
+               "guid": "439bfb1d-448a-44b1-86ad-edcce6887d5b",
+               "id": "171",
+               "meta_info": {
+                  "power_bookmark_meta": ""
+               },
+               "name": "Native Linux Games. Y@Ldysse : Free : Free Download, Borrow and Streaming : Internet Archive",
+               "type": "url",
+               "url": "https://archive.org/details/native-linux-games-collection"
+            }, {
+               "date_added": "13411472094992989",
+               "date_last_used": "0",
+               "guid": "ae3e7819-a1f5-422c-9e23-7ad2efd482cb",
+               "id": "173",
+               "meta_info": {
+                  "power_bookmark_meta": ""
+               },
+               "name": "All Silksong major abilities and where to get them | GamesRadar+",
+               "type": "url",
+               "url": "https://www.gamesradar.com/games/silksong-abilities-skills-powers/"
+            }, {
+               "date_added": "13411487138641569",
+               "date_last_used": "0",
+               "guid": "c6ec6b7b-9501-4d20-9c35-d206c952d300",
+               "id": "175",
+               "meta_info": {
+                  "power_bookmark_meta": ""
+               },
+               "name": "Silksong Map - Full Interactive Map | silksongmap.cc",
+               "type": "url",
+               "url": "https://silksongmap.cc/?layers=mossberry%2Cred-tools"
+            }, {
+               "date_added": "13411767414350240",
+               "date_last_used": "0",
+               "guid": "439005a9-7115-4c6b-a9cf-152f41e7fc6e",
+               "id": "177",
+               "meta_info": {
+                  "power_bookmark_meta": ""
+               },
+               "name": "public-apis/public-apis: A collective list of free APIs",
+               "type": "url",
+               "url": "https://github.com/public-apis/public-apis"
+            }, {
+               "date_added": "13411767418865518",
+               "date_last_used": "0",
+               "guid": "b4d62321-04df-48ec-9e1b-667281417e14",
+               "id": "178",
+               "meta_info": {
+                  "power_bookmark_meta": ""
+               },
+               "name": "Free Public APIs for Developers",
+               "type": "url",
+               "url": "https://rapidapi.com/collection/list-of-free-apis"
             } ],
             "date_added": "13394122919575727",
             "date_last_used": "0",
-            "date_modified": "13406622914153121",
+            "date_modified": "13411767418865518",
             "guid": "ff4c2e23-1f2d-41a9-ad5b-6cc0370bcce7",
             "id": "141",
             "name": "Ai-websites",

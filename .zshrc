@@ -54,12 +54,11 @@ function config(){
     export GTK2_RC_FILES=~/.gtkrc-2.0
     export CONDA_DEFAULT_ENV="base"
     # export BAT_PAGER="less -FRX"
-    export DXVK_HUD=full
     # export WINEPREFIX=~/.wine64
     # export WINEARCH=win64 winecfg
     # export DXVK_LOG_LEVEL=info
-    export QT_QPA_PLATFORM=xcb
-    # export QT_QPA_PLATFORM=wayland
+    # export QT_QPA_PLATFORM=xcb
+    export QT_QPA_PLATFORM=wayland
     export QT_QPA_PLATFORMTHEME=qt5ct
     export QT_WAYLAND_DISABLE_WINDOWDECORATION=1  # Disable extra borders in some apps
     export QT_QPA_ENABLE_PLATFORMAUXBUFFERS=1     # Fix rendering issues in some cases
@@ -68,6 +67,9 @@ function config(){
     export KDEWallet=disabled
     export OPENMC_CROSS_SECTIONS=/run/media/nico/nova/Lab/Python/nuclear_sim/endfb71/endfb-vii.1-hdf5/cross_sections.xml
     export OMP_NUM_THREADS=4
+
+    export WINEARCH=win64
+    export WINEPREFIX=$HOME/.wine-silksong
 
     #Style:
     zstyle ':completion:*' verbose true
@@ -133,6 +135,7 @@ function config(){
 function zsh_alias(){
 # Alias:
     # Programs-alias:
+        alias hyprland="start-hyprland"
         # eza:
         alias ls="eza --icons --group-directories-first -l --hyperlink"
         alias lss="eza --icons --group-directories-first -l --hyperlink --total-size"

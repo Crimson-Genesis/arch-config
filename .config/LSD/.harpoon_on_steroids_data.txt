@@ -111,3 +111,6 @@
 /run/media/nico/nova/images_iso
 /run/media/nico/nova/projects/micro_project_mca_3_sem
 /run/media/nico/nova/research_works/AWS_sec_enc_dec
+/run/media/nico/nova/LFS
+/run/media/nico/nova/mydistro
+/run/media/nico/nova/SteamLibrary/steamapps/common
