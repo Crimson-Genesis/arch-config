@@ -62,8 +62,8 @@ function config(){
     export QT_QPA_PLATFORMTHEME=qt5ct
     export QT_WAYLAND_DISABLE_WINDOWDECORATION=1  # Disable extra borders in some apps
     export QT_QPA_ENABLE_PLATFORMAUXBUFFERS=1     # Fix rendering issues in some cases
+    export JAVA_HOME=/usr/lib/jvm/java-17-openjdk
     export PATH=$JAVA_HOME/bin:$PATH
-    export JAVA_HOME=/usr/lib/jvm/java-24-openjdk
     export KDEWallet=disabled
     export OPENMC_CROSS_SECTIONS=/run/media/nico/nova/Lab/Python/nuclear_sim/endfb71/endfb-vii.1-hdf5/cross_sections.xml
     export OMP_NUM_THREADS=4
@@ -201,6 +201,8 @@ function zsh_alias(){
             alias cp="cp -i"
             alias du="du -h"
             alias tree="tree | less"
+            alias logout_hl="hyprctl dispatch exit"
+            alias android-s="GDK_BACKEND=x11 _JAVA_AWT_WM_NONREPARENTING=1 _JAVA_OPTIONS='-Dsun.java2d.opengl=false -Dsun.java2d.xrender=false' android-studio"
 }
 
 function zsh_key_bingings(){

@@ -12,7 +12,6 @@
 /run/media/nico/nova/Lab
 /home/nico/.config/kitty
 /home/nico/.config/BraveSoftware
-/etc/lightdm
 /home/nico/.config/yay
 /home/nico/wallpaper
 /home/nico/.config/wezterm
@@ -27,8 +26,6 @@
 /run/media/nico/nova/Lab/ASM
 /run/media/nico/nova/Lab/ec_councile
 /run/media/nico/nova/Lab/ec_councile/Hands-on-Linux-for-DevOps-Cloud-Engineers/lab-terraform
-/run/media/nico/nova
-/home/nico
 /run/media/nico/nova/movies/to_watch
 /run/media/nico/nova/video_wallpaper
 /run/media/nico/nova/Lab/ec_councile/Linux-Command-Line-From-Zero-to-Expert
@@ -63,7 +60,6 @@
 /run/media/nico/nova/ctf-site/ctf-site/algorift
 /run/media/nico/nova/Lab/Python/unit_4
 /home/nico/.config/presenterm
-/etc/default
 /run/media/nico/nova/Lab/Python/django_sde
 /run/media/nico/nova/Lab/Python/django_sde/other
 /run/media/nico/nova/ai_model/text-generation-webui
@@ -82,14 +78,11 @@
 /run/media/nico/nova/Lab/sdp/cloud_and_devops
 /home/nico/vms/ubuntu-vm
 /home/nico/.config/libvirt
-/home/nico/.config
 /run/media/nico/nova/Lab/Python/dj_pridection_project
 /run/media/nico/nova/Lab/sdp/cloud_and_devops/House-price-prediction-master/HousePred
 /run/media/nico/nova/Lab/django_mms
 /run/media/nico/nova/Lab/manga
 /home/nico/openmc-env
-/home/nico/qt5
-/home/nico/qt6
 /run/media/nico/nova/Lab/cuda
 /run/media/nico/nova/anime
 /run/media/nico/nova/internshit_cyber
@@ -112,4 +105,8 @@
 /run/media/nico/nova/projects/micro_project_mca_3_sem
 /run/media/nico/nova/research_works/AWS_sec_enc_dec
 /run/media/nico/nova/LFS
-/home/nico/mydistro/airootfs/etc/skel
+/run/media/nico/nova/mydistro
+/run/media/nico/nova/SteamLibrary/steamapps/common
+/run/media/nico/nova/projects/algo
+/run/media/nico/nova/projects/aishit
+/run/media/nico/nova/projects/aistuff

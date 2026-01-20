@@ -17,7 +17,7 @@ image=[
     {run = 'feh "$@"', block = true}
 ]
 pdf=[
-    {run = 'zathura "$@"', block = true}
+    {run = 'brave "$@"', block = true}
 ]
 html=[
     {run = 'brave "$@"', block = true}

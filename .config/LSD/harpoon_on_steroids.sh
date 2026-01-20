@@ -1,4 +1,4 @@
-#!/use/bin/bash
+#!/usr/bin/bash
 
 data_file_path=~/.config/LSD/.harpoon_on_steroids_data.txt
 
@@ -22,6 +22,77 @@ get_active_fzf_session(){
     readarray -t data <<< "$active_session"
     echo -e "${active_session[@]}"
 }
+
+# build_fzf_dirs_cache() {
+#     local cache="$HOME/.cache/fzf_dirs.cache"
+#     local src="$data_file_path"
+#
+#     mkdir -p "${cache%/*}"
+#
+#     echo "[fzf-dirs] building cache..." >&2
+#
+#     sort -u "$src" | awk '
+#     {
+#         for (i = 1; i <= n; i++)
+#             if ($0 ~ "^" roots[i] "/") next
+#         roots[++n] = $0
+#         print
+#     }' | while IFS= read -r root; do
+#         [[ -d "$root" ]] || continue
+#         echo "[fzf-dirs] scanning: $root" >&2
+#         find "$root" -type d 2>/dev/null
+#     done > "$cache"
+#
+#     echo "[fzf-dirs] cache built at $cache" >&2
+# }
+#
+# get_all_dirs_from_data_file() {
+#     local cache="$HOME/.cache/fzf_dirs.cache"
+#
+#     if [[ ! -f "$cache" ]]; then
+#         build_fzf_dirs_cache
+#     fi
+#
+#     cat "$cache"
+# }
+#
+#
+#
+# fzf_select() {
+#     local active_paths
+#     mapfile -t active_paths < <(get_active_fzf_session)
+#
+#     local input
+#     input="$(get_all_dirs_from_data_file | fzf_path_highlight "${active_paths[@]}")"
+#
+#     if [[ $# -ne 0 ]]; then
+#         fzf --wrap --cycle --ansi --reverse \
+#             --preview "echo 'Session name :-'; echo {} | awk -F '/' '{print \$(NF-1)\"-\"\$NF}' | tr '.' '_'" \
+#             --header="$1" <<< "$input"
+#     else
+#         fzf --wrap --cycle --ansi --reverse \
+#             --preview "echo 'Session name :-'; echo {} | awk -F '/' '{print \$(NF-1)\"-\"\$NF}' | tr '.' '_'" \
+#             <<< "$input"
+#     fi
+# }
+#
+# fzf_multi_select() {
+#     local active_paths
+#     mapfile -t active_paths < <(get_active_fzf_session)
+#
+#     local input
+#     input="$(get_all_dirs_from_data_file | fzf_path_highlight "${active_paths[@]}")"
+#
+#     if [[ $# -ne 0 ]]; then
+#         fzf --wrap --cycle --ansi --reverse -m \
+#             --preview "echo 'Session name :-'; echo {} | awk -F '/' '{print \$(NF-1)\"-\"\$NF}' | tr '.' '_'" \
+#             --header="$1" <<< "$input"
+#     else
+#         fzf --wrap --cycle --ansi --reverse -m \
+#             --preview "echo 'Session name :-'; echo {} | awk -F '/' '{print \$(NF-1)\"-\"\$NF}' | tr '.' '_'" \
+#             <<< "$input"
+#     fi
+# }
 
 fzf_multi_select(){
     local active_paths=($(get_active_fzf_session))
@@ -291,8 +362,11 @@ in
         fi
         exit
         ;;
+    buildcatch)
+        rm -f "$HOME/.cache/fzf_dirs.cache"
+        build_fzf_dirs_cache
+    ;;
     *)
         echo -e "\033[38;5;1mInvalid command...\033[0m"
         exit
 esac
-

@@ -1,5 +1,5 @@
 {
-   "checksum": "c4216689ba46b434e29112850f510a4e",
+   "checksum": "cf5309d44fc52ab87656879807135655",
    "roots": {
       "bookmark_bar": {
          "children": [  ],
@@ -1168,10 +1168,32 @@
                "name": "Free Public APIs for Developers",
                "type": "url",
                "url": "https://rapidapi.com/collection/list-of-free-apis"
+            }, {
+               "date_added": "13412662585733659",
+               "date_last_used": "0",
+               "guid": "72b893b2-711b-40d6-ad21-78b8b8134742",
+               "id": "180",
+               "meta_info": {
+                  "power_bookmark_meta": ""
+               },
+               "name": "bareactslive.com/?AspxAutoDetectCookieSupport=1",
+               "type": "url",
+               "url": "https://www.bareactslive.com/?AspxAutoDetectCookieSupport=1"
+            }, {
+               "date_added": "13412662841477298",
+               "date_last_used": "0",
+               "guid": "08e1c817-0e42-45a9-b0fa-47315f0dae47",
+               "id": "181",
+               "meta_info": {
+                  "power_bookmark_meta": ""
+               },
+               "name": "Legal Guides, Business Reports and Events | ICLG",
+               "type": "url",
+               "url": "https://iclg.com/"
             } ],
             "date_added": "13394122919575727",
             "date_last_used": "0",
-            "date_modified": "13411767418865518",
+            "date_modified": "13412662841477298",
             "guid": "ff4c2e23-1f2d-41a9-ad5b-6cc0370bcce7",
             "id": "141",
             "name": "Ai-websites",

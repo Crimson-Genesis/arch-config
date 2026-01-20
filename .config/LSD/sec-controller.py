@@ -32,9 +32,12 @@ class Operations:
     def __init__(self, indexed=True) -> None:
         # self.fake = faker.Faker()
         # self.options = "\n".join(["Brightness"])
+        self.__update_env(indexed=indexed)
+
+    def __update_env(self, indexed = False):
         self._options = {
-            0: "Brightness",
-            1: "Volume",
+            0: self.get_brightness(),
+            1: self.get_volume(),
             -1: "Exit - asdf",
         }
         if indexed:
@@ -88,6 +91,39 @@ class Operations:
             )
         else:
             ...
+
+    def get_volume(self,):
+        result = subprocess.run(
+            ["wpctl", "get-volume", "@DEFAULT_AUDIO_SINK@"],
+            capture_output=True,
+            text=True,
+        ).stdout.strip()
+        # example output: "Volume: 0.45"
+        vol = int(float(result.split()[1]) * 100)
+        is_mut = " [MUTED]" if self.is_muted() == "yes" else ""
+        return f"Volume - {vol}" + is_mut
+
+    def is_muted(self,):
+        result = subprocess.run(
+            ["wpctl", "get-volume", "@DEFAULT_AUDIO_SINK@"],
+            capture_output=True,
+            text=True,
+        ).stdout
+        return "yes" if "MUTED" in result else "no"
+
+    def get_brightness(self,):
+        current = subprocess.run(
+            ["brightnessctl", "g"],
+            capture_output=True,
+            text=True,
+        ).stdout.strip()
+
+        maximum = subprocess.run(
+            ["brightnessctl", "m"],
+            capture_output=True,
+            text=True,
+        ).stdout.strip()
+        return f"Brightness - {int((int(current) / int(maximum)) * 100)}"
 
     def get_int(self):
         rows, cols = os.get_terminal_size()
@@ -152,7 +188,7 @@ class Operations:
     def main(self):
         while True:
             self.menu()
-
+            self.__update_env()
 
 if __name__ == "__main__":
     try:
